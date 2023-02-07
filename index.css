@@ -1,0 +1,180 @@
+:root {
+	--vue-logo-dark-green: #34495e;
+	--vue-logo-light-green: #41b883;
+	--dark-white: #d6d9d7;
+	--white-cream: #F5E5D5;
+
+	--YELLOW: #fac22b;
+	--BLUE: #0e638e;
+	--RED: #d42a20;
+	--almost-black: #32302b;
+
+
+	--pallete-1-yellow: #E9C46A;
+	--pallete-2-orange: #F4A261;
+	--pallete-3-green: #2A9D8F;
+	--pallete-4-dark-blue: #264653;
+	--pallete-5-red: #E76F51;
+}
+
+html {
+	background-color: var(--white-cream);
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	color: var(--vue-logo-dark-green);
+	font-size: 3rem;
+}
+
+h2 {
+	margin: 0.5rem 0;
+	font-size: 1.3rem;
+}
+
+header {
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+/*	height: 90%;*/
+	display: grid;
+}
+
+#index {
+	display: flex;
+	flex-direction: row;
+	gap: 10svw;
+	padding: 10vw;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 70vh;
+}
+
+@media(max-width: 600px) {
+	#index {
+		flex-direction: column;
+	}
+}
+
+#theVueElement {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 2vw;
+	padding: 2vw;
+	align-content: center;
+	box-sizing: border-box;
+}
+
+button.colorful {
+	background-color: var(--white-cream);
+}
+
+button.red:focus,
+button.red:hover {
+	background-color: var(--RED);
+}
+
+button.blue:focus,
+button.blue:hover {
+	background-color: var(--BLUE);
+}
+
+button.yellow:focus,
+button.yellow:hover {
+	background-color: var(--YELLOW);
+}
+
+input,
+button {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+input {
+	height: 1.6rem;
+	margin: 0.3rem 0;
+
+}
+
+button {
+	width: 50%;
+	margin: 2% auto;
+	height: 3.5rem;
+	cursor: pointer;
+	box-shadow: 4px 5px 0 0 #3c372d;
+	transition: box-shadow,transform  .2s;
+	animation-timing-function: ease-in-out;
+}
+
+button:focus-visible,
+button:hover {
+	transform: translate(1px, 1px);
+	box-shadow: 3px 4px 0 0 #3c372d;
+}
+
+ol {
+	text-align: left;
+	overflow-y: auto;
+	max-height: 6rem;
+	margin: 0;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+
+
+
+
+.color-block {
+	background-color: var(--pallete-1-yellow);
+	color: var(--pallete-4-dark-blue);
+	border-radius: 11px;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	border: 3px solid var(--vue-logo-dark-green);
+/*	box-shadow: 0px 0px 5px 1px #329569;*/
+}
+
+.color-block.warning {
+	animation: blinking-animation 1s steps(1, start) infinite;
+}
+
+@keyframes blinking-animation {
+	50% {
+		border-color: red;
+	}
+}
+
+.color-block.warning p {
+	visibility: hidden;
+	position: relative;
+}
+
+.color-block.warning p:after {
+	visibility: visible;
+	color: red;
+	font-size: 2rem;
+	content: "EMERGENCY!";
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translateX(-50%);
+}

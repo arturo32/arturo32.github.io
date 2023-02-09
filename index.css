@@ -31,13 +31,35 @@ body {
 }
 
 h1 {
-	color: var(--vue-logo-dark-green);
+	color: var(--almost-black);
 	font-size: 3rem;
 }
 
 h2 {
 	margin: 0.5rem 0;
-	font-size: 1.3rem;
+	font-size: 2.5rem;
+	text-align: left;
+}
+
+.colorful h2 {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+.red h2 {
+	border-bottom-color: var(--RED);	
+}
+
+.blue h2 {
+	border-bottom-color: var(--BLUE);	
+}
+
+.yellow h2 {
+	border-bottom-color: var(--YELLOW);	
+}
+
+h3 {
+	font-size: 1.8rem;
 }
 
 header {
@@ -52,20 +74,73 @@ main {
 	display: grid;
 }
 
+section {
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
+
+.subsection {
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+	min-height: 70vh;
+}
+
 #index {
 	display: flex;
 	flex-direction: row;
-	gap: 10svw;
-	padding: 10vw;
+	gap: 6vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
 	height: 70vh;
 }
 
-@media(max-width: 600px) {
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 2rem;	
+}
+
+.column h4 {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.column p {
+	text-align: left;
+	margin: 0;
+}
+
+.columns img {
+	width: 6rem;
+	margin-right: 1rem;
+	float: left;
+}
+
+.divider {
+	border: 1px solid black;
+	height: 70vh;
+	width: 0;
+	position: relative;
+	left: 50%;
+}
+
+@media(max-width: 900px) {
 	#index {
 		flex-direction: column;
+	}
+
+	.columns {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -80,6 +155,7 @@ main {
 
 button.colorful {
 	background-color: var(--white-cream);
+	font-size: 1.5rem;
 }
 
 button.red:focus,
@@ -130,10 +206,6 @@ ol {
 	overflow-y: auto;
 	max-height: 6rem;
 	margin: 0;
-}
-
-p {
-	margin: 0.5rem 0;
 }
 
 

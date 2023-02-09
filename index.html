@@ -6,7 +6,7 @@
 	<title>My portfolio!</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="index.css">
 	
 </head>
@@ -17,25 +17,69 @@
 	<main>
 		<article>
 			<section>
-				<div id="index">
+				<div id="index" class="subsection">
 					<button class="colorful red">About me</button>
 					<button class="colorful yellow">Projects</button>
 					<button class="colorful blue">Others</button>
 				</div>
 			</section>
-			<section>
-				<div id="about">
+			<section class="colorful red">
+				<div id="about" class="subsection">
+					<h2>About me</h2>
 
 				</div>
 			</section>
-			<section>
-				<div id="projects">
+			<section class="colorful yellow">
+				<div id="projects" class="subsection">
+					<h2>Projects</h2>
+					<div class="columns">
+						<div>
+							<h3>Visual Math</h3>
+							<div class="column">
+								<div>
+									<h4>Triangle lerp</h4>
+									<img src="media/miniatures/triangle_lerp.jpg" />
+									<p>Linear interpolation but with areas! In a triangle!</p>
+
+								</div>	
+								<div>
+									<h4>Perlin noise - vector field</h4>
+									<img src="media/miniatures/perlin-noise-vector-field.jpg" />
+									<p>The beauty of a particular random number generator.</p>
+								</div>
+								<div>
+									<h4>Julia sets</h4>
+									<img src="media/miniatures/julia-set-interactive.jpg" />
+									<p>Move your mouse to generate beautiful products of a complex number function.</p>
+								</div>
+								<div>
+									<h4>Times table</h4>
+									<img src="media/miniatures/times-table.jpg" />
+									<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+								</div>
+							</div>
+							
+							
+							<!-- <hr class="divider"></hr> -->
+						</div>
+
+						<div>
+							<h3>Sites</h3>
+							<!-- <hr class="divider"></hr> -->
+						</div>	
+
+						
+
+						<div>
+							<h3>Others</h3>
+						</div>
+					</div>
 
 				</div>
 			</section>
-			<section>
-				<div id="others">
-
+			<section class="colorful blue">
+				<div id="others" class="subsection">
+					<h2>Others</h2>
 				</div>
 			</section>
 		</article>

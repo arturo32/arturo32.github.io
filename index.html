@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My portfolio!</title>
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;600&display=swap" rel="stylesheet"> 
+
 	<link rel="stylesheet" type="text/css" href="index.css">
 	
 </head>
@@ -18,9 +20,20 @@
 		<article>
 			<section>
 				<div id="index" class="subsection">
-					<button class="colorful red">About me</button>
-					<button class="colorful yellow">Projects</button>
-					<button class="colorful blue">Others</button>
+					<button class="colorful red" type="button" 
+						onclick="moveToSection(event)">
+						About me
+					</button>
+					
+					<button class="colorful yellow" type="button"
+						onclick="moveToSection(event)">
+						Projects
+					</button>
+					
+					<button class="colorful blue" type="button" 
+					onclick="moveToSection(event)">
+						Others
+					</button>
 				</div>
 			</section>
 			<section class="colorful red">
@@ -38,23 +51,28 @@
 							<div class="column">
 								<div>
 									<h4>Triangle lerp</h4>
-									<img src="media/miniatures/triangle_lerp.jpg" />
+									<img src="media/miniatures/triangle_lerp.gif" />
 									<p>Linear interpolation but with areas! In a triangle!</p>
 
 								</div>	
 								<div>
 									<h4>Perlin noise - vector field</h4>
-									<img src="media/miniatures/perlin-noise-vector-field.jpg" />
+									<img src="media/miniatures/perlin-noise-vector-field.gif" />
 									<p>The beauty of a particular random number generator.</p>
 								</div>
 								<div>
 									<h4>Julia sets</h4>
-									<img src="media/miniatures/julia-set-interactive.jpg" />
+									<img src="media/miniatures/julia-set-interactive.gif" />
 									<p>Move your mouse to generate beautiful products of a complex number function.</p>
 								</div>
 								<div>
 									<h4>Times table</h4>
-									<img src="media/miniatures/times-table.jpg" />
+									<img src="media/miniatures/times-table.gif" />
+									<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+								</div>
+								<div>
+									<h4>Light and shadow</h4>
+									<img src="media/miniatures/light-and-shadow.gif" />
 									<p>Wonderful patterns emerge when numbers are written in a circle.</p>
 								</div>
 							</div>
@@ -65,6 +83,30 @@
 
 						<div>
 							<h3>Sites</h3>
+							<div class="column">
+								<div>
+									<h4>How Pointers Work</h4>
+									<img src="media/miniatures/how-pointers-work.gif" />
+									<p>Linear interpolation but with areas! In a triangle!</p>
+
+								</div>	
+
+								<div>
+									<h4>Ecoleta (React)</h4>
+									<img src="media/miniatures/ecoleta.gif" />
+									<p>Linear interpolation but with areas! In a triangle!</p>
+								</div>	
+
+								<div>
+									<h4>Converter (Vue.js)</h4>
+									<img src="media/miniatures/converter-vue-js.gif" />
+									<p>Linear interpolation but with areas! In a triangle!</p>
+
+								</div>	
+
+								
+							</div>
+							
 							<!-- <hr class="divider"></hr> -->
 						</div>	
 
@@ -72,6 +114,25 @@
 
 						<div>
 							<h3>Others</h3>
+							<div class="column">
+								<div>
+									<h4>Ray Tracer</h4>
+									<img src="media/miniatures/ray-tracer.gif" />
+									<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
+								</div>	
+
+								<div>
+									<h4>Drawing Project</h4>
+									<img src="media/miniatures/drawing-project.gif" />
+									<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
+								</div>	
+							
+								<div>
+									<h4>Som Imaginário</h4>
+									<img src="media/miniatures/som-imaginario.gif" />
+									<p>Linear interpolation but with areas! In a triangle!</p>
+								</div>	
+							</div>
 						</div>
 					</div>
 
@@ -89,6 +150,25 @@
 
 
 
+	<script>
+		function moveToSection(e) {
+			
+			for(className of e.target.classList) {
+				if(className === "red") {
+					document.getElementById('about').scrollIntoView();
+				}
+				else if(className === "yellow") {
+					document.getElementById('projects').scrollIntoView();
+				}
+				else if(className === "blue") {
+					document.getElementById('others').scrollIntoView();
+				}
+			}
+			
+		}
+		
+
+	</script>
 
 	<!-- development version, includes helpful console warnings -->
 	<script src="https://unpkg.com/petite-vue" defer init></script>

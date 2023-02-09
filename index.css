@@ -19,10 +19,12 @@
 
 html {
 	background-color: var(--white-cream);
-	font-family: 'M PLUS Rounded 1c', sans-serif;
-	font-size: 16px;
+	font-size: 17px;
 	text-align: center;
 	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 200;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -30,14 +32,23 @@ body {
 	margin: 0;
 }
 
+
+header {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 h1 {
 	color: var(--almost-black);
-	font-size: 3rem;
+	font-size: 4.5rem;
+	letter-spacing: .2rem;
 }
 
 h2 {
 	margin: 0.5rem 0;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: left;
 }
 
@@ -59,15 +70,15 @@ h2 {
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 2rem;
+	font-weight: 200;
 }
 
-header {
-	height: 15vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+h4{
+	font-weight: 200;
 }
+
+
 
 main {
 /*	height: 90%;*/
@@ -79,9 +90,12 @@ section {
 	margin-right: 8vw;
 }
 
-.subsection {
+section.colorful {
 	padding-top: 15vh;
 	padding-bottom: 15vh;
+}
+
+.subsection {
 	min-height: 70vh;
 }
 
@@ -100,30 +114,32 @@ section {
 .columns {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15vw;
 }
 
 .column {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 2rem;	
+	grid-gap: 3rem;	
 }
 
+
 .column h4 {
-	text-align: left;
+	text-align: center;
 	margin: 0;
 	margin-bottom: 0.5rem;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 .column p {
-	text-align: left;
+	text-align: center;
 	margin: 0;
+	margin-top: .3rem;
 }
 
 .columns img {
-	width: 6rem;
-	margin-right: 1rem;
-	float: left;
+	width: 100%;
+	border-radius: 25px;
 }
 
 .divider {

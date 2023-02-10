@@ -19,7 +19,7 @@
 
 html {
 	background-color: var(--white-cream);
-	font-size: 17px;
+	font-size: 24px;
 	text-align: center;
 	box-sizing: border-box;
 	font-family: 'Josefin Sans', sans-serif;
@@ -42,13 +42,13 @@ header {
 
 h1 {
 	color: var(--almost-black);
-	font-size: 4.5rem;
+	font-size: 3.5rem;
 	letter-spacing: .2rem;
 }
 
 h2 {
-	margin: 0.5rem 0;
-	font-size: 3rem;
+	margin: 1.5rem 0;
+	font-size: 2rem;
 	text-align: left;
 }
 
@@ -71,13 +71,25 @@ h2 {
 
 h3 {
 	font-size: 2rem;
-	font-weight: 200;
+	font-weight: 300;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 }
 
 h4{
 	font-weight: 200;
 }
 
+p {
+	text-align: left;
+	font-weight: 300;
+	line-height: 1.5rem;
+}
+
+em {
+	font-style: normal;
+	font-weight: 600;
+}
 
 
 main {
@@ -128,13 +140,16 @@ section.colorful {
 	text-align: center;
 	margin: 0;
 	margin-bottom: 0.5rem;
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 }
 
 .column p {
 	text-align: center;
 	margin: 0;
 	margin-top: .3rem;
+	font-weight: 200;
+	font-size: .8rem;
+	line-height: 1rem;
 }
 
 .columns img {
@@ -160,18 +175,9 @@ section.colorful {
 	}
 }
 
-#theVueElement {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 2vw;
-	padding: 2vw;
-	align-content: center;
-	box-sizing: border-box;
-}
-
 button.colorful {
 	background-color: var(--white-cream);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 button.red:focus,
@@ -204,7 +210,7 @@ input {
 button {
 	width: 50%;
 	margin: 2% auto;
-	height: 3.5rem;
+	height: 3rem;
 	cursor: pointer;
 	box-shadow: 4px 5px 0 0 #3c372d;
 	transition: box-shadow,transform  .2s;

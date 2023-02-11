@@ -63,21 +63,68 @@
 						<div>
 							<h3>Visual Math</h3>
 							<div class="column">
-								<div>
+								<div id="triagleLerp">
 									<h4>Triangle lerp</h4>
-									<img src="media/miniatures/triangle_lerp.gif" />
+									
+									<div class="project-container">
+										<img src="media/miniatures/triangle_lerp.gif"/>
+										<button >Learn <br> more</button>
+									</div>
 									<p>Linear interpolation but with areas! In a triangle!</p>
+									
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<span class="close">&times;</span>
+												<h3>Triangle Lerp</h3>
+												
+												<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
+
+												<p>As Freya says in her thread, to calculate the influence of each triangle vertex in the rotating point you have to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage of that area relative to the total area of the larger triangle.</p>
+
+												<p>A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes (Phong Shading).</p>
+												<img src="media/miniatures/triangle_lerp.gif"/>
+												</div>
+										</div>
+									</div>
 
 								</div>	
 								<div>
 									<h4>Perlin noise - vector field</h4>
-									<img src="media/miniatures/perlin-noise-vector-field.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/perlin-noise-vector-field.gif" />
+										<button id="perlinNoise">Learn <br> more</button>
+									</div>
 									<p>The beauty of a particular random number generator.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<span class="close">&times;</span>
+												<h3>Perlin noise</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div>
 									<h4>Julia sets</h4>
-									<img src="media/miniatures/julia-set-interactive.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/julia-set-interactive.gif" />
+										<button id="juliaSets">Learn <br> more</button>
+									</div>
+									
 									<p>Move your mouse to generate beautiful products of a complex number function.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<span class="close">&times;</span>
+												<h3>Julia sets</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div>
 									<h4>Times table</h4>
@@ -100,7 +147,11 @@
 							<div class="column">
 								<div>
 									<h4>How Pointers Work</h4>
-									<img src="media/miniatures/how-pointers-work.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/how-pointers-work.gif"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
+									
 									<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
 
 								</div>	
@@ -201,8 +252,42 @@
 			}
 			
 		}
-		
+	</script>
 
+	<script>
+		// Get the modal
+		let modals = document.getElementsByClassName('project-details');
+
+		for(let modal of modals) {
+			let btn = modal.parentNode.querySelector('button');
+			
+			// Get the <span> element that closes the modal
+			let span = modal.querySelector('.close');
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+		  		modal.style.display = 'block';
+		  		document.documentElement.style.overflowY = 'hidden';
+		  		document.documentElement.style.cursor = 'pointer';
+		  		
+		  		// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = 'none';
+						document.documentElement.style.overflowY = 'initial';
+						document.documentElement.style.cursor = 'default';
+					}
+					
+				}
+				
+			}
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = 'none';
+				document.documentElement.style.overflowY = 'initial';
+				document.documentElement.style.cursor = 'default';
+			}
+		}
 	</script>
 
 	<!-- development version, includes helpful console warnings -->

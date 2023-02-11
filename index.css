@@ -134,6 +134,112 @@ section.colorful {
 	object-fit: contain;
 }
 
+
+
+.project-container {
+	position: relative;
+	display: flex;
+}
+
+.project-container img {
+	position: relative;
+	z-index: 3;
+}
+
+.project-container button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 25px;
+	box-shadow: none !important;
+	transform: none !important;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	font-family: 'Josefin Sans', sans-serif;
+	color: var(--YELLOW);
+	font-weight: 300;
+	font-size: 1.5rem;
+	letter-spacing: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.project-container img:hover {
+	z-index: 1;
+}
+
+.project-container button:hover,
+.project-container button:focus {
+	z-index: 4;
+}
+
+.project-details {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 10; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: var(--white-cream);
+	margin-left: 16vw;
+	margin-right: 16vw;
+	margin-top: calc(var(--header-height) / 2);
+	margin-bottom: calc(var(--header-height) / 2);
+	height: calc(100vh - var(--header-height));
+	border-radius: 25px;
+	box-sizing: border-box;
+	overflow-y: hidden;
+	cursor: default;
+
+}
+
+.modal-inner-content {
+	padding: 1.5%;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.project-details .modal-inner-content img {
+	width: 300px;
+	margin: 1rem;
+}
+
+.project-details .modal-content p {
+	text-align: left;
+	font-weight: 300;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .columns {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -147,6 +253,8 @@ section.colorful {
 }
 
 
+
+
 .column h4 {
 	text-align: center;
 	margin: 0;
@@ -155,9 +263,9 @@ section.colorful {
 }
 
 .column p {
-	text-align: center;
+	text-align: left;
 	margin: 0;
-	margin-top: .3rem;
+	margin-top: 0.8rem;
 	font-weight: 200;
 	font-size: .8rem;
 	line-height: 1rem;

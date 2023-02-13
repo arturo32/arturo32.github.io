@@ -123,16 +123,83 @@ section.colorful {
 	box-sizing: border-box;
 }
 
-#others img {
-	height: 320px;
-	width: 320px;
+#index button {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 50%;
+	margin: 2% auto;
+	height: 3rem;
+	cursor: pointer;
+	box-shadow: 4px 5px 0 0 #3c372d;
+	transition: box-shadow,transform  .2s;
+	animation-timing-function: ease-in-out;
+}
+
+#index button:focus-visible,
+#index button:hover {
+	transform: translate(1px, 1px);
+	box-shadow: 3px 4px 0 0 #3c372d;
+}
+
+
+#others .project-container {
+	height: 20vw;
+	width: 20vw;
+}	
+
+/*#others #origami {
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2vw;
+	height: 25vh;
+}*/
+
+#others #origami img {
+	height: 20vw;
+	width: 20vw;
 	object-fit: cover;
 	border-radius: 25px;
 }
 
-#photography img {
-	object-fit: contain;
+#others .project-container {
+	display: inline-block;
 }
+
+#others .project-container a {
+	padding: 0;
+	text-decoration: none;
+}
+
+#others .project-container a div {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	padding-left: 0.5rem;
+	text-decoration: none;
+	color: var(--BLUE);
+}
+
+#others .project-container a:hover,
+#others .project-container a:focus {
+	text-decoration: none;
+}
+
+
+#photography {
+	height: 25vh;
+}
+
+#photography img {
+	height: 100%;
+	width: auto;
+	border-radius: 25px;
+}
+
+/*#photography a {
+	display: inline-block;
+	height: 100%;
+	margin:.3vw;
+}*/
 
 
 
@@ -146,7 +213,8 @@ section.colorful {
 	z-index: 3;
 }
 
-.project-container button {
+.project-container button,
+.project-container a {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -154,12 +222,10 @@ section.colorful {
 	margin: 0;
 	border: none;
 	border-radius: 25px;
-	box-shadow: none !important;
-	transform: none !important;
 	z-index: 2;
 	left: 0;
 	top: 0;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.7);
 	font-family: 'Josefin Sans', sans-serif;
 	color: var(--YELLOW);
 	font-weight: 300;
@@ -173,7 +239,9 @@ section.colorful {
 }
 
 .project-container button:hover,
-.project-container button:focus {
+.project-container button:focus,
+.project-container a:hover,
+.project-container a:focus {
 	z-index: 4;
 }
 
@@ -211,6 +279,7 @@ section.colorful {
 	padding-right: 8vw;
 	overflow-y: auto;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 .project-details .modal-inner-content img {
@@ -231,6 +300,8 @@ section.colorful {
   float: right;
   font-size: 3rem;
   font-weight: bold;
+  background: none;
+  border: none;
 }
 
 .close:hover,
@@ -306,33 +377,12 @@ button.yellow:hover {
 	background-color: var(--YELLOW);
 }
 
-input,
-button {
-	border: 1px solid black;
-	border-radius: 5px;
-}
-
-input {
-	height: 1.6rem;
-	margin: 0.3rem 0;
-
-}
 
 button {
-	width: 50%;
-	margin: 2% auto;
-	height: 3rem;
 	cursor: pointer;
-	box-shadow: 4px 5px 0 0 #3c372d;
-	transition: box-shadow,transform  .2s;
-	animation-timing-function: ease-in-out;
 }
 
-button:focus-visible,
-button:hover {
-	transform: translate(1px, 1px);
-	box-shadow: 3px 4px 0 0 #3c372d;
-}
+
 
 
 @media(max-width: 900px) {

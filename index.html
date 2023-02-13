@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Arturo Fonseca</title>
 	
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
 
@@ -75,7 +75,7 @@
 									<div class="project-details">
 										<div class="modal-content">
 											<div class="modal-inner-content">
-												<span class="close">&times;</span>
+												<button class="close">&times;</button>
 												<h3>Triangle Lerp</h3>
 												
 												<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
@@ -92,7 +92,7 @@
 								<div>
 									<h4>Perlin noise - vector field</h4>
 									<div class="project-container">
-										<img src="media/miniatures/perlin-noise-vector-field.gif" />
+										<img src="media/miniatures/perlin-noise-vector-field.gif"/>
 										<button id="perlinNoise">Learn <br> more</button>
 									</div>
 									<p>The beauty of a particular random number generator.</p>
@@ -100,13 +100,21 @@
 									<div class="project-details">
 										<div class="modal-content">
 											<div class="modal-inner-content">
-												<span class="close">&times;</span>
+												<button class="close">&times;</button>
+												
 												<h3>Perlin noise</h3>
-												<p>Under construction!</p>
+												<p>I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>, one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not only about the methods of p5.js but also the math and algorithms behind them.</p>
+												
+												<p>As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is relatively close to the numbers that came before and after it.</p>
+
+												<p>In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the GIF below. I use the sin function to map the colors blue and red to their rotation.</p>
+
+												<img src="media/miniatures/perlin-noise-vector-field.gif"/>
 											</div>
 										</div>
 									</div>
 								</div>
+								
 								<div>
 									<h4>Julia sets</h4>
 									<div class="project-container">
@@ -119,22 +127,51 @@
 									<div class="project-details">
 										<div class="modal-content">
 											<div class="modal-inner-content">
-												<span class="close">&times;</span>
+												<button class="close">&times;</button>
 												<h3>Julia sets</h3>
 												<p>Under construction!</p>
 											</div>
 										</div>
 									</div>
 								</div>
+								
 								<div>
 									<h4>Times table</h4>
-									<img src="media/miniatures/times-table.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/times-table.gif"/>
+										<button id="juliaSets">Learn <br> more</button>
+									</div>
 									<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Times table</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
+									
+									
 								</div>
 								<div>
 									<h4>Light and shadow</h4>
-									<img src="media/miniatures/light-and-shadow.gif" />
-									<p>Lines and their interceptions.</p>
+									<div class="project-container">
+										<img src="media/miniatures/light-and-shadow.gif" />
+										<button id="juliaSets">Learn <br> more</button>
+									</div>
+									<p>Lines and their interceptions with the environment.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Light and shadow</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							
@@ -154,26 +191,75 @@
 									
 									<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
 
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>How Pointers Work</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
+
 								</div>	
 
 								<div>
 									<h4>Ecoleta (React)</h4>
-									<img src="media/miniatures/ecoleta.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/ecoleta.gif" />
+										<button id="pointers">Learn <br> more</button>
+									</div>
+									
 									<p>A site about recycling collections points in your city.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Ecoleta (React)</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>	
 
 								<div>
 									<h4>Converter (Vue.js)</h4>
-									<img src="media/miniatures/converter-vue-js.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/converter-vue-js.gif"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
 									<p>Convert monetary values between numerous international currencies!</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Converter (Vue.js)</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>
+								
 								<div>
 									<h4>(Re)learning Vue.js</h4>
-									<img src="media/miniatures/re-learning-vue.png" />
+									<div class="project-container">
+										<img src="media/miniatures/re-learning-vue.png"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
 									<p>Back to basics.</p>
-								</div>
 
-								
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>(Re)learning Vue.js</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>									
+								</div>
 							</div>
 							
 							<!-- <hr class="divider"></hr> -->
@@ -186,20 +272,59 @@
 							<div class="column">
 								<div>
 									<h4>Ray Tracer</h4>
-									<img src="media/miniatures/ray-tracer.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/ray-tracer.gif"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
 									<p>3D ray tracer that can create photorealistic images.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Ray Tracer</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>	
 
 								<div>
 									<h4>Drawing Project</h4>
-									<img src="media/miniatures/drawing-project.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/drawing-project.gif"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
 									<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Drawing Project</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>	
 							
 								<div>
 									<h4>Som Imaginário</h4>
-									<img src="media/miniatures/som-imaginario.gif" />
+									<div class="project-container">
+										<img src="media/miniatures/som-imaginario.gif"/>
+										<button id="pointers">Learn <br> more</button>
+									</div>
 									<p>Educational project about sound and how humans perceive its origin in space.</p>
+
+									<div class="project-details">
+										<div class="modal-content">
+											<div class="modal-inner-content">
+												<button class="close">&times;</button>
+												<h3>Som Imaginário</h3>
+												<p>Under construction!</p>
+											</div>
+										</div>
+									</div>
 								</div>	
 							</div>
 						</div>
@@ -212,20 +337,42 @@
 					<h2>Others</h2>
 					
 					<h3>Origami</h3>
-					<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 11 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
+					<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
 
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><img src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: right;"></a>
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><img src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3"></a>
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><img src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;"></a>
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><img src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box"></a>
+					<div id="origami"> 
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
+							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> by <br/> Román Díaz</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
+							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> by <br/> Jose Anibal Voyer</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
+							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> by <br/> Satoshi Kamiya</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
+							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><div>Clover Folding <br/> by <br/> Shuzo Fujimoto</div></a>
+						</div>
+					</div>
+					
 					
 
 
 
 					<h3>Photography</h3>
-					<div id="photography">
+					<p>It was through photographing my origamis that I began to pay more attention to lighting, composition and photography in general. I've found great pleasure in photographing nature and all its little living things.</p>
+					<div>
+						<div id="photography">
 						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título"><img src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título"></a>	
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out"><img src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out"></a>
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título"><img src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título"></a>
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo"><img src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo"></a>
+					</div>	
 					</div>
+					
 					
 				</div>
 			</section>
@@ -261,12 +408,13 @@
 		for(let modal of modals) {
 			let btn = modal.parentNode.querySelector('button');
 			
-			// Get the <span> element that closes the modal
-			let span = modal.querySelector('.close');
+			// Get the <button> element that closes the modal
+			let closeButton = modal.querySelector('.close');
 
 			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
 		  		modal.style.display = 'block';
+		  		modal.focus();
 		  		document.documentElement.style.overflowY = 'hidden';
 		  		document.documentElement.style.cursor = 'pointer';
 		  		
@@ -281,22 +429,14 @@
 				}
 				
 			}
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
+			// When the user clicks on <button> (x), close the modal
+			closeButton.onclick = function() {
 				modal.style.display = 'none';
 				document.documentElement.style.overflowY = 'initial';
 				document.documentElement.style.cursor = 'default';
 			}
 		}
 	</script>
-
-	<!-- development version, includes helpful console warnings -->
-	<script src="https://unpkg.com/petite-vue" defer init></script>
-
-
-
-	<!-- <script src="https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.iife.js" defer init></script>
-	 -->
 
 </body>
 </html>

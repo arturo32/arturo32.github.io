@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,27 @@
 
 
 	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<meta content="Arturo Fonseca" property="og:title">
+	<meta name="description" content="Brazilian IT student interested in web development and computer graphics.">
+	
+	<meta content="Brazilian IT student interested in web development and computer graphics." property="og:description">
+	
+	<meta content="media/miniatures/me.jpg" property="og:image">
+
+	<meta content="Arturo Fonseca" property="twitter:title">
+	
+	<meta content="Brazilian IT student interested in web development and computer graphics." property="twitter:description">
+	
+	<meta content="media/miniatures/me.jpg" property="twitter:image">
+
+	<meta property="og:type" content="website">
+	
+	<meta content="summary_large_image" name="twitter:card">
+
+	<!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
+
+
 	
 </head>
 <body>
@@ -495,7 +516,7 @@
 			thisWebsiteImage.height = thisWebsiteImage.width / 2;
 		
 			let currentScroll = window.scrollY; 
-			let maxScroll = document.documentElement.scrollTopMax;
+			let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 			let scrollPercentage = (currentScroll/maxScroll) * 100;
 
 			thisWebsiteImage.style.objectPosition = '0 ' + scrollPercentage + '%';	

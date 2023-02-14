@@ -18,454 +18,470 @@
 		<h1>Arturo Fonseca</h1>
 	</header>
 	<main>
-		<article>
-			<section>
-				<div id="index" class="subsection">
-					<button class="colorful red" type="button" 
-						onclick="moveToSection(event)">
-						About me
-					</button>
-					
-					<button class="colorful yellow" type="button"
-						onclick="moveToSection(event)">
-						Projects
-					</button>
-					
-					<button class="colorful blue" type="button" 
-					onclick="moveToSection(event)">
-						Others
-					</button>
-				</div>
-			</section>
+		<section>
+			<nav id="index" class="subsection">
+				<a class="colorful red" href="#aboutTitle">
+					About me
+				</a>
+				
+				<a class="colorful yellow" href="#projectsTitle">
+					Projects
+				</a>
+				
+				<a class="colorful blue" href="#othersTitle">
+					Others
+				</a>
+			</nav>
+		</section>
 
-			<section class="colorful red">
-				<div id="about" class="subsection">
-					
-					<h2>About me</h2>
-					<img id="myPicture" src="media/miniatures/me.jpg" width="300" height="300"/>
-					<p>Hi! My name is Arturo Fonseca de Souza. I am a 23 year old IT student at the Universidade Federal do Rio Grande do Norte (Brazil). For the last 2 years I have been working with <em>web development</em> in scholarships, furthering my knowledge in the <em>backend</em> side as well as the <em>frontend</em>.</p>
+		<section class="colorful red" aria-labelledby="aboutTitle">
+			<article id="about" class="subsection">
+				
+				<h2 id="aboutTitle">About me</h2>
+				<img id="myPicture" src="media/miniatures/me.jpg" width="300" height="300" alt="A photo of me. I have long brown hair, white skin, long and skinny face. The background is a blueish wall of a room. I am wearing a green indian shirt."/>
+				<p>Hi! My name is Arturo Fonseca de Souza. I am a 23 year old IT student at the Universidade Federal do Rio Grande do Norte (Brazil). For the last 2 years I have been working with <em>web development</em> in scholarships, furthering my knowledge in the <em>backend</em> side as well as the <em>frontend</em>.</p>
 
-					<p>I really like learning new things and making them more accessible to people. This was my main motivation behind one of my dearest personal projects: a website where anyone can visualize and understand <a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages. It is still in the early stages of development, but I am determined to finish it this year!</p>
-					
-					<p>Outside developing web applications, I have a big passion for geometry and mathematics in general. This led me down a path of studies where I discovered the wonders of <em>computer graphics</em>. After finally taking a course in the subject at my university, I was sure that this was something I wanted to pursue more deeply.</p>
+				<p>I really like learning new things and making them more accessible to people. This was my main motivation behind one of my dearest personal projects: a website where anyone can visualize and understand <a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages. It is still in the early stages of development, but I am determined to finish it this year!</p>
+				
+				<p>Outside developing web applications, I have a big passion for geometry and mathematics in general. This led me down a path of studies where I discovered the wonders of <em>computer graphics</em>. After finally taking a course in the subject at my university, I was sure that this was something I wanted to pursue more deeply.</p>
 
-					
+				
 
-					<p>My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about music theory.</p>
+				<p>My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about music theory.</p>
 
-				</div>
-			</section>
-			
-			<section class="colorful yellow">
-				<div id="projects" class="subsection">
-					<h2>Projects</h2>
-					<div class="columns">
-						<div>
-							<h3>Visual Math</h3>
-							<div class="column">
-								<div id="triagleLerp">
-									<h4>Triangle lerp</h4>
-									
-									<div class="project-container">
-										<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Linear interpolation but with areas! In a triangle!</p>
-									
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Triangle Lerp</h3>
-												
-												<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
-
-												<p>As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage of that area relative to the total area of the larger triangle.</p>
-
-												<p>A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes (Phong Shading).</p>
-
-												<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
-
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
-											</div>
-										</div>
-									</div>
-
-								</div>	
-								<div>
-									<h4>Perlin noise - vector field</h4>
-									<div class="project-container">
-										<img src="media/miniatures/perlin-noise-vector-field.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>The beauty of a particular random number generator.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												
-												<h3>Perlin noise</h3>
-												<p>I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>, one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not only about the methods of p5.js but also the math and algorithms behind them.</p>
-												
-												<p>As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is relatively close to the numbers that came before and after it.</p>
-
-												<p>In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the GIF below. I use the sin function to map the colors blue and red to their rotation.</p>
-
-												<img src="media/miniatures/perlin-noise-vector-field.gif"/>
-
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div>
-									<h4>Julia sets</h4>
-									<div class="project-container">
-										<img src="media/miniatures/julia-set-interactive.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									
-									<p>Move your mouse to generate beautiful products of a complex number function.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Julia sets</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div>
-									<h4>Times table</h4>
-									<div class="project-container">
-										<img src="media/miniatures/times-table.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Wonderful patterns emerge when numbers are written in a circle.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Times table</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Code</a>
-												
-											</div>
-										</div>
-									</div>
-									
-									
-								</div>
-								<div>
-									<h4>Light and shadow</h4>
-									<div class="project-container">
-										<img src="media/miniatures/light-and-shadow.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									<p>Lines and their interceptions with the environment.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Light and shadow</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div>
-									<h4>PI blocks</h4>
-									<div class="project-container">
-										<img src="media/miniatures/pi-blocks.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									<p>When PI is found in unexpected places.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>PI blocks</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div>
-									<h4>Spirals</h4>
-									<div class="project-container">
-										<img src="media/miniatures/spirals.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									<p>Walk, turn slightly to the right. Suddenly, you see yourself surrounded by spiral fractals! </p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Spirals</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div>
-									<h4>Fourier series</h4>
-									<div class="project-container">
-										<img src="media/miniatures/fourier.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									<p>Circles around circles around circles...</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Fourier series</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							
-							<!-- <hr class="divider"></hr> -->
-						</div>
-
-						<div>
-							<h3>Websites</h3>
-							<div class="column">
-								<div>
-									<h4>How Pointers Work</h4>
-									<div class="project-container">
-										<img src="media/miniatures/how-pointers-work.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									
-									<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>How Pointers Work</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
-											</div>
-										</div>
-									</div>
-
-								</div>	
-
-								<div>
-									<h4>Ecoleta (React)</h4>
-									<div class="project-container">
-										<img src="media/miniatures/ecoleta.gif" />
-										<button>Learn <br> more</button>
-									</div>
-									
-									<p>A site about recycling collections points in your city.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Ecoleta (React)</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>	
-
-								<div>
-									<h4>Converter (Vue.js)</h4>
-									<div class="project-container">
-										<img src="media/miniatures/converter-vue-js.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Convert monetary values between numerous international currencies!</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Converter (Vue.js)</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div>
-									<h4>(Re)learning Vue.js</h4>
-									<div class="project-container">
-										<img src="media/miniatures/re-learning-vue.png"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Back to basics.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>(Re)learning Vue.js</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
-												
-											</div>
-										</div>
-									</div>									
-								</div>
-							</div>
-							
-							<!-- <hr class="divider"></hr> -->
-						</div>	
-
-						
-
-						<div>
-							<h3>Others</h3>
-							<div class="column">
-								<div>
-									<h4>Ray Tracer</h4>
-									<div class="project-container">
-										<img src="media/miniatures/ray-tracer.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>3D ray tracer that can create photorealistic images.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Ray Tracer</h3>
-												<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a> throughout the course of Computer Graphics, taught by professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.</p>
-
-												<p>Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired. It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected, refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em> of the image, defining its final color.</p>
-
-												<p>Doing this project was challenging because of its size. We had to take into account the <em>camera</em>, <em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different <em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very rewarding because at each step we could <em>see</em> the result of what we had done at that point.</p>
-
-												<p>In the end, we couldn't believe the images that our own program made! The (optional) spherical background made the reflective surfaces much more interesting!</p>
-
-												<img src="media/miniatures/ray-tracer.gif"/>
-
-												<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>	
-
-								<div>
-									<h4>Drawing Project</h4>
-									<div class="project-container">
-										<img src="media/miniatures/drawing-project.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Drawing Project</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
-											</div>
-										</div>
-									</div>
-								</div>	
-							
-								<div>
-									<h4>Som Imaginário</h4>
-									<div class="project-container">
-										<img src="media/miniatures/som-imaginario.gif"/>
-										<button>Learn <br> more</button>
-									</div>
-									<p>Educational project about sound and how humans perceive its origin in space.</p>
-
-									<div class="project-details">
-										<div class="modal-content">
-											<div class="modal-inner-content">
-												<button class="close">&times;</button>
-												<h3>Som Imaginário</h3>
-												<p>Soon!</p>
-												<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
-												
-											</div>
-										</div>
-									</div>
-								</div>	
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<section class="colorful blue">
-				<div id="others" class="subsection">
-					<h2>Others</h2>
-					
-					<h3>Origami</h3>
-					<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
-
-					<div id="origami"> 
-						<div class="project-container">
-							<img src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
-							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> by <br/> Román Díaz</div></a>
-						</div>
-						<div class="project-container">
-							<img src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
-							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> by <br/> Jose Anibal Voyer</div></a>
-						</div>
-						<div class="project-container">
-							<img src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
-							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> by <br/> Satoshi Kamiya</div></a>
-						</div>
-						<div class="project-container">
-							<img src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
-							<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><div>Clover Folding <br/> by <br/> Shuzo Fujimoto</div></a>
-						</div>
-					</div>
-
-					<p>Checkout my <a href="https://www.instagram.com/arturorigamis/">instagram</a> and <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>.</p>
-					
-					
-
-
-
-					<h3>Photography</h3>
-					<p>It was through photographing my origamis that I began to pay more attention to lighting, composition and photography in general. I've found great pleasure in photographing nature and all its little living things.</p>
+			</article>
+		</section>
+		
+		<section class="colorful yellow" aria-labelledby="projectsTitle">
+			<div id="projects" class="subsection">
+				<h2 id="projectsTitle">Projects</h2>
+				<div class="columns">
 					<div>
-						<div id="photography">
-						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título"><img src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título"></a>	
-						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out"><img src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out"></a>
-						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título"><img src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título"></a>
-						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo"><img src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo"></a>
-					</div>	
+						<h3>Visual Math</h3>
+						<div class="column">
+							<div id="triagleLerp">
+								<h4>Triangle lerp</h4>
+								
+								<div class="project-container">
+									<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Linear interpolation but with areas! In a triangle!</p>
+								
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="triagleLerpTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close" aria-label="Close">&times;</button>
+											<h3 id="triagleLerpTitle">Triangle Lerp</h3>
+											
+											<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
+
+											<p>As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage of that area relative to the total area of the larger triangle.</p>
+
+											<p>A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes (Phong Shading).</p>
+
+											<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
+										</div>
+									</div>
+								</div>
+
+							</div>	
+							<div>
+								<h4>Perlin noise - vector field</h4>
+								<div class="project-container">
+									<img src="media/miniatures/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>The beauty of a particular random number generator.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="perlinNoiseTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											
+											<h3 id="perlinNoiseTitle">Perlin noise</h3>
+											<p>I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>, one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not only about the methods of p5.js but also the math and algorithms behind them.</p>
+											
+											<p>As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is relatively close to the numbers that came before and after it.</p>
+
+											<p>In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the GIF below. I use the sin function to map the colors blue and red to their rotation.</p>
+
+											<img src="media/miniatures/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div>
+								<h4>Julia sets</h4>
+								<div class="project-container">
+									<img src="media/miniatures/julia-set-interactive.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+									<button>Learn <br> more</button>
+								</div>
+								
+								<p>Move your mouse to generate beautiful products of a complex number function.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="juliaSetsTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="juliaSetsTitle">Julia sets</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div>
+								<h4>Times table</h4>
+								<div class="project-container">
+									<img src="media/miniatures/times-table.gif" alt="A 2-second GIF showing a circle with many green lines connecting different sides of its circumference. The number of these lines increases rapidly, forming an image of what appears to be a heart from the side (a cardioid)."/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="timesTableTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="timesTableTitle">Times table</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Code</a>
+											
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							<div>
+								<h4>Light and shadow</h4>
+								<div class="project-container">
+									<img src="media/miniatures/light-and-shadow.gif" alt="A GIF showing a black background with a small square and an abstract shape, both drawn with thin red lines. A cursor appears and moves around the scene, with numerous white rays emanating from it and being intercepted by the boundaries of the geometric objects."/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Lines and their interceptions with the environment.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="lightAndShadowTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="lightAndShadowTitle">Light and shadow</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<h4>PI blocks</h4>
+								<div class="project-container">
+									<img src="media/miniatures/pi-blocks.gif" />
+									<button>Learn <br> more</button>
+								</div>
+								<p>When PI is found in unexpected places.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="piBlocksTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="piBlocksTitle">PI blocks</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<h4>Spirals</h4>
+								<div class="project-container">
+									<img src="media/miniatures/spirals.gif" />
+									<button>Learn <br> more</button>
+								</div>
+								<p>Walk, turn slightly to the right. Suddenly, you see yourself surrounded by spiral fractals! </p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="spiralsTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="spiralsTitle">Spirals</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<h4>Fourier series</h4>
+								<div class="project-container">
+									<img src="media/miniatures/fourier.gif" />
+									<button>Learn <br> more</button>
+								</div>
+								<p>Circles around circles around circles...</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="fourierSeriesTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="fourierSeriesTitle">Fourier series</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- <hr class="divider"></hr> -->
 					</div>
+
+					<div>
+						<h3>Websites</h3>
+						<div class="column">
+							<div>
+								<h4>How Pointers Work</h4>
+								<div class="project-container">
+									<img src="media/miniatures/how-pointers-work.gif"/>
+									<button>Learn <br> more</button>
+								</div>
+								
+								<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="howPointersWorkTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="howPointersWorkTitle">How Pointers Work</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
+										</div>
+									</div>
+								</div>
+
+							</div>	
+
+							<div>
+								<h4>Ecoleta (React)</h4>
+								<div class="project-container">
+									<img src="media/miniatures/ecoleta.gif" />
+									<button>Learn <br> more</button>
+								</div>
+								
+								<p>A site about recycling collections points in your city.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="ecoletaTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="ecoletaTitle">Ecoleta (React)</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<div>
+								<h4>Converter (Vue.js)</h4>
+								<div class="project-container">
+									<img src="media/miniatures/converter-vue-js.gif"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Convert monetary values between numerous international currencies!</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="converterTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="converterTitle">Converter (Vue.js)</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div>
+								<h4>(Re)learning Vue.js</h4>
+								<div class="project-container">
+									<img src="media/miniatures/re-learning-vue.png"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Back to basics.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="learningVueTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
+											
+										</div>
+									</div>
+								</div>									
+							</div>
+
+							<div>
+								<h4>This very own website</h4>
+								<div class="project-container">
+									<img src="media/miniatures/site.jpg" id="thisWebsiteImage"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>We are here.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="thisVeryOwnWebSiteTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
+											
+										</div>
+									</div>
+								</div>									
+							</div>
+						</div>
+						
+						<!-- <hr class="divider"></hr> -->
+					</div>	
+
 					
-					
+
+					<div>
+						<h3>Others</h3>
+						<div class="column">
+							<div>
+								<h4>Ray Tracer</h4>
+								<div class="project-container">
+									<img src="media/miniatures/ray-tracer.gif"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>3D ray tracer that can create photorealistic images.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="rayTracerTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="rayTracerTitle">Ray Tracer</h3>
+											<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a> throughout the course of Computer Graphics, taught by professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.</p>
+
+											<p>Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired. It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected, refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em> of the image, defining its final color.</p>
+
+											<p>Doing this project was challenging because of its size. We had to take into account the <em>camera</em>, <em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different <em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very rewarding because at each step we could <em>see</em> the result of what we had done at that point.</p>
+
+											<p>In the end, we couldn't believe the images that our own program made! The (optional) spherical background made the reflective surfaces much more interesting!</p>
+
+											<img src="media/miniatures/ray-tracer.gif"/>
+
+											<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<div>
+								<h4>Drawing Project</h4>
+								<div class="project-container">
+									<img src="media/miniatures/drawing-project.gif"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="drawingProjectTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="drawingProjectTitle">Drawing Project</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
+										</div>
+									</div>
+								</div>
+							</div>	
+						
+							<div>
+								<h4>Som Imaginário</h4>
+								<div class="project-container">
+									<img src="media/miniatures/som-imaginario.gif"/>
+									<button>Learn <br> more</button>
+								</div>
+								<p>Educational project about sound and how humans perceive its origin in space.</p>
+
+								<div class="project-details">
+									<div class="modal-content" role="dialog" aria-labelledby="somImaginarioTitle" aria-modal="true" tabindex="-1">
+										<div class="modal-inner-content">
+											<button class="close">&times;</button>
+											<h3 id="somImaginarioTitle">Som Imaginário</h3>
+											<p>Soon!</p>
+											<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
 				</div>
-			</section>
-		</article>
+
+			</div>
+		</section>
+		<section class="colorful blue" aria-labelledby="othersTitle">
+			<div id="others" class="subsection">
+				<h2 id="othersTitle">Others</h2>
+				
+				<h3>Origami</h3>
+				<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
+
+				<div id="origami"> 
+					<div class="project-container">
+						<img src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> by <br/> Román Díaz</div></a>
+					</div>
+					<div class="project-container">
+						<img src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> by <br/> Jose Anibal Voyer</div></a>
+					</div>
+					<div class="project-container">
+						<img src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> by <br/> Satoshi Kamiya</div></a>
+					</div>
+					<div class="project-container">
+						<img src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><div>Clover Folding <br/> by <br/> Shuzo Fujimoto</div></a>
+					</div>
+				</div>
+
+				<p>Checkout my <a href="https://www.instagram.com/arturorigamis/">instagram</a> and <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>.</p>
+				
+				
+
+
+
+				<h3>Photography</h3>
+				<p>It was through photographing my origamis that I began to pay more attention to lighting, composition and photography in general. I've found great pleasure in photographing nature and all its little living things.</p>
+				<div>
+					<div id="photography">
+					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título"><img src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título"></a>	
+					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out"><img src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out"></a>
+					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título"><img src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título"></a>
+					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo"><img src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo"></a>
+				</div>	
+				</div>
+				
+				
+			</div>
+		</section>
 	</main>
 	
 	
@@ -473,21 +489,19 @@
 
 
 	<script>
-		function moveToSection(e) {
-			
-			for(className of e.target.classList) {
-				if(className === "red") {
-					document.getElementById('about').scrollIntoView();
-				}
-				else if(className === "yellow") {
-					document.getElementById('projects').scrollIntoView();
-				}
-				else if(className === "blue") {
-					document.getElementById('others').scrollIntoView();
-				}
-			}
-			
+		window.onscroll = function() {
+			let thisWebsiteImage = document.getElementById('thisWebsiteImage');
+
+			thisWebsiteImage.height = thisWebsiteImage.width / 2;
+		
+			let currentScroll = window.scrollY; 
+			let maxScroll = document.documentElement.scrollTopMax;
+			let scrollPercentage = (currentScroll/maxScroll) * 100;
+
+			thisWebsiteImage.style.objectPosition = '0 ' + scrollPercentage + '%';	
 		}
+		
+
 	</script>
 
 	<script>
@@ -503,7 +517,7 @@
 			// When the user clicks the button, open the modal 
 			btn.onclick = function() {
 		  		modal.style.display = 'block';
-		  		modal.focus();
+		  		modal.querySelector('.modal-content').focus();
 		  		document.documentElement.style.overflowY = 'hidden';
 		  		document.documentElement.style.cursor = 'pointer';
 		  		

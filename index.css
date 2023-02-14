@@ -123,7 +123,7 @@ section.colorful {
 	box-sizing: border-box;
 }
 
-#index button,
+#index a,
 a.code-button {
 	border: 1px solid black;
 	border-radius: 5px;
@@ -134,9 +134,7 @@ a.code-button {
 	box-shadow: 4px 5px 0 0 #3c372d;
 	transition: box-shadow,transform  .2s;
 	animation-timing-function: ease-in-out;
-}
 
-a.code-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -150,8 +148,8 @@ a.code-button:hover {
 	background-color: var(--YELLOW);
 }
 
-#index button:focus-visible,
-#index button:hover,
+#index a:focus-visible,
+#index a:hover,
 a.code-button:focus-visible,
 a.code-button:hover {
 	transform: translate(1px, 1px);
@@ -372,6 +370,10 @@ a.code-button:hover {
 	left: 50%;
 }
 
+#thisWebsiteImage {
+	object-fit: cover;
+}
+
 
 
 button.colorful,
@@ -380,18 +382,18 @@ a.colorful {
 	font-size: 1.2rem;
 }
 
-button.red:focus,
-button.red:hover {
+a.red:focus,
+a.red:hover {
 	background-color: var(--RED);
 }
 
-button.blue:focus,
-button.blue:hover {
+a.blue:focus,
+a.blue:hover {
 	background-color: var(--BLUE);
 }
 
-button.yellow:focus,
-button.yellow:hover {
+a.yellow:focus,
+a.yellow:hover {
 	background-color: var(--YELLOW);
 }
 
@@ -412,9 +414,11 @@ button {
 		font-size: 3rem;
 	}
 
-	button {
+	button,
+	a {
 		width: 70%;
 	}
+
 
 	#index {
 		flex-direction: column;

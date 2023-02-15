@@ -33,8 +33,12 @@
 	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="twitter:image">
 
 	<meta property="og:type" content="website">
+
+	<meta property="og:url" content="https://arturo32.github.io/">
 	
 	<meta content="summary_large_image" name="twitter:card">
+
+	<meta name="theme-color" content="#F5E5D5">
 	
 </head>
 <body>
@@ -209,6 +213,7 @@
 										<div class="modal-inner-content">
 											<button class="close">&times;</button>
 											<h3 id="timesTableTitle">Times table</h3>
+											<p>When I saw this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a> I had to try it...</p>
 											<p>Soon!</p>
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Code</a>
 											
@@ -231,6 +236,7 @@
 										<div class="modal-inner-content">
 											<button class="close">&times;</button>
 											<h3 id="lightAndShadowTitle">Light and shadow</h3>
+											<p>This one I got from the  <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>. </p>
 											<p>Soon!</p>
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
 										</div>
@@ -251,6 +257,7 @@
 										<div class="modal-inner-content">
 											<button class="close">&times;</button>
 											<h3 id="piBlocksTitle">PI blocks</h3>
+											<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>
 											<p>Soon!</p>
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>
 										</div>
@@ -264,13 +271,14 @@
 									<img src="media/miniatures/spirals.gif" />
 									<button>Learn <br> more</button>
 								</div>
-								<p>Walk, turn slightly to the right. Suddenly, you see yourself surrounded by spiral fractals! </p>
+								<p>Walk, turn slightly to the right. Suddenly, you see yourself surrounded by spiral fractals!</p>
 
 								<div class="project-details">
 									<div class="modal-content" role="dialog" aria-labelledby="spiralsTitle" aria-modal="true" tabindex="-1">
 										<div class="modal-inner-content">
 											<button class="close">&times;</button>
 											<h3 id="spiralsTitle">Spirals</h3>
+											<p>Matt Henderson thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
 											<p>Soon!</p>
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
 										</div>
@@ -529,14 +537,16 @@
 
 				<h3>Photography</h3>
 				<p>It was through photographing my origamis that I began to pay more attention to lighting, composition and photography in general. I've found great pleasure in photographing nature and all its little living things.</p>
-				<div>
-					<div id="photography">
+				
+				<div id="photography">
 					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título"><img src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título"></a>	
+
 					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out"><img src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out"></a>
+
 					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título"><img src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título"></a>
+
 					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo"><img src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo"></a>
 				</div>	
-				</div>
 				
 				
 			</div>
@@ -547,8 +557,9 @@
 
 
 
+	<!-- A website inside itself -->
 	<script>
-		window.onscroll = function() {
+		window.addEventListener('scroll', function() {
 			let thisWebsiteImage = document.getElementById('thisWebsiteImage');
 
 			thisWebsiteImage.height = thisWebsiteImage.width / 2;
@@ -558,11 +569,11 @@
 			let scrollPercentage = (currentScroll/maxScroll) * 100;
 
 			thisWebsiteImage.style.objectPosition = '0 ' + scrollPercentage + '%';	
-		}
-		
-
+		});
 	</script>
 
+	
+	<!-- Modals -->
 	<script>
 		// Get the modal
 		let modals = document.getElementsByClassName('project-details');
@@ -574,29 +585,30 @@
 			let closeButton = modal.querySelector('.close');
 
 			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-		  		modal.style.display = 'block';
+			btn.addEventListener('click', function() {
+				modal.style.display = 'block';
 		  		modal.querySelector('.modal-content').focus();
 		  		document.documentElement.style.overflowY = 'hidden';
 		  		document.documentElement.style.cursor = 'pointer';
 		  		
 		  		// When the user clicks anywhere outside of the modal, close it
-				window.onclick = function(event) {
-					if (event.target == modal) {
+				window.addEventListener('click', function clickOutside(event) {
+					if(event.target == modal) {
 						modal.style.display = 'none';
 						document.documentElement.style.overflowY = 'initial';
 						document.documentElement.style.cursor = 'default';
+						window.removeEventListener('click', clickOutside);
 					}
-					
-				}
+				});
+			});
+		  		
 				
-			}
 			// When the user clicks on <button> (x), close the modal
-			closeButton.onclick = function() {
+			closeButton.addEventListener('click', function() {
 				modal.style.display = 'none';
 				document.documentElement.style.overflowY = 'initial';
 				document.documentElement.style.cursor = 'default';
-			}
+			});
 		}
 	</script>
 

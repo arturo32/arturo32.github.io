@@ -114,7 +114,7 @@ section.colorful {
 	min-height: calc(100vh - 2*var(--header-height));
 }
 
-#index {
+#indexSection {
 	display: flex;
 	flex-direction: row;
 	gap: 6vw;
@@ -125,7 +125,7 @@ section.colorful {
 	box-sizing: border-box;
 }
 
-#index a,
+#indexSection a,
 a.code-button {
 	border: 1px solid black;
 	border-radius: 5px;
@@ -150,8 +150,8 @@ a.code-button:hover {
 	background-color: var(--YELLOW);
 }
 
-#index a:focus-visible,
-#index a:hover,
+#indexSection a:focus-visible,
+#indexSection a:hover,
 a.code-button:focus-visible,
 a.code-button:hover {
 	transform: translate(1px, 1px);
@@ -164,34 +164,34 @@ a.code-button {
 }
 
 
-#others .project-container {
+#othersSection .project-container {
 	height: 20vw;
 	width: 20vw;
 }	
 
-/*#others #origami {
+/*#othersSection #origami {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2vw;
 	height: 25vh;
 }*/
 
-#others #origami img {
+#othersSection #origami img {
 	height: 20vw;
 	width: 20vw;
 	object-fit: cover;
 	border-radius: 25px;
 }
 
-#others .project-container {
+#othersSection .project-container {
 	display: inline-block;
 }
 
-#others .project-container a {
+#othersSection .project-container a {
 	padding: 0;
 	text-decoration: none;
 }
 
-#others .project-container a div {
+#othersSection .project-container a div {
 	display: flex;
 	height: 100%;
 	align-items: center;
@@ -201,8 +201,8 @@ a.code-button {
 	color: var(--BLUE);
 }
 
-#others .project-container a:hover,
-#others .project-container a:focus {
+#othersSection .project-container a:hover,
+#othersSection .project-container a:focus {
 	text-decoration: none;
 }
 
@@ -445,7 +445,7 @@ p.equation {
 
 	button,
 	a,
-	#index a, 
+	#indexSection a, 
 	a.code-button {
 		width: 100%;
 	}
@@ -456,38 +456,38 @@ p.equation {
 		padding-top: calc(var(--header-height)/2);
 	}
 
-	#index {
+	#indexSection {
 		flex-direction: column;
 	}
 
-	#projects .modal-content {
+	#projectsSection .modal-content {
 		margin-left: 2vw;
 		margin-right: 2vw;
 	}
 
-	#projects .modal-content .modal-inner-content {
+	#projectsSection .modal-content .modal-inner-content {
 		padding-left: 6vw;
 		padding-right: 6vw;
 	}
 
-	#projects .modal-content .modal-inner-content .close {
+	#projectsSection .modal-content .modal-inner-content .close {
 		text-align: right;
 		padding-right: 3vw;
 		float: none;
 	}
 
-	#projects .modal-inner-content img {
+	#projectsSection .modal-inner-content img {
 		width: 100%;
 		margin: 1rem 0;
 		margin-bottom: 0;
 	}
 
-	#others .project-container {
+	#othersSection .project-container {
 		height: auto;
 		width: 100%;
 	}
 
-	#others .project-container a {
+	#othersSection .project-container a {
 		height: 98%;
 	}
 
@@ -497,19 +497,19 @@ p.equation {
 
 
 
-	#others #origami {
+	#othersSection #origami {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	#others #origami img,
-	#others #photography img {
+	#othersSection #origami img,
+	#othersSection #photography img {
 		height: auto;
 		width: 100%;
 	}
 
-	#others #photography {
+	#othersSection #photography {
 		height: auto;
 	}
 

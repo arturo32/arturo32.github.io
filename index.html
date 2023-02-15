@@ -47,25 +47,25 @@
 	</header>
 	<main>
 		<section>
-			<nav id="index" class="subsection">
-				<a class="colorful red" href="#aboutTitle">
+			<nav id="indexSection" class="subsection">
+				<a class="colorful red" href="#about">
 					About me
 				</a>
 				
-				<a class="colorful yellow" href="#projectsTitle">
+				<a class="colorful yellow" href="#projects">
 					Projects
 				</a>
 				
-				<a class="colorful blue" href="#othersTitle">
+				<a class="colorful blue" href="#others">
 					Others
 				</a>
 			</nav>
 		</section>
 
 		<section class="colorful red" aria-labelledby="aboutTitle">
-			<article id="about" class="subsection">
+			<div id="aboutSection" class="subsection">
 				
-				<h2 id="aboutTitle">About me</h2>
+				<h2 id="about">About me</h2>
 				<img id="myPicture" src="media/miniatures/me.jpg" width="300" height="300" alt="A photo of me. I have long brown hair, white skin, long and skinny face. The background is a blueish wall of a room. I am wearing a green indian shirt."/>
 				<p>Hi! My name is Arturo Fonseca de Souza. I am a 23 year old IT student at the Universidade Federal do Rio Grande do Norte (Brazil). For the last 2 years I have been working with <em>web development</em> in scholarships, furthering my knowledge in the <em>backend</em> side as well as the <em>frontend</em>.</p>
 
@@ -77,12 +77,12 @@
 
 				<p>My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about music theory.</p>
 
-			</article>
+			</div>
 		</section>
 		
 		<section class="colorful yellow" aria-labelledby="projectsTitle">
-			<div id="projects" class="subsection">
-				<h2 id="projectsTitle">Projects</h2>
+			<div id="projectsSection" class="subsection">
+				<h2 id="projects">Projects</h2>
 				<div class="columns">
 					<div>
 						<h3>Visual Math</h3>
@@ -98,7 +98,7 @@
 								
 								<div class="project-details">
 									<div class="modal-content" role="dialog" aria-labelledby="triagleLerpTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
+										<div class="modal-inner-content" tabindex="-1">
 											<button class="close" aria-label="Close">&times;</button>
 											<h3 id="triagleLerpTitle">Triangle Lerp</h3>
 											
@@ -504,8 +504,8 @@
 			</div>
 		</section>
 		<section class="colorful blue" aria-labelledby="othersTitle">
-			<div id="others" class="subsection">
-				<h2 id="othersTitle">Others</h2>
+			<div id="othersSection" class="subsection">
+				<h2 id="others">Others</h2>
 				
 				<h3>Origami</h3>
 				<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
@@ -587,7 +587,7 @@
 			// When the user clicks the button, open the modal 
 			btn.addEventListener('click', function() {
 				modal.style.display = 'block';
-		  		modal.querySelector('.modal-content').focus();
+		  		modal.querySelector('.modal-inner-content').focus();
 		  		document.documentElement.style.overflowY = 'hidden';
 		  		document.documentElement.style.cursor = 'pointer';
 		  		

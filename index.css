@@ -72,11 +72,13 @@ h3 {
 	margin-bottom: 3rem;
 }
 
-h4{
+h4 {
 	font-weight: 200;
 }
 
-p {
+p, 
+ol,
+ul {
 	text-align: left;
 	font-weight: 300;
 	line-height: 1.5rem;
@@ -154,6 +156,11 @@ a.code-button:focus-visible,
 a.code-button:hover {
 	transform: translate(1px, 1px);
 	box-shadow: 3px 4px 0 0 #3c372d;
+}
+
+a.code-button {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -302,6 +309,20 @@ a.code-button:hover {
 	margin: 1rem;
 }
 
+
+.project-details .modal-inner-content figure {
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+.project-details .modal-inner-content figure img {
+	margin: 0;
+}
+
+.project-details .modal-inner-content figure figcaption {
+	margin-top: 0.2rem !important;
+}
+
 .project-details .modal-content p {
 	text-align: left;
 	font-weight: 300;
@@ -348,7 +369,8 @@ a.code-button:hover {
 	font-size: 1.1rem;
 }
 
-.column p {
+.column p,
+.project-details .modal-inner-content figure figcaption {
 	text-align: left;
 	margin: 0;
 	margin-top: 0.8rem;
@@ -402,7 +424,9 @@ button {
 	cursor: pointer;
 }
 
-
+p.equation {
+	text-align: center !important;
+}
 
 
 @media(max-width: 900px) {

@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Arturo Fonseca</title>
+
+	<!-- <link rel="icon" type="image/x-icon" href="media/favicon.ico"> -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+	<link rel="manifest" href="media/site.webmanifest">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +24,7 @@
 	
 	<meta content="Brazilian IT student interested in web development and computer graphics." property="og:description">
 	
-	<meta content="media/miniatures/me.jpg" property="og:image">
+	<meta content="https://arturo32.github.io/media/show.jpg" property="og:image">
 
 	<meta content="Arturo Fonseca" property="twitter:title">
 	
@@ -28,10 +35,6 @@
 	<meta property="og:type" content="website">
 	
 	<meta content="summary_large_image" name="twitter:card">
-
-	<!-- <meta content="width=device-width, initial-scale=1" name="viewport"> -->
-
-
 	
 </head>
 <body>
@@ -151,7 +154,45 @@
 										<div class="modal-inner-content">
 											<button class="close">&times;</button>
 											<h3 id="juliaSetsTitle">Julia sets</h3>
-											<p>Soon!</p>
+											
+											<p>The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane like the one below: </p>
+											
+											<figure role="group">
+												<img src="media/miniatures/mandelbrot.png" alt="An almost entirely black image with a white bordered structure composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a fractal manner."/>
+												<figcaption>
+													See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
+												</figcaption>
+											</figure>
+
+											
+											
+											
+											<p>To generate this is relative simple. It all boils down to the function below:</p>
+											
+											<p class="equation">\(f_c(z) = z^2 + c\)</p>
+
+											<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
+
+											<ul>
+												<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
+												<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
+											</ul>
+
+											<p>Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane. We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\). As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the <em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it <em>black</em>. That's it!</p>
+
+											<p>And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the start of our process, we can make entirely different sets. Each of them possessing a unique complexity and beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, defining them with how fast some of the inputs can reach our <em>threshold</em>, like the image below made with \(c = 0 - 0.8i\):</p>
+
+											<figure role="group">
+												<img src="media/miniatures/julia.png" title="Julia set" alt="A very colorful julia set with a black center that resembles a worm in a z format." style="width: 100%"/>
+												<figcaption>
+													See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
+												</figcaption>
+											</figure>
+											
+											
+
+										
+											
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
 										</div>
 									</div>
@@ -366,7 +407,7 @@
 											<button class="close">&times;</button>
 											<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
 											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
+											<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
 											
 										</div>
 									</div>
@@ -561,6 +602,9 @@
 			}
 		}
 	</script>
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
 </html>

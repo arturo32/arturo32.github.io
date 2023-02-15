@@ -30,7 +30,7 @@
 	
 	<meta content="Brazilian IT student interested in web development and computer graphics." property="twitter:description">
 	
-	<meta content="https://arturo32.github.io/media/show-twitter.png" property="twitter:image">
+	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="twitter:image">
 
 	<meta property="og:type" content="website">
 	
@@ -143,7 +143,7 @@
 							<div>
 								<h4>Julia sets</h4>
 								<div class="project-container">
-									<img src="media/miniatures/julia-set-interactive.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+									<img src="media/miniatures/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
 									<button>Learn <br> more</button>
 								</div>
 								
@@ -164,9 +164,6 @@
 												</figcaption>
 											</figure>
 
-											
-											
-											
 											<p>To generate this is relative simple. It all boils down to the function below:</p>
 											
 											<p class="equation">\(f_c(z) = z^2 + c\)</p>
@@ -180,7 +177,7 @@
 
 											<p>Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane. We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\). As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the <em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it <em>black</em>. That's it!</p>
 
-											<p>And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the start of our process, we can make entirely different sets. Each of them possessing a unique complexity and beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, defining them with how fast some of the inputs can reach our <em>threshold</em>, like the image below made with \(c = 0 - 0.8i\):</p>
+											<p>And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the start of our process, we can make entirely different sets. Each of them possessing a unique complexity and beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with \(c = 0 - 0.8i\):</p>
 
 											<figure role="group">
 												<img src="media/miniatures/julia.png" title="Julia set" alt="A very colorful julia set with a black center that resembles a worm in a z format." style="width: 100%"/>
@@ -188,10 +185,10 @@
 													See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
 												</figcaption>
 											</figure>
-											
-											
 
-										
+											<p>Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor. So at each new position of the mouse the function iterated thought all the pixels to render the image for that particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit washed out.</p>
+
+											<img src="media/miniatures/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
 											
 											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
 										</div>

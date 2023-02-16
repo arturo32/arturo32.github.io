@@ -542,6 +542,12 @@
 			document.documentElement.style.cursor = 'pointer';
 		}
 
+		function closeModal(modal) {
+			modal.close();
+			document.documentElement.style.overflowY = 'initial';
+			document.documentElement.style.cursor = 'default';
+		}
+
 		// Get the modals
 		let dialogs = document.getElementsByTagName('dialog');
 
@@ -554,26 +560,38 @@
 			// When the user clicks the button, open the modal 
 			btn.addEventListener('click', function() { 
 				openModal(dialog);
-				
-		  		// When the user clicks anywhere outside of the modal, close it
-				window.addEventListener('click', function clickOutside(event) {
-					if(event.target == dialog) {
-						window.removeEventListener('click', clickOutside);
-						dialog.close();
+
+				let clickEsc = function (event) {
+					let key = event.key;
+					if(key === 'Escape') {
+						removeEventListeners();
+						closeModal(dialog);
 					}
-				});
+				}
+
+				let clickOutside = function (event) {
+					if(event.target === dialog) {
+						removeEventListeners();
+						closeModal(dialog);
+					}
+				}
+
+				let clickXButton = function () {
+					removeEventListeners();
+					closeModal(dialog);
+				}
+
+				window.addEventListener('click', clickOutside);
+				window.addEventListener('keydown', clickEsc);
+				closeButton.addEventListener('click', clickXButton);
+
+				let removeEventListeners = function () {
+					window.removeEventListener('keydown', clickEsc);
+					window.removeEventListener('click', clickOutside);
+					closeButton.removeEventListener('click', clickXButton);
+				}
 			});
 
-			// When the user clicks on <button> (x), close the modal
-			closeButton.addEventListener('click', function() {
-				dialog.close();
-			});
-
-			// When the dialog is closed, no matter how it is closed
-			dialog.addEventListener("close", function() {
-				document.documentElement.style.overflowY = 'initial';
-				document.documentElement.style.cursor = 'default';
-			});
 		}
 
 	</script>

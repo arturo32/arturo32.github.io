@@ -267,21 +267,13 @@ a.code-button {
 	z-index: 4;
 }
 
-.project-details {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 10; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+
+dialog::backdrop {
+	background-color: rgba(0,0,0,0.7);
 }
 
 /* Modal Content */
-.modal-content {
+.modal {
 	background-color: var(--white-cream);
 	margin-left: 16vw;
 	margin-right: 16vw;
@@ -292,38 +284,41 @@ a.code-button {
 	box-sizing: border-box;
 	overflow-y: hidden;
 	cursor: default;
-
+	border: 0;
+	padding: 1%;
 }
 
-.modal-inner-content {
-	padding: 1.5%;
-	padding-left: 8vw;
-	padding-right: 8vw;
+.modal.cool {
+	box-shadow: 1px 1px 53px 5px var(--white-cream);
+}
+
+.modal-content {
+	padding: 0 8vw;
 	overflow-y: auto;
 	height: 100%;
 	box-sizing: border-box;
 }
 
-.project-details .modal-inner-content img {
+dialog.project-details img {
 	width: 300px;
 	margin: 1rem;
 }
 
 
-.project-details .modal-inner-content figure {
+dialog.project-details figure {
 	display: inline-block;
 	margin: 1rem 0;
 }
 
-.project-details .modal-inner-content figure img {
+dialog.project-details figure img {
 	margin: 0;
 }
 
-.project-details .modal-inner-content figure figcaption {
+dialog.project-details figure figcaption {
 	margin-top: 0.2rem !important;
 }
 
-.project-details .modal-content p {
+dialog.project-details p {
 	text-align: left;
 	font-weight: 300;
 	line-height: 1.5rem;
@@ -370,7 +365,7 @@ a.code-button {
 }
 
 .column p,
-.project-details .modal-inner-content figure figcaption {
+.project-details .modal-content figure figcaption {
 	text-align: left;
 	margin: 0;
 	margin-top: 0.8rem;
@@ -434,7 +429,6 @@ p.equation {
 		--header-height: 30vh;	
 	}
 
-	
 	header {
 		align-items: flex-end;
 	}
@@ -460,23 +454,24 @@ p.equation {
 		flex-direction: column;
 	}
 
-	#projectsSection .modal-content {
+	.modal {
 		margin-left: 2vw;
 		margin-right: 2vw;
+		max-width: none;
 	}
 
-	#projectsSection .modal-content .modal-inner-content {
+	.modal .modal-content {
 		padding-left: 6vw;
 		padding-right: 6vw;
 	}
 
-	#projectsSection .modal-content .modal-inner-content .close {
+	.modal .close {
 		text-align: right;
 		padding-right: 3vw;
 		float: none;
 	}
 
-	#projectsSection .modal-inner-content img {
+	#projectsSection .modal-content img {
 		width: 100%;
 		margin: 1rem 0;
 		margin-bottom: 0;

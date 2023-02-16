@@ -96,26 +96,25 @@
 								</div>
 								<p>Linear interpolation but with areas! In a triangle!</p>
 								
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="triagleLerpTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content" tabindex="-1">
-											<button class="close" aria-label="Close">&times;</button>
-											<h3 id="triagleLerpTitle">Triangle Lerp</h3>
-											
-											<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
+									<div class="modal-content">
+										<button class="close" aria-label="Close">&times;</button>
+										<h3 id="triagleLerpTitle">Triangle Lerp</h3>
+										
+										<p>This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation for the Drawing Project, but I had never heard of interpolating between three points at the time.</p>
 
-											<p>As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage of that area relative to the total area of the larger triangle.</p>
+										<p>As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage of that area relative to the total area of the larger triangle.</p>
 
-											<p>A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes (Phong Shading).</p>
+										<p>A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes (Phong Shading).</p>
 
-											<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+										<img src="media/miniatures/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
 
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
-										</div>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>	
 									</div>
-								</div>
-
+									
+								</dialog>
 							</div>	
+
 							<div>
 								<h4>Perlin noise - vector field</h4>
 								<div class="project-container">
@@ -124,24 +123,22 @@
 								</div>
 								<p>The beauty of a particular random number generator.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="perlinNoiseTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											
-											<h3 id="perlinNoiseTitle">Perlin noise</h3>
-											<p>I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>, one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not only about the methods of p5.js but also the math and algorithms behind them.</p>
-											
-											<p>As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is relatively close to the numbers that came before and after it.</p>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										
+										<h3 id="perlinNoiseTitle">Perlin noise</h3>
+										<p>I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>, one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not only about the methods of p5.js but also the math and algorithms behind them.</p>
+										
+										<p>As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is relatively close to the numbers that came before and after it.</p>
 
-											<p>In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the GIF below. I use the sin function to map the colors blue and red to their rotation.</p>
+										<p>In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the GIF below. I use the sin function to map the colors blue and red to their rotation.</p>
 
-											<img src="media/miniatures/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+										<img src="media/miniatures/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
 
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
-										</div>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 							
 							<div>
@@ -153,51 +150,49 @@
 								
 								<p>Move your mouse to generate beautiful products of a complex number function.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="juliaSetsTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="juliaSetsTitle">Julia sets</h3>
-											
-											<p>The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane like the one below: </p>
-											
-											<figure role="group">
-												<img src="media/miniatures/mandelbrot.png" alt="An almost entirely black image with a white bordered structure composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a fractal manner."/>
-												<figcaption>
-													See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
-												</figcaption>
-											</figure>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="juliaSetsTitle">Julia sets</h3>
+										
+										<p>The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane like the one below: </p>
+										
+										<figure role="group">
+											<img src="media/miniatures/mandelbrot.png" alt="An almost entirely black image with a white bordered structure composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a fractal manner."/>
+											<figcaption>
+												See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
+											</figcaption>
+										</figure>
 
-											<p>To generate this is relative simple. It all boils down to the function below:</p>
-											
-											<p class="equation">\(f_c(z) = z^2 + c\)</p>
+										<p>To generate this is relative simple. It all boils down to the function below:</p>
+										
+										<p class="equation">\(f_c(z) = z^2 + c\)</p>
 
-											<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
+										<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
 
-											<ul>
-												<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
-												<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
-											</ul>
+										<ul>
+											<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
+											<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
+										</ul>
 
-											<p>Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane. We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\). As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the <em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it <em>black</em>. That's it!</p>
+										<p>Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane. We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\). As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the <em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it <em>black</em>. That's it!</p>
 
-											<p>And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the start of our process, we can make entirely different sets. Each of them possessing a unique complexity and beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with \(c = 0 - 0.8i\):</p>
+										<p>And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the start of our process, we can make entirely different sets. Each of them possessing a unique complexity and beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with \(c = 0 - 0.8i\):</p>
 
-											<figure role="group">
-												<img src="media/miniatures/julia.png" title="Julia set" alt="A very colorful julia set with a black center that resembles a worm in a z format." style="width: 100%"/>
-												<figcaption>
-													See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
-												</figcaption>
-											</figure>
+										<figure role="group">
+											<img src="media/miniatures/julia.png" title="Julia set" alt="A very colorful julia set with a black center that resembles a worm in a z format." style="width: 100%"/>
+											<figcaption>
+												See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
+											</figcaption>
+										</figure>
 
-											<p>Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor. So at each new position of the mouse the function iterated thought all the pixels to render the image for that particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit washed out.</p>
+										<p>Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor. So at each new position of the mouse the function iterated thought all the pixels to render the image for that particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit washed out.</p>
 
-											<img src="media/miniatures/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
-											
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
-										</div>
+										<img src="media/miniatures/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+										
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 							
 							<div>
@@ -208,21 +203,18 @@
 								</div>
 								<p>Wonderful patterns emerge when numbers are written in a circle.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="timesTableTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="timesTableTitle">Times table</h3>
-											<p>When I saw this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a> I had to try it...</p>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Code</a>
-											
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="timesTableTitle">Times table</h3>
+										<p>When I saw this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a> I had to try it...</p>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Code</a>
+										
 									</div>
-								</div>
-								
-								
+								</dialog>
 							</div>
+
 							<div>
 								<h4>Light and shadow</h4>
 								<div class="project-container">
@@ -231,17 +223,15 @@
 								</div>
 								<p>Lines and their interceptions with the environment.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="lightAndShadowTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="lightAndShadowTitle">Light and shadow</h3>
-											<p>This one I got from the  <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>. </p>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="lightAndShadowTitle">Light and shadow</h3>
+										<p>This one I got from the  <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>. </p>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 
 							<div>
@@ -252,17 +242,15 @@
 								</div>
 								<p>When PI is found in unexpected places.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="piBlocksTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="piBlocksTitle">PI blocks</h3>
-											<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="piBlocksTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="piBlocksTitle">PI blocks</h3>
+										<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 
 							<div>
@@ -273,17 +261,15 @@
 								</div>
 								<p>Walk, turn slightly to the right. Suddenly, you see yourself surrounded by spiral fractals!</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="spiralsTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="spiralsTitle">Spirals</h3>
-											<p>Matt Henderson thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="spiralsTitle">Spirals</h3>
+										<p>Matt Henderson thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 
 							<div>
@@ -294,23 +280,19 @@
 								</div>
 								<p>Circles around circles around circles...</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="fourierSeriesTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="fourierSeriesTitle">Fourier series</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="fourierSeriesTitle">Fourier series</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 						</div>
-						
-						
-						<!-- <hr class="divider"></hr> -->
 					</div>
 
+					
 					<div>
 						<h3>Websites</h3>
 						<div class="column">
@@ -323,17 +305,14 @@
 								
 								<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="howPointersWorkTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="howPointersWorkTitle">How Pointers Work</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="howPointersWorkTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="howPointersWorkTitle">How Pointers Work</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
 									</div>
-								</div>
-
+								</dialog>
 							</div>	
 
 							<div>
@@ -345,16 +324,14 @@
 								
 								<p>A site about recycling collections points in your city.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="ecoletaTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="ecoletaTitle">Ecoleta (React)</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="ecoletaTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="ecoletaTitle">Ecoleta (React)</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>	
 
 							<div>
@@ -365,16 +342,14 @@
 								</div>
 								<p>Convert monetary values between numerous international currencies!</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="converterTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="converterTitle">Converter (Vue.js)</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="converterTitle">Converter (Vue.js)</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>
 							
 							<div>
@@ -385,17 +360,14 @@
 								</div>
 								<p>Back to basics.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="learningVueTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
-											
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
 									</div>
-								</div>									
+								</dialog>									
 							</div>
 
 							<div>
@@ -406,23 +378,17 @@
 								</div>
 								<p>We are here.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="thisVeryOwnWebSiteTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
-											
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
 									</div>
-								</div>									
+								</dialog>									
 							</div>
 						</div>
-						
-						<!-- <hr class="divider"></hr> -->
 					</div>	
-
 					
 
 					<div>
@@ -436,25 +402,23 @@
 								</div>
 								<p>3D ray tracer that can create photorealistic images.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="rayTracerTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="rayTracerTitle">Ray Tracer</h3>
-											<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a> throughout the course of Computer Graphics, taught by professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.</p>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="rayTracerTitle">Ray Tracer</h3>
+										<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a> throughout the course of Computer Graphics, taught by professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.</p>
 
-											<p>Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired. It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected, refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em> of the image, defining its final color.</p>
+										<p>Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired. It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected, refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em> of the image, defining its final color.</p>
 
-											<p>Doing this project was challenging because of its size. We had to take into account the <em>camera</em>, <em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different <em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very rewarding because at each step we could <em>see</em> the result of what we had done at that point.</p>
+										<p>Doing this project was challenging because of its size. We had to take into account the <em>camera</em>, <em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different <em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very rewarding because at each step we could <em>see</em> the result of what we had done at that point.</p>
 
-											<p>In the end, we couldn't believe the images that our own program made! The (optional) spherical background made the reflective surfaces much more interesting!</p>
+										<p>In the end, we couldn't believe the images that our own program made! The (optional) spherical background made the reflective surfaces much more interesting!</p>
 
-											<img src="media/miniatures/ray-tracer.gif"/>
+										<img src="media/miniatures/ray-tracer.gif"/>
 
-											<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
-										</div>
+										<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>	
 
 							<div>
@@ -465,16 +429,14 @@
 								</div>
 								<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="drawingProjectTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="drawingProjectTitle">Drawing Project</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="drawingProjectTitle">Drawing Project</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
 									</div>
-								</div>
+								</dialog>
 							</div>	
 						
 							<div>
@@ -485,17 +447,15 @@
 								</div>
 								<p>Educational project about sound and how humans perceive its origin in space.</p>
 
-								<div class="project-details">
-									<div class="modal-content" role="dialog" aria-labelledby="somImaginarioTitle" aria-modal="true" tabindex="-1">
-										<div class="modal-inner-content">
-											<button class="close">&times;</button>
-											<h3 id="somImaginarioTitle">Som Imaginário</h3>
-											<p>Soon!</p>
-											<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
-											
-										</div>
+								<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+									<div class="modal-content">
+										<button class="close">&times;</button>
+										<h3 id="somImaginarioTitle">Som Imaginário</h3>
+										<p>Soon!</p>
+										<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
+										
 									</div>
-								</div>
+								</dialog>
 							</div>	
 						</div>
 					</div>
@@ -575,41 +535,47 @@
 	
 	<!-- Modals -->
 	<script>
-		// Get the modal
-		let modals = document.getElementsByClassName('project-details');
+		
+		function openModal(modal) {
+			modal.showModal();
+			document.documentElement.style.overflowY = 'hidden';
+			document.documentElement.style.cursor = 'pointer';
+		}
 
-		for(let modal of modals) {
-			let btn = modal.parentNode.querySelector('button');
-			
+		// Get the modals
+		let dialogs = document.getElementsByTagName('dialog');
+
+		for(let dialog of dialogs) {
+			let btn = dialog.parentNode.querySelector('button');
+
 			// Get the <button> element that closes the modal
-			let closeButton = modal.querySelector('.close');
+			let closeButton = dialog.querySelector('.close');
 
 			// When the user clicks the button, open the modal 
-			btn.addEventListener('click', function() {
-				modal.style.display = 'block';
-		  		modal.querySelector('.modal-inner-content').focus();
-		  		document.documentElement.style.overflowY = 'hidden';
-		  		document.documentElement.style.cursor = 'pointer';
-		  		
+			btn.addEventListener('click', function() { 
+				openModal(dialog);
+				
 		  		// When the user clicks anywhere outside of the modal, close it
 				window.addEventListener('click', function clickOutside(event) {
-					if(event.target == modal) {
-						modal.style.display = 'none';
-						document.documentElement.style.overflowY = 'initial';
-						document.documentElement.style.cursor = 'default';
+					if(event.target == dialog) {
 						window.removeEventListener('click', clickOutside);
+						dialog.close();
 					}
 				});
 			});
-		  		
-				
+
 			// When the user clicks on <button> (x), close the modal
 			closeButton.addEventListener('click', function() {
-				modal.style.display = 'none';
+				dialog.close();
+			});
+
+			// When the dialog is closed, no matter how it is closed
+			dialog.addEventListener("close", function() {
 				document.documentElement.style.overflowY = 'initial';
 				document.documentElement.style.cursor = 'default';
 			});
 		}
+
 	</script>
 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

@@ -296,6 +296,7 @@ dialog::backdrop {
 	overflow-y: auto;
 	height: 100%;
 	box-sizing: border-box;
+	position: relative;
 }
 
 dialog.project-details img {
@@ -326,19 +327,26 @@ dialog.project-details p {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 3rem;
-  font-weight: bold;
-  background: none;
-  border: none;
+	color: #aaaaaa;
+	font-size: 4rem;
+	font-weight: 200;
+	background: none;
+	border: none;
+	position: absolute;
+	right: 1rem;
+	top: -1rem;
+}
+
+.close:before {
+	display: inline-block;
+	content: "\00d7";
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .columns {
@@ -418,6 +426,14 @@ button {
 	cursor: pointer;
 }
 
+a {
+	box-sizing: border-box;
+}
+
+img.full-image {
+	width: 100% !important;
+}
+
 p.equation {
 	text-align: center !important;
 }
@@ -456,17 +472,17 @@ p.equation {
 
 	.modal {
 		max-width: none;
+		position: relative;
 	}
 
 	.modal .modal-content {
 		padding-left: 6vw;
 		padding-right: 6vw;
+		position: relative;
 	}
 
 	.modal .close {
-		text-align: right;
-		padding-right: 3vw;
-		float: none;
+
 	}
 
 	#projectsSection .modal-content img {

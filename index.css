@@ -335,6 +335,7 @@ dialog.project-details p {
 	position: absolute;
 	right: 1rem;
 	top: -1rem;
+	width: auto;
 }
 
 .close:before {
@@ -472,7 +473,6 @@ p.equation {
 
 	.modal {
 		max-width: none;
-		position: relative;
 	}
 
 	.modal .modal-content {
@@ -481,9 +481,6 @@ p.equation {
 		position: relative;
 	}
 
-	.modal .close {
-
-	}
 
 	#projectsSection .modal-content img {
 		width: 100%;

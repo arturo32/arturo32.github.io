@@ -435,6 +435,10 @@ img.full-image {
 	width: 100% !important;
 }
 
+dialog.project-details img.full-image {
+	margin: 1rem 0;
+}
+
 p.equation {
 	text-align: center !important;
 }

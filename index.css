@@ -296,14 +296,16 @@ dialog::backdrop {
 .modal-content {
 	padding: 0 8vw;
 	overflow-y: auto;
-	height: 100%;
 	box-sizing: border-box;
 	position: relative;
+	margin-top: 3rem;
+	height: calc(100% - 3rem);
 }
 
 
-dialog.project-details h3 {
-	margin: 3rem 0;
+.modal-content h3 {
+	margin-bottom: 3rem;
+	margin-top: 0;
 }
 
 dialog.project-details img {
@@ -341,7 +343,7 @@ dialog.project-details p {
 	border: none;
 	position: absolute;
 	right: 1rem;
-	top: -1rem;
+	top: -0.5rem;
 	width: auto;
 }
 
@@ -542,11 +544,16 @@ p.equation {
 		padding-left: 6vw;
 		padding-right: 6vw;
 		position: relative;
+		margin-top: 4rem;
+		height: calc(100% - 4rem);
 	}
 
+	.modal .close {
+		right: 0.6rem;
+	}
 
 	#projectsSection .modal-content img {
-		width: 100%;
+		width: 100% !important;
 		margin: 1rem 0;
 		margin-bottom: 0;
 	}

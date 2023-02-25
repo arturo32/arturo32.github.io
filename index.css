@@ -18,6 +18,7 @@ html {
 	box-sizing: border-box;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 200;
+	color: black;
 	scroll-behavior: smooth;
 }
 
@@ -285,6 +286,7 @@ dialog::backdrop {
 	cursor: default;
 	border: 0;
 	padding: 1%;
+	color: black;
 }
 
 .modal.cool {
@@ -297,6 +299,11 @@ dialog::backdrop {
 	height: 100%;
 	box-sizing: border-box;
 	position: relative;
+}
+
+
+dialog.project-details h3 {
+	margin: 3rem 0;
 }
 
 dialog.project-details img {
@@ -341,6 +348,7 @@ dialog.project-details p {
 .close:before {
 	display: inline-block;
 	content: "\00d7";
+	font-family: 'Times New Roman', serif;
 }
 
 .close:hover,
@@ -425,6 +433,8 @@ a.yellow:hover {
 
 button {
 	cursor: pointer;
+	font-family: inherit;
+	color: inherit;
 }
 
 a {
@@ -442,6 +452,55 @@ dialog.project-details img.full-image {
 p.equation {
 	text-align: center !important;
 }
+
+
+
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+	width: 20px;
+}
+
+::-webkit-scrollbar-button {
+	color: black;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+	width: 3px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 25px;
+	width: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--almost-black);
+}
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 900px) {

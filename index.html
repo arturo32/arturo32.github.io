@@ -613,9 +613,24 @@
 								<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
 									<div class="modal-content">
 										<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
-<!--										<p>This portfolio was</p>-->
+										<p>
+											This portfolio was made motivated by the <a href="https://sgi.mit.edu/">Summer Geometry Initiative (SGI)</a>
+											by the Massachusetts Institute of Technology (MIT): a six-week summer research program about geometry
+											processing. At the moment I am waiting for the results of my application! :)
+										</p>
 
-										<img class="full-image" src="media/miniatures/this-site.png" alt="A print-screen of the initial page of this site."
+										<p>
+											I made it without much JavaScript (or any of its frameworks/libraries) and tried to keep it simple and a little
+											bit unique. I am currently working on it and I am very focused in learning how to develop <em>accessible</em> websites,
+											especially for people who use the keyboard and screen readers to navigate on the web.
+										</p>
+
+										<p>
+											Well, actually I use one JS library in this site which is the <a href="https://www.mathjax.org/">MathJax library</a>
+											for displaying mathematical equations written in \( \LaTeX\) which is also accessible to screen reader users.
+										</p>
+
+										<img class="full-image" src="media/miniatures/this-modal.png" alt="A print-screen of the initial page of this site."
 											 style="border: 2px solid var(--almost-black)"/>
 										<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
 										<button type="button" class="close" aria-label="Close"></button>
@@ -644,13 +659,31 @@
 								<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
 									<div class="modal-content">
 										<h3 id="rayTracerTitle">Ray Tracer</h3>
-										<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a> throughout the course of Computer Graphics, taught by professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.</p>
+										<p>This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a>
+											throughout the course of Computer Graphics, taught by professor
+											<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>.
+											It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.
+										</p>
 
-										<p>Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired. It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected, refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em> of the image, defining its final color.</p>
+										<p>
+											Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired.
+											It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot
+											at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected,
+												refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em>
+											of the image, defining its final color.
+										</p>
 
-										<p>Doing this project was challenging because of its size. We had to take into account the <em>camera</em>, <em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different <em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very rewarding because at each step we could <em>see</em> the result of what we had done at that point.</p>
+										<p>
+											Doing this project was challenging because of its size. We had to take into account the <em>camera</em>,
+											<em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different
+											<em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very
+											rewarding because at each step we could <em>see</em> the result of what we had done at that point.
+										</p>
 
-										<p>In the end, we couldn't believe the images that our own program made! The (optional) spherical background made the reflective surfaces much more interesting!</p>
+										<p>
+											In the end, we couldn't believe the images that our own program made! The (optional) spherical background
+											made the reflective surfaces much more interesting!
+										</p>
 
 										<img src="media/miniatures/ray-tracer.gif" alt="A GIF of five images alternating: 3 colored
 										spheres on reflective black square, a donut in space that reflects 100% of its surrounding, a
@@ -677,7 +710,33 @@
 								<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
 									<div class="modal-content">
 										<h3 id="drawingProjectTitle">Drawing Project</h3>
-										<p>Soon!</p>
+										<p>
+											This was the final project of the course Introduction to Programming Techniques, taught by professor
+											Gustavo Girão in my second period. It was made by me and my friend
+											<a href="https://github.com/artursantiago">Artur Santiago</a> in the C programming language.
+										</p>
+
+										<p>
+											It's about drawing raster images in the PPM format with commands in a textfile. This is what it can draw:
+										</p>
+
+										<ul>
+											<li>Lines;</li>
+											<li>Circles;</li>
+											<li>Rectangles;</li>
+											<li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves;</a></li>
+											<li>Random Bézier curves!;</li>
+											<li>Regular polygons;</li>
+											<li>Fill tool.</li>
+										</ul>
+
+										<p>
+											I was amazed by how drawing lines in a computer screen was more complex than I thought. This was the first "big" project
+											that I participated and it was a great learning experience about planning, implementing and organizing a project in group.
+										</p>
+
+
+
 										<img src="media/miniatures/drawing-project.gif" alt="A GIF showing 5 images of white
 										geometric drawings on a black background."/>
 										<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
@@ -721,7 +780,12 @@
 				<h2 id="others">Others</h2>
 				
 				<h3>Origami</h3>
-				<p>Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite designs that I have had the opportunity to fold:</p>
+				<p>
+					Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when
+					I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it
+					doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite
+					designs that I have had the opportunity to fold:
+				</p>
 
 				<div id="origami"> 
 					<div class="project-container">
@@ -850,8 +914,11 @@
 
 	</script>
 
+
+
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 </body>
 </html>

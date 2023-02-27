@@ -287,6 +287,7 @@ dialog::backdrop {
 	border: 0;
 	padding: 1%;
 	color: black;
+	max-width: none;
 }
 
 .modal.cool {
@@ -336,28 +337,47 @@ dialog.project-details p {
 
 /* The Close Button */
 .close {
-	color: #aaaaaa;
-	font-size: 4rem;
-	font-weight: 200;
 	background: none;
 	border: none;
 	position: absolute;
 	right: 1rem;
-	top: -0.5rem;
-	width: auto;
+	top: 1rem;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+}
+
+.close:before,
+.close:after {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2px;
+	background-color: #aaa;
+	border-radius: 2px;
+	box-shadow:0 0 2px 0 #ccc;
 }
 
 .close:before {
-	display: inline-block;
-	content: "\00d7";
-	font-family: 'Times New Roman', serif;
+	transform: rotate(45deg);
+	left: 0;
+}
+
+.close:after {
+	transform: rotate(-45deg);
+	right: 0;
 }
 
 .close:hover,
 .close:focus {
-	color: #000;
-	text-decoration: none;
 	cursor: pointer;
+}
+
+.close:hover:after,
+.close:hover:before,
+.close:focus:after,
+.close:focus:before {
+	background-color: #000;
 }
 
 .columns {
@@ -537,19 +557,30 @@ p.equation {
 	}
 
 	.modal {
-		max-width: none;
+		margin: calc(20vh / 2) var(--modal-horizontal-margin);
+		height: calc(100vh - 20vh);
 	}
 
 	.modal .modal-content {
 		padding-left: 6vw;
 		padding-right: 6vw;
 		position: relative;
-		margin-top: 4rem;
-		height: calc(100% - 4rem);
+		margin-top: 2rem;
+		height: calc(100% - 2rem);
 	}
 
 	.modal .close {
-		right: 0.6rem;
+		right: 0.5rem;
+		top: 0.5rem;
+		font-size: 3.5rem;
+	}
+
+	.modal .modal-content h3 {
+		margin-bottom: 2rem;
+	}
+
+	.modal .modal-content p {
+		font-size: 0.9rem;
 	}
 
 	#projectsSection .modal-content img {
@@ -569,6 +600,19 @@ p.equation {
 
 	ul {
 		padding-left: 1rem;
+	}
+
+	.close:before,
+	.close:after {
+		width: 1.5rem;
+	}
+
+	.close:before {
+		transform: translate(0.25rem) rotate(45deg);
+	}
+
+	.close:after {
+		transform: translate(-0.25rem) rotate(-45deg);
 	}
 
 

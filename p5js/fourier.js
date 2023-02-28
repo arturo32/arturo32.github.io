@@ -59,11 +59,16 @@ const fourier = (p) => {
 		p.createCanvas(widthCanvas, heightCanvas);
 		p.strokeWeight(2);
 
-		let label = p.createElement('label', 'Number of circles:');
+		let container = p.createElement('div');
+		container.style('display', 'flex');
+		container.style('align-items', 'center');
+		let label = p.createElement('label', 'number of circles:');
 		label.attribute('for', 'circlesFourier');
 		input = p.createInput("1", 'number');
 		input.input(changeCircles);
 		input.id('circlesFourier');
+		label.parent(container);
+		input.parent(container);
 		p.background(0);
 		changeCircles();
 	}

@@ -528,6 +528,21 @@ p.equation {
 canvas {
 	display: block;
 	border-radius: 25px;
+	margin-bottom: 0.5rem;
+}
+
+label {
+	font-size: 0.8rem;
+	font-weight: 600;
+	margin-right: 0.5rem;
+}
+input {
+	border: 1px solid black;
+	height: 1rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	width: 4rem;
+	background-color: var(--white-cream);
 }
 
 

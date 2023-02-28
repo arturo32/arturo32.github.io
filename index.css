@@ -128,7 +128,7 @@ section.colorful {
 }
 
 #indexSection a,
-a.code-button {
+.code-button {
 	border: 1px solid black;
 	border-radius: 5px;
 	width: 50%;
@@ -147,20 +147,20 @@ a.code-button {
 	color: black;
 }
 
-a.code-button:focus-visible,
-a.code-button:hover {
+.code-button:focus-visible,
+.code-button:hover {
 	background-color: var(--YELLOW);
 }
 
 #indexSection a:focus-visible,
 #indexSection a:hover,
-a.code-button:focus-visible,
-a.code-button:hover {
+.code-button:focus-visible,
+.code-button:hover {
 	transform: translate(1px, 1px);
 	box-shadow: 3px 4px 0 0 #3c372d;
 }
 
-a.code-button {
+.code-button {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
@@ -517,6 +517,18 @@ p.equation {
 }
 
 
+
+.interactiveCode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0.8rem;
+}
+
+canvas {
+	display: block;
+	border-radius: 25px;
+}
 
 
 

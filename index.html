@@ -422,10 +422,29 @@
 								<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
 									<div class="modal-content">
 										<h3 id="fourierSeriesTitle">Fourier series</h3>
-										<p>Soon!</p>
-										<img src="media/miniatures/fourier.gif" alt="A GIF showing three circles on the left side, one revolving
-										on the circumference of the other, with a red dot revolving on the last smaller circle while drawing a
-										waving graph in the right side."/>
+
+										<p>
+											The Fourier series it's a way of using sine and cosine functions that can approximate other
+											functions when summed, a bit like the <a href="https://en.wikipedia.org/wiki/Taylor_series">Taylor series</a>,
+											which many learn in the Calculus course in university.
+										</p>
+
+										<p>
+											A very famous example on the internet are GIFs that show the Fourier series being used to express a square wave
+											from sin functions. They beautifully represent the sines functions being added as circles that rotate around themselves,
+											with different frequencies. So I tried to do the same, but interactively, with the help of
+											<a href="https://youtu.be/Mm2eYfj0SgA">Coding Train's video</a>.
+										</p>
+
+										<p>
+											You can click the button below if you want to play with the visualization. Just be careful with the amount of circles you add
+											if you are not in a "powerful" computer. I wouldn't recommend above 1000.
+										</p>
+
+										<button class="code-button colorful play-button">Play it</button>
+										<div id="fourierCanvas" class="interactiveCode"></div>
+										<button class="code-button colorful stop-button" style="display: none;">Stop</button>
+
 										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
 
 									</div>
@@ -896,7 +915,38 @@
 	
 	<!-- Modals -->
 	<script>
-		
+
+		let p5Visualization = null;
+		let playButtons = document.getElementsByClassName('play-button');
+		for(let button of playButtons) {
+			let canvas = button.nextElementSibling;
+			let functionName = canvas.id.substring(0, canvas.id.lastIndexOf('Canvas'));
+
+			button.addEventListener('click', function () {
+				p5Visualization = new p5(eval(functionName), canvas.id);
+				let closeButton = canvas.nextElementSibling;
+				closeButton.style.display = 'block';
+				button.style.display = 'none';
+				canvas.scrollIntoView({
+					behavior: 'smooth'
+				});
+				canvas.focus();
+			});
+		}
+		let stopButtons = document.getElementsByClassName('stop-button');
+		for(let button of stopButtons) {
+			button.addEventListener('click', function () {
+				if(p5Visualization != null) {
+					p5Visualization.remove();
+					p5Visualization = null;
+				}
+				let playButton = button.previousElementSibling.previousElementSibling;
+				playButton.style.display = 'block';
+				button.style.display = 'none';
+				playButton.focus();
+			});
+		}
+
 		function openModal(modal) {
 			modal.showModal();
 			document.documentElement.style.overflowY = 'hidden';
@@ -907,6 +957,15 @@
 			modal.close();
 			document.documentElement.style.overflowY = 'initial';
 			document.documentElement.style.cursor = 'default';
+			if(p5Visualization != null) {
+				p5Visualization.remove();
+				p5Visualization = null;
+			}
+
+			for(let button of playButtons) {
+				button.style.display = 'block';
+				button.nextElementSibling.nextElementSibling.style.display = 'none';
+			}
 		}
 
 		// Get the modals
@@ -954,6 +1013,8 @@
 
 		}
 
+
+
 	</script>
 
 
@@ -961,6 +1022,11 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+	<!-- P5.JS SCRIPTS -->
+	<script src="p5js/p5.min.js"></script>
+
+		<!-- Fourier -->
+		<script src="p5js/fourier.js"></script>
 
 </body>
 </html>

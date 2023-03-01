@@ -42,21 +42,32 @@ const fourier = (p) => {
 			p.circle(this.x, this.y, 7);
 
 			p.stroke("red");
-			p.line(this.x, this.y, 410, this.y);
+			p.line(this.x, this.y, waveStartX, this.y);
 
 
 			p.noStroke();
-			p.circle(410, this.y, 7);
+			p.circle(waveStartX, this.y, 7);
 		}
 	}
 
 	let widthCanvas = 600;
 	let heightCanvas = widthCanvas/2;
 	let axis = widthCanvas * 0.28;
+	let waveStartX = 0.683 * widthCanvas;
+	let waveFrequency = 2;
 	let circles = [];
 	let input;
 	p.setup = function() {
-		p.createCanvas(widthCanvas, heightCanvas);
+		let canvas = p.createCanvas(widthCanvas, heightCanvas);
+		if(canvas.parent().offsetWidth < 600){
+			widthCanvas = canvas.parent().offsetWidth;
+			heightCanvas = widthCanvas / 2;
+			p.resizeCanvas(widthCanvas, heightCanvas);
+			axis = widthCanvas * 0.28;
+			waveStartX = 0.683 * widthCanvas;
+			waveFrequency = 4;
+		}
+
 		p.strokeWeight(2);
 
 		let container = p.createElement('div');
@@ -81,7 +92,7 @@ const fourier = (p) => {
 		for(let i = 0;i < input.value(); i++) {
 			let n = 1+i*2;
 			let angle = (4/(n*p.PI));
-			let c = new movingCircle(axis, 150, 60*angle, n);
+			let c = new movingCircle(axis, heightCanvas / 2, (heightCanvas/5)*angle, n);
 			let d = new waveDrawer(c.x, c.y);
 			circles.push( {c, d} );
 		}
@@ -107,14 +118,14 @@ const fourier = (p) => {
 
 
 				wave.unshift(circles[i].d.y);
-				if(wave.length > 390) {
+				if(wave.length > (widthCanvas - waveStartX)*waveFrequency) {
 					wave.pop();
 				}
 				p.beginShape();
 				p.noFill();
 				for(let i= 0; i < wave.length; i++) {
 					p.stroke("red");
-					p.vertex(410+i/2, wave[i]);
+					p.vertex(waveStartX+i/waveFrequency, wave[i]);
 				}
 				p.endShape();
 

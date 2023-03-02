@@ -627,19 +627,29 @@ footer a {
 		margin-bottom: 0;
 	}
 
-	.project-container button,
-	.project-container a {
+	.container-cover {
 		font-size: 1.5rem;
 	}
 
 
-	#othersSection .project-container {
+	#othersSection .project-container,
+	#othersSection .image-container {
 		height: auto;
 		width: 100%;
+		margin: 0.25rem 0;
+		display: block;
 	}
 
-	#othersSection .project-container a {
-		height: 98%;
+	#othersSection #blender,
+	#othersSection #photography {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#othersSection .project-container img,
+	#othersSection .image-container img,
+	#othersSection a img {
+		display: block;
 	}
 
 	ul {
@@ -677,6 +687,12 @@ footer a {
 	#othersSection #photography {
 		height: auto;
 	}
+
+	#othersSection #photography a {
+		margin: 0.25rem 0;
+		display: inline-block;
+	}
+
 
 	#myPicture {
 		float: none;

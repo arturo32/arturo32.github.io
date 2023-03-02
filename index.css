@@ -187,7 +187,8 @@ section {
 	display: inline-block;
 }
 
-#othersSection .project-container a {
+#othersSection .project-container a,
+#photography a {
 	padding: 0;
 	text-decoration: none;
 }

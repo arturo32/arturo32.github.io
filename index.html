@@ -44,21 +44,22 @@
 	<meta name="theme-color" content="#F5E5D5">
 </head>
 <body>
+	<div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
 	<header>
 		<h1>Arturo Fonseca</h1>
 	</header>
 	<main>
 		<section>
 			<nav id="indexSection" class="subsection">
-				<a class="colorful red" href="#about">
+				<a class="colorful red" href="#about" id="aboutHomeButton">
 					About me
 				</a>
 				
-				<a class="colorful yellow" href="#projects">
+				<a class="colorful yellow" href="#projects" id="projectsHomeButton">
 					Projects
 				</a>
 				
-				<a class="colorful blue" href="#others">
+				<a class="colorful blue" href="#others" id="othersHomeButton">
 					Others
 				</a>
 			</nav>
@@ -1134,8 +1135,12 @@
 	<!-- P5.JS SCRIPTS -->
 	<script src="p5js/p5.min.js"></script>
 
+		<!-- Front page animation-->
+		<script src="p5js/front-page.js"></script>
+
 		<!-- Fourier -->
 		<script src="p5js/fourier.js"></script>
+
 
 </body>
 </html>

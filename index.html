@@ -1137,9 +1137,15 @@
 
 		<!-- Front page animation-->
 		<script src="p5js/front-page.js"></script>
+		<script>
+			if(window.innerWidth > 1000) {
+				let frontPageAnimation = new p5(frontPage);
+			}
+		</script>
 
 		<!-- Fourier -->
 		<script src="p5js/fourier.js"></script>
+
 
 
 </body>

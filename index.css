@@ -9,6 +9,8 @@
 
 	--header-height: 25vh;
 	--modal-horizontal-margin: 16vw;
+
+	--c2-column-gap: 12vw
 }
 
 html {
@@ -420,33 +422,45 @@ dialog.project-details p {
 
 .columns {
 	display: grid;
+}
+
+.columns:not(:last-child) {
+	margin-bottom: 20vh;
+}
+
+.columns.c-2 {
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 11vh;
+	column-gap: var(--c2-column-gap);
+}
+
+.columns.c-3 {
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 15vw;
+	row-gap: 11vh;
+	column-gap: 10vw;
 }
 
 .column {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 3rem;	
+	grid-gap: 3rem;
 }
 
 
-
-
-.column h4 {
+.columns h4 {
 	text-align: center;
 	margin: 0;
 	margin-bottom: 0.5rem;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 }
 
-.column p,
+.columns p,
 .project-details .modal-content figure figcaption {
 	text-align: left;
 	margin: 0;
 	margin-top: 0.8rem;
 	font-weight: 200;
-	font-size: .8rem;
+	font-size: .9rem;
 	line-height: 1rem;
 }
 
@@ -747,7 +761,7 @@ a:focus {
 	}
 
 	.columns {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 1fr) !important;
 	}
 
 

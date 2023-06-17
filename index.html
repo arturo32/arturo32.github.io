@@ -108,265 +108,375 @@
 		<section class="colorful yellow" aria-labelledby="projectsTitle">
 			<div id="projectsSection" class="subsection">
 				<h2 id="projects">Projects</h2>
-				<div class="columns">
+				<h3>Websites</h3>
+				<div class="columns c-2">
+
 					<div>
-						<h3>Visual Math</h3>
-						<div class="column">
-							<div id="triagleLerp">
-								<h4>Triangle lerp</h4>
-								
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle
-									moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a
-									different color: red, blue and green and each edge interpolates between these colors. The circle changes colors
-									while moving."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Linear interpolation but with areas! In a triangle!</p>
-								
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
-									<div class="modal-content">
-										<h3 id="triagleLerpTitle">Triangle Lerp</h3>
-										
-										<p>
-											This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter
-											thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation
-											for the Drawing Project, but I had never heard of interpolating between three points at the time.
-										</p>
+						<h4>How Pointers Work</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF of the website being used."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
 
-										<p>
-											As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have
-											to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage
-											of that area relative to the total area of the larger triangle.
-										</p>
+						<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
 
-										<p>
-											A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes
-											(Phong Shading).
-										</p>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="howPointersWorkTitle">
+							<div class="modal-content">
+								<h3 id="howPointersWorkTitle">How Pointers Work</h3>
+								<p>
+									When I saw my colleagues struggling with the concepts of pointers in introductory programming classes,
+									I thought of writing a program that could help them visualize what happens in the computer's memory when
+									they run their programs.
+								</p>
 
-										<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+								<p>
+									So 2 years ago I started making a website that shows memory allocation of variables and their pointers
+									as they are typed into a console.
+								</p>
 
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
+								<p>
+									As of now it can identify declaration and assignment of variables and pointers and their types, as well as
+									dereferencing of pointers. It cannot yet identify arrays (which are sort of pointers, important
+									ones!). I plan to use Vue.js to manage the visualization of the memory cells instead of p5.js and to
+									finish it this year.
+								</p>
+
+								<img loading="lazy" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF of the website being used." class="full-image"/>
 
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
+								<p>I talk more about it in the project's page below.</p>
 
-							<div>
-								<h4>Perlin noise - vector field</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
-									color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>The beauty of a particular random number generator.</p>
+								<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
-									<div class="modal-content">
-										<h3 id="perlinNoiseTitle">Perlin noise</h3>
-										<p>
-											I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>,
-											one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his
-											channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not
-											only about the methods of p5.js but also the math and algorithms behind them.
-										</p>
-										
-										<p>
-											As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding
-											Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is
-											relatively close to the numbers that came before and after it.
-										</p>
-
-										<p>
-											In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the
-											GIF below. I use the sin function to map the colors blue and red to their rotation.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
-
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
 							</div>
-							
-							<div>
-								<h4>Julia sets</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								
-								<p>Move your mouse to generate beautiful products of a complex number function.</p>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
-									<div class="modal-content">
-										<h3 id="juliaSetsTitle">Julia sets</h3>
-										
-										<p>
-											The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane
-											like the one below:
-										</p>
-										
-										<figure role="group">
-											<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png" alt="An almost entirely black image with a white bordered structure
-											composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each
-											other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a
-											fractal manner."/>
-											<figcaption>
-												See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
-											</figcaption>
-										</figure>
 
-										<p>To generate this is relative simple. It all boils down to the function below:</p>
-										
-										<p class="equation">\(f_c(z) = z^2 + c\)</p>
+					<div>
+						<h4>Ecoleta (React)</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/ecoleta/ecoleta.webp" alt="A GIF showing the flow of the site: A landing page, registration of a
+								recycling collection point with a lot of fields like its name, image, address (with a map) and, at the end, what
+								types of material that point accepts."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
 
-										<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
+						<p>A site about recycling collections points in your city.</p>
 
-										<ul>
-											<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
-											<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
-										</ul>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="ecoletaTitle">
+							<div class="modal-content">
+								<h3 id="ecoletaTitle">Ecoleta (React)</h3>
+								<p>
+									This site was developed following the first edition of the brazilian Next Level Week
+									online event organised by <a href="https://www.rocketseat.com.br/">Rocketseat</a>. This event
+									was free to the public and consisted of 5 videos posted over a period of one week, teaching
+									concepts of front and backend while collaboratively developing a website about finding solid
+									waste collection points near you.
+								</p>
 
-										<p>
-											Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane.
-											We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\).
-											As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the
-											<em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it
-											<em>black</em>. That's it!
-										</p>
+								<img loading="lazy" src="media/miniatures/ecoleta/ecoleta.webp" alt="A GIF showing the flow of the site: A landing page, registration of a
+									recycling collection point with a lot of fields like its name, image, address (with a map) and, at the end, what
+									types of material that point accepts." class="full-image"/>
 
-										<p>
-											And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will
-											represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the
-											start of our process, we can make entirely different sets. Each of them possessing a unique complexity and
-											beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing
-											them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with
-											\(c = 0 - 0.8i\):
-										</p>
+								<p>
+									The <em>backend</em> consisted of a restful API made with <em>NodeJS</em> and the <em>frontend</em>
+									was made with the JavaScript library <em>React</em>. I was very proud of the small modifications
+									I made to the original project. You can check them out on the project's page by clicking the button below:
+								</p>
 
-										<figure role="group">
-											<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
-											that resembles a worm in a z format." class="full-image"/>
-											<figcaption>
-												See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
-											</figcaption>
-										</figure>
+								<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
 
-										<p>
-											Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor.
-											So at each new position of the mouse the function iterated thought all the pixels to render the image for that
-											particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit
-											washed out.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its
-										colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle
-										morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
-										
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
 							</div>
-							
-							<div>
-								<h4>Times table</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/times-table/times-table.gif" alt="A 2-second GIF showing a circle with many green lines connecting
-									different sides of its circumference. The number of these lines increases rapidly, forming an image of what
-									appears to be a heart from the side (a cardioid)."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Wonderful patterns emerge when numbers are written in a circle.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
-									<div class="modal-content">
-										<h3 id="timesTableTitle">Times table</h3>
-										<p>
-											...times table? That's right! The GIF in the thumbnail is simply a 2 times table, where each point
-											on the circumference is a number and each line connects a number to its double. Thus, 2 connects to
-											4, 3 connects to 6, and so on. In the image below we only have 12 numbers. So, from 6 and beyond we
-											do what's called clock arithmetic, or more precisely, modular arithmetic. 0 is 12, 1 is 13, 2 is 14,
-											and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
-											to 0 and 7 connects to 2. We can called it the <em>2 time table module 12</em>:
-										</p>
-										<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
-										green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
-										symmetrical about the horizontal axis."/>
-
-										<p>
-											I discovered this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a>. When you add more
-											numbers, i.e., change the module, a cardioid starts to appear in the 2 times table:
-										</p>
-
-										<img loading="lazy" src="media/miniatures/times-table/times-table.gif" alt="A 2-second GIF showing a circle with many green lines connecting
-										different sides of its circumference. The number of these lines increases rapidly, forming an image of what
-										appears to be a heart from the side (a cardioid)."/>
-
-										<p>
-											And when you choose bigger numbers to represent their times table, intriguing patterns starts to appear:
-										</p>
-
-										<figure>
-											<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
-											each other forming small rectangles."/>
-											<figcaption>38 times table with 78 numbers.</figcaption>
-										</figure>
-										<figure>
-											<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
-											each other forming a small cardioid in the center with lots of random lines surrounding it."/>
-											<figcaption>65 times table with 191 numbers.</figcaption>
-										</figure>
-										<figure>
-											<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
-											each other forming a beautiful pattern with radial symmetry."/>
-											<figcaption>17 times table with 288 numbers.</figcaption>
-										</figure>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
 
 
+					<div>
+						<h4>Converter (Vue.js)</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
+							top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
+							the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
+							with empty fields."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Convert monetary values between numerous international currencies!</p>
 
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ"
-										   title="Code of the Times Table">Code</a>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
+							<div class="modal-content">
+								<h3 id="converterTitle">Converter (Vue.js)</h3>
+								<p>
+									This is one of many small projects that I did while learning for the first time <em>Vue.js</em>, a
+									JavaScript's framework for building frontend interfaces. I did following a
+									<a href="https://youtu.be/tIEa3MRBpI0">video from Programador BR</a> but soon I got carried away with
+									the reactiveness of the data biding that Vue offer and tried to exploit it as much as I could.
+								</p>
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
+								<img loading="lazy" src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
+								top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
+								the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
+								with empty fields." class="full-image"/>
+
+								<p>
+									In this currency converter you can choose a base currency and type the value that you want to convert from
+									in the top text field. As you type, the value is instantaneously converted to three main different currencies:
+									the US Dollar, Euro and Canadian Dollar. But at each box of this types of currency you can type individual values
+									just for their type. Also, the inversion conversion is available in three more boxes below.
+								</p>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
+
 							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
 
-							<div>
-								<h4>Light and shadow</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/light-and-shadow/light-and-shadow.gif" alt="A GIF showing a black background with a small square and
-									an abstract shape, both drawn with thin red lines. A cursor appears and moves around the scene, with numerous
-									white rays emanating from it and being intercepted by the boundaries of the geometric objects."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Lines and their interceptions with the environment.</p>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
-									<div class="modal-content">
-										<h3 id="lightAndShadowTitle">Light and shadow</h3>
-										<p>
-											This one I got from the <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>.
-											It is all about how you can simulate light and its shadows for games. I had followed just half of the tutorial.
-											Ah, I also have done this... thing:
-										</p>
-										<img loading="lazy" src="media/miniatures/light-and-shadow/third-eye.gif" alt="The GIF starts with two geometrically drawn eyes on a black
-										background. Their pupils radiate several white lines as they move outside the eyes toward the center
-										above them. When they converge, another eye is drawn around them.">
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
+					<div>
+						<h4>(Re)learning Vue.js</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
+							yellow rectangles, each with a title and subtitle, some of them with buttons and input fields."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Back to basics.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
+							<div class="modal-content">
+								<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
+								<p>
+									After 3 years of my first <em>Vue.js</em> projects, I felt the need to
+									re-learn it from the beginning, starting from the <a href="https://v2.vuejs.org/v2/guide/">Vue 2 guide</a>.
+									After running through the basics (conditional rendering, data biding, computed properties, etc) with a
+									<a href="https://v2.vuejs.org/v2/guide/installation.html#CDN">CDN script</a> I wanted to try making Vue's
+									Single File Components <em>without</em> using Vue's CLI, with the intention of learning all the little
+									parts that make possible frontend web development of complex applications.
+								</p>
+
+								<img loading="lazy" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
+								yellow rectangles, each with a title and subtitle, some of them with buttons and input fields." class="full-image"/>
+
+								<p>
+									So, using <a title="Creating a Vue.js app using SFC without CLI."
+												 href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/">
+									this guide</a>, I learned how to configure <em>Webpack</em> and <em>Babel</em> for bundling and (trans)compiling all the JS and Vue's files
+									in a way that browsers can understand.
+								</p>
+
+								<p>
+									For the final stage of this project I plan to read and use Vue version 3, using the CLI this time. It will be also a preparation
+									for keep going with my <a href="https://github.com/arturo32/HowPointersWork">HowPointersWork</a> project.
+								</p>
+								<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
+
 							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Selo ou não sê-lo (Tumblr)</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an image of a brown
+						paper as the background and articles written in a yellowish background in the center." />
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Making a website for my sister... on Tumblr.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="seloNaoSeloTitle">
+							<div class="modal-content">
+								<h3 id="seloNaoSeloTitle">Selo ou não sê-lo (Tumblr)</h3>
+								<p>
+									My sister, <a href="https://luizafonseca.com/">Luiza Fonseca</a>, is a visual artist and designer
+									who sometimes asks me for help when she needs to make a website. It was no different when she
+									had to do a project about making collective art while connecting different artists through letters!
+								</p>
+
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Image of the first page of the site."/>
+
+								<p>
+									She designed the entire site beforehand and decided to use the Tumblr platform to host it (which was
+									a bit challenging due to its limitations, but less so than I had imagined). From there, I tried to implement it
+									as close to her vision as possible. The titles and even the look of the cursor were drawn by her, creating
+									a really unique look.
+								</p>
+
+								<p>
+									One small thing that I enjoyed doing in this project was the navigation drawer for mobile. I saw somewhere a menu
+									icon that transformed itself in a close button and I really wanted to try with pure CSS. It worked, as you can see below.
+								</p>
+
+								<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp" alt="A GIF showing the mobile version of the site with a menu
+							button with two parallel lines that cross each other forming an X when clicked. The action brings up the hidden menu drawer."/>
+
+								<p>
+									The name of the site is a pun in portuguese referencing the famous Shakespeare's phrase "to be or
+									not to be" using the word for "stamp" which is "<i>selo</i>" in brazilian portuguese.
+								</p>
+
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an
+							image of a brown paper as the background and articles written in a yellowish background in the center."/>
+								<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>This very own website</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt="An image showing a part of this site that moves as
+							you scroll the page, trying to be in sync to where you are (in the project's section)."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>We are here.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
+							<div class="modal-content">
+								<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
+								<p>
+									This portfolio was made motivated by the <a href="https://sgi.mit.edu/">Summer Geometry Initiative (SGI)</a>
+									by the Massachusetts Institute of Technology (MIT): a six-week summer research program about geometry
+									processing. At the moment I am waiting for the results of my application! :)
+								</p>
+
+								<p>
+									I made it without much JavaScript (or any of its frameworks/libraries) and tried to keep it simple and a little
+									bit unique. I am currently working on it and I am very focused in learning how to develop <em>accessible</em> websites,
+									especially for people who use the keyboard and screen readers to navigate on the web.
+								</p>
+
+								<p>
+									Well, actually I use one JS library in this site which is the <a href="https://www.mathjax.org/">MathJax library</a>
+									for displaying mathematical equations written in \( \LaTeX\) which is also accessible to screen reader users.
+								</p>
+
+								<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="A print-screen of the initial page of this site."/>
+								<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+				</div>
+
+				<h3>Visual Math</h3>
+				<div class="columns c-3">
+
+					<div id="triagleLerp">
+						<h4>Triangle lerp</h4>
+
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle
+							moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a
+							different color: red, blue and green and each edge interpolates between these colors. The circle changes colors
+							while moving."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Linear interpolation but with areas! In a triangle!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
+							<div class="modal-content">
+								<h3 id="triagleLerpTitle">Triangle Lerp</h3>
+
+								<p>
+									This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter
+									thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation
+									for the Drawing Project, but I had never heard of interpolating between three points at the time.
+								</p>
+
+								<p>
+									As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have
+									to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage
+									of that area relative to the total area of the larger triangle.
+								</p>
+
+								<p>
+									A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes
+									(Phong Shading).
+								</p>
+
+								<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
+
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Times table</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/times-table/times-table.gif" alt="A 2-second GIF showing a circle with many green lines connecting
+							different sides of its circumference. The number of these lines increases rapidly, forming an image of what
+							appears to be a heart from the side (a cardioid)."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
+							<div class="modal-content">
+								<h3 id="timesTableTitle">Times table</h3>
+								<p>
+									...times table? That's right! The GIF in the thumbnail is simply a 2 times table, where each point
+									on the circumference is a number and each line connects a number to its double. Thus, 2 connects to
+									4, 3 connects to 6, and so on. In the image below we only have 12 numbers. So, from 6 and beyond we
+									do what's called clock arithmetic, or more precisely, modular arithmetic. 0 is 12, 1 is 13, 2 is 14,
+									and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
+									to 0 and 7 connects to 2. We can called it the <em>2 time table module 12</em>:
+								</p>
+								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
+								green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
+								symmetrical about the horizontal axis."/>
+
+								<p>
+									I discovered this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a>. When you add more
+									numbers, i.e., change the module, a cardioid starts to appear in the 2 times table:
+								</p>
+
+								<img loading="lazy" src="media/miniatures/times-table/times-table.gif" alt="A 2-second GIF showing a circle with many green lines connecting
+								different sides of its circumference. The number of these lines increases rapidly, forming an image of what
+								appears to be a heart from the side (a cardioid)."/>
+
+								<p>
+									And when you choose bigger numbers to represent their times table, intriguing patterns starts to appear:
+								</p>
+
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
+									each other forming small rectangles."/>
+									<figcaption>38 times table with 78 numbers.</figcaption>
+								</figure>
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
+									each other forming a small cardioid in the center with lots of random lines surrounding it."/>
+									<figcaption>65 times table with 191 numbers.</figcaption>
+								</figure>
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
+									each other forming a beautiful pattern with radial symmetry."/>
+									<figcaption>17 times table with 288 numbers.</figcaption>
+								</figure>
+
+
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ"
+								   title="Code of the Times Table">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+
 
 <!--							<div>-->
 <!--								<h4>PI blocks</h4>-->
@@ -387,509 +497,402 @@
 <!--								</dialog>-->
 <!--							</div>-->
 
-							<div>
-								<h4>Spirals</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
-									that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
-									spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Walk, turn slightly to the right, repeat. Suddenly, you see yourself surrounded by spiral fractals!</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
-									<div class="modal-content">
-										<h3 id="spiralsTitle">Spirals</h3>
-										<p>Matt Henderson's thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
-										<p>
-											It is really as simple as the description suggests: draw a line, rotate a <em>certain angle</em>, draw another line.
-											But with each repetition, you add this <em>certain angle</em>, accumulating it. In the end you have a approximation
-											of an <a href="https://en.wikipedia.org/wiki/Euler_spiral" title="Wikipedia's article.">Euler Spiral</a>. And, if you
-											choose the right angle you can have a Euler Spiral made of little Euler Spirals:
-										</p>
-
-										<img loading="lazy" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
-										that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
-										spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
-
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>
-
-							<div>
-								<h4>Fourier series</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/fourier/fourier.gif" alt="A GIF showing three circles on the left side, one revolving
-									on the circumference of the other, with a red dot revolving on the last smaller circle while drawing a
-									waving graph in the right side."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Circles around circles around circles...</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
-									<div class="modal-content">
-										<h3 id="fourierSeriesTitle">Fourier series</h3>
-
-										<p>
-											The Fourier series it's a way of using sine and cosine functions that can approximate other
-											functions when summed, a bit like the <a href="https://en.wikipedia.org/wiki/Taylor_series">Taylor series</a>,
-											which many learn in the Calculus course in university.
-										</p>
-
-										<p>
-											A very famous example on the internet are GIFs that show the Fourier series being used to express a square wave
-											from sin functions. They beautifully represent the sines functions being added as circles that rotate around themselves,
-											with different frequencies. So I tried to do the same, but interactively, with the help of
-											<a href="https://youtu.be/Mm2eYfj0SgA">Coding Train's video</a>.
-										</p>
-
-										<p>
-											You can click the button below if you want to play with the visualization. Just be careful with the amount of circles you add
-											if you are not in a "powerful" computer. I wouldn't recommend above 1000.
-										</p>
-
-										<button class="code-button colorful play-button">Play it</button>
-										<div id="fourierCanvas" class="interactiveCode"></div>
-										<button class="code-button colorful stop-button" style="display: none;">Stop</button>
-
-										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>
+					<div>
+						<h4>Perlin noise - vector field</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
+							color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
 						</div>
+						<p>The beauty of a particular random number generator.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
+							<div class="modal-content">
+								<h3 id="perlinNoiseTitle">Perlin noise</h3>
+								<p>
+									I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>,
+									one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his
+									channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not
+									only about the methods of p5.js but also the math and algorithms behind them.
+								</p>
+
+								<p>
+									As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding
+									Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is
+									relatively close to the numbers that came before and after it.
+								</p>
+
+								<p>
+									In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the
+									GIF below. I use the sin function to map the colors blue and red to their rotation.
+								</p>
+
+								<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
 					</div>
 
-					
+
 					<div>
-						<h3>Websites</h3>
-						<div class="column">
-							<div>
-								<h4>How Pointers Work</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF of the website being used."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								
-								<p>Personal educational project about the magic of pointers and what are they like in memory.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="howPointersWorkTitle">
-									<div class="modal-content">
-										<h3 id="howPointersWorkTitle">How Pointers Work</h3>
-										<p>
-											When I saw my colleagues struggling with the concepts of pointers in introductory programming classes,
-											I thought of writing a program that could help them visualize what happens in the computer's memory when
-											they run their programs.
-										</p>
-
-										<p>
-											So 2 years ago I started making a website that shows memory allocation of variables and their pointers
-											as they are typed into a console.
-										</p>
-
-										<p>
-											As of now it can identify declaration and assignment of variables and pointers and their types, as well as
-											dereferencing of pointers. It cannot yet identify arrays (which are sort of pointers, important
-											ones!). I plan to use Vue.js to manage the visualization of the memory cells instead of p5.js and to
-											finish it this year.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF of the website being used." class="full-image"/>
-
-
-										<p>I talk more about it in the project's page below.</p>
-
-										<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
-
-							<div>
-								<h4>Ecoleta (React)</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/ecoleta/ecoleta.webp" alt="A GIF showing the flow of the site: A landing page, registration of a
-									recycling collection point with a lot of fields like its name, image, address (with a map) and, at the end, what
-									types of material that point accepts."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								
-								<p>A site about recycling collections points in your city.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="ecoletaTitle">
-									<div class="modal-content">
-										<h3 id="ecoletaTitle">Ecoleta (React)</h3>
-										<p>
-											This site was developed following the first edition of the brazilian Next Level Week
-											online event organised by <a href="https://www.rocketseat.com.br/">Rocketseat</a>. This event
-											was free to the public and consisted of 5 videos posted over a period of one week, teaching
-											concepts of front and backend while collaboratively developing a website about finding solid
-											waste collection points near you.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/ecoleta/ecoleta.webp" alt="A GIF showing the flow of the site: A landing page, registration of a
-										recycling collection point with a lot of fields like its name, image, address (with a map) and, at the end, what
-										types of material that point accepts." class="full-image"/>
-
-										<p>
-											The <em>backend</em> consisted of a restful API made with <em>NodeJS</em> and the <em>frontend</em>
-											was made with the JavaScript library <em>React</em>. I was very proud of the small modifications
-											I made to the original project. You can check them out on the project's page by clicking the button below:
-										</p>
-
-										<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
-
-							<div>
-								<h4>Converter (Vue.js)</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
-									top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
-									the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
-									with empty fields."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Convert monetary values between numerous international currencies!</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
-									<div class="modal-content">
-										<h3 id="converterTitle">Converter (Vue.js)</h3>
-										<p>
-											This is one of many small projects that I did while learning for the first time <em>Vue.js</em>, a
-											JavaScript's framework for building frontend interfaces. I did following a
-											<a href="https://youtu.be/tIEa3MRBpI0">video from Programador BR</a> but soon I got carried away with
-											the reactiveness of the data biding that Vue offer and tried to exploit it as much as I could.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
-										top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
-										the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
-										with empty fields." class="full-image"/>
-
-										<p>
-											In this currency converter you can choose a base currency and type the value that you want to convert from
-											in the top text field. As you type, the value is instantaneously converted to three main different currencies:
-											the US Dollar, Euro and Canadian Dollar. But at each box of this types of currency you can type individual values
-											just for their type. Also, the inversion conversion is available in three more boxes below.
-										</p>
-
-										<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>
-							
-							<div>
-								<h4>(Re)learning Vue.js</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
-									yellow rectangles, each with a title and subtitle, some of them with buttons and input fields."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Back to basics.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
-									<div class="modal-content">
-										<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
-										<p>
-											After 3 years of my first <em>Vue.js</em> projects, I felt the need to
-											re-learn it from the beginning, starting from the <a href="https://v2.vuejs.org/v2/guide/">Vue 2 guide</a>.
-											After running through the basics (conditional rendering, data biding, computed properties, etc) with a
-											<a href="https://v2.vuejs.org/v2/guide/installation.html#CDN">CDN script</a> I wanted to try making Vue's
-											Single File Components <em>without</em> using Vue's CLI, with the intention of learning all the little
-											parts that make possible frontend web development of complex applications.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
-										yellow rectangles, each with a title and subtitle, some of them with buttons and input fields." class="full-image"/>
-
-										<p>
-											So, using <a title="Creating a Vue.js app using SFC without CLI."
-											href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/">
-											this guide</a>, I learned how to configure <em>Webpack</em> and <em>Babel</em> for bundling and (trans)compiling all the JS and Vue's files
-											in a way that browsers can understand.
-										</p>
-
-										<p>
-											For the final stage of this project I plan to read and use Vue version 3, using the CLI this time. It will be also a preparation
-											for keep going with my <a href="https://github.com/arturo32/HowPointersWork">HowPointersWork</a> project.
-										</p>
-										<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
-
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>									
-							</div>
-
-
-							<div>
-								<h4>Selo ou não sê-lo (Tumblr)</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an image of a brown
-									paper as the background and articles written in a yellowish background in the center." />
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Making a website for my sister... on Tumblr.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="seloNaoSeloTitle">
-									<div class="modal-content">
-										<h3 id="seloNaoSeloTitle">Selo ou não sê-lo (Tumblr)</h3>
-										<p>
-											My sister, <a href="https://luizafonseca.com/">Luiza Fonseca</a>, is a visual artist and designer
-											who sometimes asks me for help when she needs to make a website. It was no different when she
-											had to do a project about making collective art while connecting different artists through letters!
-										</p>
-
-										<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Image of the first page of the site."/>
-
-										<p>
-											She designed the entire site beforehand and decided to use the Tumblr platform to host it (which was
-											a bit challenging due to its limitations, but less so than I had imagined). From there, I tried to implement it
-											as close to her vision as possible. The titles and even the look of the cursor were drawn by her, creating
-											a really unique look.
-										</p>
-
-										<p>
-											One small thing that I enjoyed doing in this project was the navigation drawer for mobile. I saw somewhere a menu
-											icon that transformed itself in a close button and I really wanted to try with pure CSS. It worked, as you can see below.
-										</p>
-
-										<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp" alt="A GIF showing the mobile version of the site with a menu
-										button with two parallel lines that cross each other forming an X when clicked. The action brings up the hidden menu drawer."/>
-
-										<p>
-											The name of the site is a pun in portuguese referencing the famous Shakespeare's phrase "to be or
-											not to be" using the word for "stamp" which is "<i>selo</i>" in brazilian portuguese.
-										</p>
-
-										<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an
-										image of a brown paper as the background and articles written in a yellowish background in the center."/>
-										<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>
-
-							<div>
-								<h4>This very own website</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt="An image showing a part of this site that moves as
-									you scroll the page, trying to be in sync to where you are (in the project's section)."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>We are here.</p>
-
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
-									<div class="modal-content">
-										<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
-										<p>
-											This portfolio was made motivated by the <a href="https://sgi.mit.edu/">Summer Geometry Initiative (SGI)</a>
-											by the Massachusetts Institute of Technology (MIT): a six-week summer research program about geometry
-											processing. At the moment I am waiting for the results of my application! :)
-										</p>
-
-										<p>
-											I made it without much JavaScript (or any of its frameworks/libraries) and tried to keep it simple and a little
-											bit unique. I am currently working on it and I am very focused in learning how to develop <em>accessible</em> websites,
-											especially for people who use the keyboard and screen readers to navigate on the web.
-										</p>
-
-										<p>
-											Well, actually I use one JS library in this site which is the <a href="https://www.mathjax.org/">MathJax library</a>
-											for displaying mathematical equations written in \( \LaTeX\) which is also accessible to screen reader users.
-										</p>
-
-										<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="A print-screen of the initial page of this site."/>
-										<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>									
-							</div>
+						<h4>Light and shadow</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/light-and-shadow/light-and-shadow.gif" alt="A GIF showing a black background with a small square and
+							an abstract shape, both drawn with thin red lines. A cursor appears and moves around the scene, with numerous
+							white rays emanating from it and being intercepted by the boundaries of the geometric objects."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
 						</div>
-					</div>	
-					
+						<p>Lines and their interceptions with the environment.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
+							<div class="modal-content">
+								<h3 id="lightAndShadowTitle">Light and shadow</h3>
+								<p>
+									This one I got from the <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>.
+									It is all about how you can simulate light and its shadows for games. I had followed just half of the tutorial.
+									Ah, I also have done this... thing:
+								</p>
+								<img loading="lazy" src="media/miniatures/light-and-shadow/third-eye.gif" alt="The GIF starts with two geometrically drawn eyes on a black
+								background. Their pupils radiate several white lines as they move outside the eyes toward the center
+								above them. When they converge, another eye is drawn around them.">
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
 
 					<div>
-						<h3>Others</h3>
-						<div class="column">
-							<div>
-								<h4>Ray Tracer</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/ray-tracer/ray-tracer.gif" alt="A GIF of five images alternating: 3 colored
+						<h4>Julia sets</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+
+						<p>Move your mouse to generate beautiful products of a complex number function.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
+							<div class="modal-content">
+								<h3 id="juliaSetsTitle">Julia sets</h3>
+
+								<p>
+									The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane
+									like the one below:
+								</p>
+
+								<figure role="group">
+									<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png" alt="An almost entirely black image with a white bordered structure
+									composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each
+									other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a
+									fractal manner."/>
+									<figcaption>
+										See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
+									</figcaption>
+								</figure>
+
+								<p>To generate this is relative simple. It all boils down to the function below:</p>
+
+								<p class="equation">\(f_c(z) = z^2 + c\)</p>
+
+								<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
+
+								<ul>
+									<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
+									<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
+								</ul>
+
+								<p>
+									Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane.
+									We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\).
+									As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the
+									<em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it
+									<em>black</em>. That's it!
+								</p>
+
+								<p>
+									And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will
+									represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the
+									start of our process, we can make entirely different sets. Each of them possessing a unique complexity and
+									beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing
+									them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with
+									\(c = 0 - 0.8i\):
+								</p>
+
+								<figure role="group">
+									<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
+									that resembles a worm in a z format." class="full-image"/>
+									<figcaption>
+										See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
+									</figcaption>
+								</figure>
+
+								<p>
+									Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor.
+									So at each new position of the mouse the function iterated thought all the pixels to render the image for that
+									particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit
+									washed out.
+								</p>
+
+								<img loading="lazy" src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its
+								colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle
+								morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Spirals</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
+							that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
+							spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Walk, turn slightly to the right, repeat. Suddenly, you see yourself surrounded by spiral fractals!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
+							<div class="modal-content">
+								<h3 id="spiralsTitle">Spirals</h3>
+								<p>Matt Henderson's thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
+								<p>
+									It is really as simple as the description suggests: draw a line, rotate a <em>certain angle</em>, draw another line.
+									But with each repetition, you add this <em>certain angle</em>, accumulating it. In the end you have a approximation
+									of an <a href="https://en.wikipedia.org/wiki/Euler_spiral" title="Wikipedia's article.">Euler Spiral</a>. And, if you
+									choose the right angle you can have a Euler Spiral made of little Euler Spirals:
+								</p>
+
+								<img loading="lazy" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
+								that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
+								spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Fourier series</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/fourier/fourier.gif" alt="A GIF showing three circles on the left side, one revolving
+									on the circumference of the other, with a red dot revolving on the last smaller circle while drawing a
+									waving graph in the right side."/>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Circles around circles around circles...</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
+							<div class="modal-content">
+								<h3 id="fourierSeriesTitle">Fourier series</h3>
+
+								<p>
+									The Fourier series it's a way of using sine and cosine functions that can approximate other
+									functions when summed, a bit like the <a href="https://en.wikipedia.org/wiki/Taylor_series">Taylor series</a>,
+									which many learn in the Calculus course in university.
+								</p>
+
+								<p>
+									A very famous example on the internet are GIFs that show the Fourier series being used to express a square wave
+									from sin functions. They beautifully represent the sines functions being added as circles that rotate around themselves,
+									with different frequencies. So I tried to do the same, but interactively, with the help of
+									<a href="https://youtu.be/Mm2eYfj0SgA">Coding Train's video</a>.
+								</p>
+
+								<p>
+									You can click the button below if you want to play with the visualization. Just be careful with the amount of circles you add
+									if you are not in a "powerful" computer. I wouldn't recommend above 1000.
+								</p>
+
+								<button class="code-button colorful play-button">Play it</button>
+								<div id="fourierCanvas" class="interactiveCode"></div>
+								<button class="code-button colorful stop-button" style="display: none;">Stop</button>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+				</div>
+
+				<h3>Other Projects</h3>
+				<div class="columns c-3">
+					<div>
+						<h4>Ray Tracer</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/ray-tracer/ray-tracer.gif" alt="A GIF of five images alternating: 3 colored
 									spheres on reflective black square, a donut in space that reflects 100% of its surrounding, a
 									mirrored Stanford dragon sitting in an open green field, two mirrored spheres floating in the
 									same field and a tilted green Utah teapot above a square mirror reflecting the blue sky of the
 									same field."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>3D ray tracer that can create photorealistic images.</p>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>3D ray tracer that can create photorealistic images.</p>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
-									<div class="modal-content">
-										<h3 id="rayTracerTitle">Ray Tracer</h3>
-										<p>
-											This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a>
-											throughout the course of Computer Graphics, taught by professor
-											<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>.
-											It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.
-										</p>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
+							<div class="modal-content">
+								<h3 id="rayTracerTitle">Ray Tracer</h3>
+								<p>
+									This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a>
+									throughout the course of Computer Graphics, taught by professor
+									<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>.
+									It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.
+								</p>
 
-										<p>
-											Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired.
-											It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot
-											at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected,
-												refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em>
-											of the image, defining its final color.
-										</p>
+								<p>
+									Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired.
+									It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot
+									at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected,
+									refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em>
+									of the image, defining its final color.
+								</p>
 
-										<p>
-											Doing this project was challenging because of its size. We had to take into account the <em>camera</em>,
-											<em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different
-											<em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very
-											rewarding because at each step we could <em>see</em> the result of what we had done at that point.
-										</p>
+								<p>
+									Doing this project was challenging because of its size. We had to take into account the <em>camera</em>,
+									<em>objects</em> and their <em>interactions with rays</em>, different <em>types of lights</em>, different
+									<em>light models</em>, parsing <em>XML files</em> and <em>.obj files</em>... At the same time it was very
+									rewarding because at each step we could <em>see</em> the result of what we had done at that point.
+								</p>
 
-										<p>
-											In the end, we couldn't believe the images that our own program made! The (optional) spherical background
-											made the reflective surfaces much more interesting!
-										</p>
+								<p>
+									In the end, we couldn't believe the images that our own program made! The (optional) spherical background
+									made the reflective surfaces much more interesting!
+								</p>
 
-										<img loading="lazy" src="media/miniatures/ray-tracer/ray-tracer.gif" alt="A GIF of five images alternating: 3 colored
+								<img loading="lazy" src="media/miniatures/ray-tracer/ray-tracer.gif" alt="A GIF of five images alternating: 3 colored
 										spheres on reflective black square, a donut in space that reflects 100% of its surrounding, a
 										mirrored Stanford dragon sitting in an open green field, two mirrored spheres floating in the
 										same field and a tilted green Utah teapot above a square mirror reflecting the blue sky of the
 										same field."/>
 
-										<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
 
-							<div>
-								<h4>Drawing Project</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/drawing-project/drawing-project.gif" alt="A GIF of five images alternating: white
+					<div>
+						<h4>Drawing Project</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/drawing-project/drawing-project.gif" alt="A GIF of five images alternating: white
 									geometric drawings on a black background."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
-									<div class="modal-content">
-										<h3 id="drawingProjectTitle">Drawing Project</h3>
-										<p>
-											This was the final project of the course Introduction to Programming Techniques, taught by professor
-											Gustavo Girão in my second period. It was made by me and my friend
-											<a href="https://github.com/artursantiago">Artur Santiago</a> in the C programming language.
-										</p>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+							<div class="modal-content">
+								<h3 id="drawingProjectTitle">Drawing Project</h3>
+								<p>
+									This was the final project of the course Introduction to Programming Techniques, taught by professor
+									Gustavo Girão in my second period. It was made by me and my friend
+									<a href="https://github.com/artursantiago">Artur Santiago</a> in the C programming language.
+								</p>
 
-										<p>
-											It's about drawing raster images in the PPM format with commands in a textfile. This is what it can draw:
-										</p>
+								<p>
+									It's about drawing raster images in the PPM format with commands in a textfile. This is what it can draw:
+								</p>
 
-										<ul>
-											<li>Lines;</li>
-											<li>Circles;</li>
-											<li>Rectangles;</li>
-											<li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves;</a></li>
-											<li>Random Bézier curves!;</li>
-											<li>Regular polygons;</li>
-											<li>Fill tool.</li>
-										</ul>
+								<ul>
+									<li>Lines;</li>
+									<li>Circles;</li>
+									<li>Rectangles;</li>
+									<li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Bézier curves;</a></li>
+									<li>Random Bézier curves!;</li>
+									<li>Regular polygons;</li>
+									<li>Fill tool.</li>
+								</ul>
 
-										<p>
-											I was amazed by how drawing lines in a computer screen was more complex than I thought. This was the first "big" project
-											that I participated and it was a great learning experience about planning, implementing and organizing a project in group.
-										</p>
+								<p>
+									I was amazed by how drawing lines in a computer screen was more complex than I thought. This was the first "big" project
+									that I participated and it was a great learning experience about planning, implementing and organizing a project in group.
+								</p>
 
 
 
-										<img loading="lazy" src="media/miniatures/drawing-project/drawing-project.gif" alt="A GIF showing 5 images of white
+								<img loading="lazy" src="media/miniatures/drawing-project/drawing-project.gif" alt="A GIF showing 5 images of white
 										geometric drawings on a black background."/>
-										<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
-						
-							<div>
-								<h4>Som Imaginário</h4>
-								<div class="project-container">
-									<img loading="lazy" src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Som Imaginário</h4>
+						<div class="project-container">
+							<img loading="lazy" src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
 									diagram of an electronic project with an arduino, two sound sensors, a lcd screen, a motor and
 									a potentiometer."/>
-									<button class="container-cover" type="button">Learn <br> more</button>
-								</div>
-								<p>Educational project about sound and how humans perceive its origin in space.</p>
+							<button class="container-cover" type="button">Learn <br> more</button>
+						</div>
+						<p>Educational project about sound and how humans perceive its origin in space.</p>
 
-								<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
-									<div class="modal-content">
-										<h3 id="somImaginarioTitle">Som Imaginário</h3>
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+							<div class="modal-content">
+								<h3 id="somImaginarioTitle">Som Imaginário</h3>
 
-										<p>
-											This was the final project of the Embedded Systems course taught by Professor
-											<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.
-										</p>
+								<p>
+									This was the final project of the Embedded Systems course taught by Professor
+									<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.
+								</p>
 
-										<p>
-											It's an electronic education about the physics of sound and how humans can perceive its origin. It is intended for
-											primary and secondary school classrooms. The device, made with Arduino, two sound sensors, an LCD display,
-											a potentiometer and one stepper motor can indicate the origin of loud sounds, by measuring the difference in
-											the time it takes for the sound to reach each sensor.
-										</p>
+								<p>
+									It's an electronic education about the physics of sound and how humans can perceive its origin. It is intended for
+									primary and secondary school classrooms. The device, made with Arduino, two sound sensors, an LCD display,
+									a potentiometer and one stepper motor can indicate the origin of loud sounds, by measuring the difference in
+									the time it takes for the sound to reach each sensor.
+								</p>
 
-										<img loading="lazy" src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
+								<img loading="lazy" src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
 										diagram of an electronic project with an arduino, two sound sensors, a lcd screen, a motor and
 										a potentiometer."/>
 
-										<p>
-											One of the game modes involves someone clapping their hands while the device tries to point to their location. Since
-											the device only has 2 sound sensors, it can point to the opposite location of a particular sound. This can lead to
-											discussions about why the device behave likes that and how it knows where to point to.
-										</p>
+								<p>
+									One of the game modes involves someone clapping their hands while the device tries to point to their location. Since
+									the device only has 2 sound sensors, it can point to the opposite location of a particular sound. This can lead to
+									discussions about why the device behave likes that and how it knows where to point to.
+								</p>
 
-										<p>
-											I was inspired by a <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">video from the Smarter Every Day YouTube channel</a>,
-											as well as a <a href="https://youtu.be/CqB95rj_txI">video from Steve Mould's channel</a>.
-										</p>
+								<p>
+									I was inspired by a <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">video from the Smarter Every Day YouTube channel</a>,
+									as well as a <a href="https://youtu.be/CqB95rj_txI">video from Steve Mould's channel</a>.
+								</p>
 
-										<p>The game also involved a mobile app that I couldn't implement in time. Below there are some screens that I prototyped:</p>
+								<p>The game also involved a mobile app that I couldn't implement in time. Below there are some screens that I prototyped:</p>
 
-										<figure>
-											<img loading="lazy" src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt=""/>
-											<figcaption>
-												Three screens of the Som Imaginário app, written in portuguese: the first one with a button that takes to the
-												"about" section (third screen) and other that opens a modal for choosing one of the two game modes (second screen).
-											</figcaption>
-										</figure>
+								<figure>
+									<img loading="lazy" src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt=""/>
+									<figcaption>
+										Three screens of the Som Imaginário app, written in portuguese: the first one with a button that takes to the
+										"about" section (third screen) and other that opens a modal for choosing one of the two game modes (second screen).
+									</figcaption>
+								</figure>
 
-										<p>
-											PS The name of the project it's a reference to a <a href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
-											title="Matança do Porco Album" aria-label="Matança do Porco Album">brazilian band from the 70's</a>.
-										</p>
+								<p>
+									PS The name of the project it's a reference to a <a href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
+																						title="Matança do Porco Album" aria-label="Matança do Porco Album">brazilian band from the 70's</a>.
+								</p>
 
 
 
-										<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
 
-									</div>
-									<button type="button" class="close" aria-label="Close" title="Close"></button>
-								</dialog>
-							</div>	
-						</div>
+							</div>
+							<button type="button" class="close" aria-label="Close" title="Close"></button>
+						</dialog>
 					</div>
 				</div>
 

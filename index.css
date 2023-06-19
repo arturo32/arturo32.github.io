@@ -254,7 +254,8 @@ section {
 	display: flex;
 }
 
-.project-container img {
+.project-container img,
+.project-container video {
 	position: relative;
 	z-index: 3;
 }
@@ -280,7 +281,8 @@ section {
 	letter-spacing: 0.5rem;
 }
 
-.project-container img:hover {
+.project-container img:hover,
+.project-container video:hover {
 	z-index: 1;
 }
 
@@ -298,7 +300,8 @@ section {
 	margin: 0;
 }
 
-#blender div.image-container img {
+#blender div.image-container img,
+#blender div.image-container video {
 	height: 100% !important;
 }
 
@@ -349,7 +352,8 @@ dialog::backdrop {
 	margin-top: 0;
 }
 
-dialog.project-details img {
+dialog.project-details img,
+dialog.project-details video {
 	width: 300px;
 	margin: 1rem;
 }
@@ -360,7 +364,8 @@ dialog.project-details figure {
 	margin: 1rem 0;
 }
 
-dialog.project-details figure img {
+dialog.project-details figure img,
+dialog.project-details figure video {
 	margin: 0 !important;
 }
 
@@ -464,7 +469,8 @@ dialog.project-details p {
 	line-height: 1rem;
 }
 
-.columns img {
+.columns img,
+.columns video {
 	width: 100%;
 	border-radius: 25px;
 }
@@ -680,7 +686,8 @@ a:focus {
 		font-size: 0.9rem;
 	}
 
-	#projectsSection .modal-content img {
+	#projectsSection .modal-content img,
+	#projectsSection .modal-content video {
 		width: 100% !important;
 		margin: 1rem 0;
 		margin-bottom: 0;

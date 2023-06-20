@@ -358,6 +358,60 @@ dialog.project-details video {
 	margin: 1rem;
 }
 
+.media-with-description {
+	margin: 1rem 0;
+}
+
+.gif-with-toggle {
+	display: inline-block;
+	margin: 0;
+}
+
+svg.triangle {
+	width: 0.6875em;
+	height: 0.6875em;
+	display: inline;
+	fill: black;
+	flex-shrink: 0;
+	backface-visibility: hidden;
+	transition: transform 200ms ease-out 0s;
+	transform: rotateZ(90deg);
+}
+
+.collapseButton:hover svg.triangle,
+.collapseButton:focus-visible svg.triangle {
+	fill: var(--YELLOW);
+}
+
+svg.triangle.open {
+	transform: rotateZ(180deg);
+}
+
+.collapseButton {
+	background: none;
+	border: none;
+	font-size: 0.8rem;
+	display: block;
+}
+
+dialog.project-details p.gif-description {
+	font-size: 0.8rem;
+	border: 1px black solid;
+	padding: 0.3rem 0.5rem;
+	width: 80%;
+	margin: auto;
+	display: none;
+}
+
+dialog.project-details p.gif-description.open {
+	display: block;
+}
+
+dialog.project-details .gif-with-toggle img,
+dialog.project-details .gif-with-toggle video {
+	margin: 0;
+}
+
 
 dialog.project-details figure {
 	display: inline-block;
@@ -642,7 +696,7 @@ a:focus {
 		font-size: 2.7rem;
 	}
 
-	button,
+	button:not(.collapseButton),
 	a,
 	#indexSection a, 
 	a.code-button {

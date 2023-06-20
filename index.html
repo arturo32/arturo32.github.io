@@ -297,7 +297,7 @@
 									had to do a project about making collective art while connecting different artists through letters!
 								</p>
 
-								<img  class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Image of the first page of the site."/>
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Image of the first page of the site."/>
 
 								<p>
 									She designed the entire site beforehand and decided to use the Tumblr platform to host it (which was
@@ -311,7 +311,7 @@
 									icon that transformed itself in a close button and I really wanted to try with pure CSS. It worked, as you can see below.
 								</p>
 
-								<img  src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp" alt="A GIF showing the mobile version of the site with a menu
+								<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp" alt="A GIF showing the mobile version of the site with a menu
 							button with two parallel lines that cross each other forming an X when clicked. The action brings up the hidden menu drawer."/>
 
 								<p>
@@ -357,7 +357,7 @@
 									for displaying mathematical equations written in \( \LaTeX\) which is also accessible to screen reader users.
 								</p>
 
-								<img  class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="A print-screen of the initial page of this site."/>
+								<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="A print-screen of the initial page of this site."/>
 								<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
 							</div>
 							<button type="button" class="close" aria-label="Close" title="Close"></button>
@@ -402,7 +402,24 @@
 									(Phong Shading).
 								</p>
 
-								<img  src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green and each edge interpolates between these colors. The circle changes colors while moving."/>
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="Triangle lerp GIF"/>
+										<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="triangleLerpDescription" class="gif-description">
+										A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with
+										edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green
+										and each edge interpolates between these colors. The circle changes colors while moving.
+									</p>
+								</div>
+
+
 
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
 
@@ -431,7 +448,7 @@
 									and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
 									to 0 and 7 connects to 2. We can called it the <em>2 time table module 12</em>:
 								</p>
-								<img  src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
+								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
 								green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
 								symmetrical about the horizontal axis."/>
 
@@ -440,27 +457,39 @@
 									numbers, i.e., change the module, a cardioid starts to appear in the 2 times table:
 								</p>
 
-								<video autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
-<!--								A 2-second GIF showing a circle with many green lines connecting-->
-<!--								different sides of its circumference. The number of these lines increases rapidly, forming an image of what-->
-<!--								appears to be a heart from the side (a cardioid).-->
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
+										<button id="timesTableDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="timesTableDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="timesTableDescription" class="gif-description">
+										A 2-second GIF showing a circle with many green lines connecting
+										different sides of its circumference. The number of these lines increases rapidly, forming an image of what
+										appears to be a heart from the side (a cardioid).
+									</p>
+								</div>
 
 								<p>
 									And when you choose bigger numbers to represent their times table, intriguing patterns starts to appear:
 								</p>
 
 								<figure>
-									<img  src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
+									<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
 									each other forming small rectangles."/>
 									<figcaption>38 times table with 78 numbers.</figcaption>
 								</figure>
 								<figure>
-									<img  src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
+									<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
 									each other forming a small cardioid in the center with lots of random lines surrounding it."/>
 									<figcaption>65 times table with 191 numbers.</figcaption>
 								</figure>
 								<figure>
-									<img  src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
+									<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
 									each other forming a beautiful pattern with radial symmetry."/>
 									<figcaption>17 times table with 288 numbers.</figcaption>
 								</figure>
@@ -526,7 +555,23 @@
 									GIF below. I use the sin function to map the colors blue and red to their rotation.
 								</p>
 
-								<img  src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="Vector field GIF"/>
+										<button id="perlinNoiseVectorFieldDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="perlinNoiseVectorFieldDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="perlinNoiseVectorFieldDescription" class="gif-description">
+										A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation.
+										They move in a synchronized but organic way.
+									</p>
+								</div>
+
+
 
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
 
@@ -539,9 +584,7 @@
 					<div>
 						<h4>Light and shadow</h4>
 						<div class="project-container">
-							<img  src="media/miniatures/light-and-shadow/light-and-shadow.gif" alt="A GIF showing a black background with a small square and
-							an abstract shape, both drawn with thin red lines. A cursor appears and moves around the scene, with numerous
-							white rays emanating from it and being intercepted by the boundaries of the geometric objects."/>
+							<video autoplay loop muted src="media/miniatures/light-and-shadow/light-and-shadow.mp4"></video>
 							<button class="container-cover" type="button">Learn <br> more</button>
 						</div>
 						<p>Lines and their interceptions with the environment.</p>
@@ -554,9 +597,24 @@
 									It is all about how you can simulate light and its shadows for games. I had followed just half of the tutorial.
 									Ah, I also have done this... thing:
 								</p>
-								<img  src="media/miniatures/light-and-shadow/third-eye.gif" alt="The GIF starts with two geometrically drawn eyes on a black
-								background. Their pupils radiate several white lines as they move outside the eyes toward the center
-								above them. When they converge, another eye is drawn around them.">
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img loading="lazy" src="media/miniatures/light-and-shadow/third-eye.gif" alt="Third eye GIF">
+										<button id="thirdEyeDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="thirdEyeDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="thirdEyeDescription" class="gif-description">
+										The GIF starts with two geometrically drawn eyes on a black background. Their pupils radiate
+										several white lines as they move outside the eyes toward the center above them. When they
+										converge, another eye is drawn around them.
+									</p>
+								</div>
+
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
 
 							</div>
@@ -568,7 +626,7 @@
 					<div>
 						<h4>Julia sets</h4>
 						<div class="project-container">
-							<img  src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+							<video autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
 							<button class="container-cover" type="button">Learn <br> more</button>
 						</div>
 
@@ -584,7 +642,7 @@
 								</p>
 
 								<figure role="group">
-									<img  src="media/miniatures/julia-set/mandelbrot.png" alt="An almost entirely black image with a white bordered structure
+									<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png" alt="An almost entirely black image with a white bordered structure
 									composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each
 									other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a
 									fractal manner."/>
@@ -622,7 +680,7 @@
 								</p>
 
 								<figure role="group">
-									<img  src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
+									<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
 									that resembles a worm in a z format." class="full-image"/>
 									<figcaption>
 										See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
@@ -636,9 +694,22 @@
 									washed out.
 								</p>
 
-								<img  src="media/miniatures/julia-set/julia.gif" alt="A GIF of a colorful rectangle with a black circle inside. Its
-								colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle
-								morphs drastically, with opposite sides of the circle merging in a psychedelic way."/>
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
+										<button id="juliaSetDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="juliaSetDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="juliaSetDescription" class="gif-description">
+										A GIF of a colorful rectangle with a black circle inside. Its
+										colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle
+										morphs drastically, with opposite sides of the circle merging in a psychedelic way.
+									</p>
+								</div>
 
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
 
@@ -669,9 +740,23 @@
 									choose the right angle you can have a Euler Spiral made of little Euler Spirals:
 								</p>
 
-								<img  src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
-								that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
-								spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img  src="media/miniatures/spirals/spirals.gif" alt="Spiral GIF"/>
+										<button id="spiralsDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="spiralsDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="spiralsDescription" class="gif-description">
+										A GIF showing a spiral a white spiral in a black square background
+										that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
+										spiraling inwards clockwise. The same pattern is found along the spiral line, smaller.
+									</p>
+								</div>
+
 
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
 
@@ -764,17 +849,24 @@
 									made the reflective surfaces much more interesting!
 								</p>
 
-								<figure role="group">
-									<video autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
-<!--									<figcaption>-->
-<!--										A GIF of five images alternating: 3 colored-->
-<!--										spheres on reflective black square, a donut in space that reflects 100% of its surrounding, a-->
-<!--										mirrored Stanford dragon sitting in an open green field, two mirrored spheres floating in the-->
-<!--										same field and a tilted green Utah teapot above a square mirror reflecting the blue sky of the-->
-<!--										same field.-->
-<!--									</figcaption>-->
-								</figure>
-
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
+										<button id="rayTracerDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="rayTracerDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="rayTracerDescription" class="gif-description">
+										A GIF of five images alternating: 3 colored
+										spheres on reflective black square, a donut in space that reflects 100% of its surrounding, a
+										mirrored Stanford dragon sitting in an open green field, two mirrored spheres floating in the
+										same field and a tilted green Utah teapot above a square mirror reflecting the blue sky of the
+										same field.
+									</p>
+								</div>
 
 								<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
 
@@ -819,10 +911,21 @@
 									that I participated and it was a great learning experience about planning, implementing and organizing a project in group.
 								</p>
 
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
+										<button id="drawingProjectDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="drawingProjectDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="drawingProjectDescription" class="gif-description">
+										A GIF showing 5 images of white geometric drawings on a black background.
+									</p>
+								</div>
 
-
-								<video autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
-<!--								A GIF showing 5 images of white geometric drawings on a black background.-->
 								<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
 
 							</div>
@@ -833,9 +936,7 @@
 					<div>
 						<h4>Som Imaginário</h4>
 						<div class="project-container">
-							<img  src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
-									diagram of an electronic project with an arduino, two sound sensors, a lcd screen, a motor and
-									a potentiometer."/>
+							<video autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
 							<button class="container-cover" type="button">Learn <br> more</button>
 						</div>
 						<p>Educational project about sound and how humans perceive its origin in space.</p>
@@ -856,9 +957,23 @@
 									the time it takes for the sound to reach each sensor.
 								</p>
 
-								<img  src="media/miniatures/som-imaginario/som-imaginario.gif" alt="A GIF of five images alternating: one is a
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
+										<button id="somImaginarioDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="somImaginarioDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											GIF description
+										</button>
+									</div>
+									<p id="somImaginarioDescription" class="gif-description">
+										A GIF of five images alternating: one is a
 										diagram of an electronic project with an arduino, two sound sensors, a lcd screen, a motor and
-										a potentiometer."/>
+										a potentiometer.
+									</p>
+								</div>
+
 
 								<p>
 									One of the game modes involves someone clapping their hands while the device tries to point to their location. Since
@@ -1131,6 +1246,20 @@
 	</script>
 
 
+	<!--	Toggle GIF's descriptions-->
+	<script>
+		const collapseButtons = document.getElementsByClassName("collapseButton");
+		for(let button of collapseButtons) {
+			button.addEventListener('click', function () {
+				const descriptionId = button.id.substring(0, button.id.indexOf("Toggle"));
+				const description = document.getElementById(descriptionId);
+				const triangle = button.querySelector("svg.triangle");
+				triangle.classList.toggle("open");
+				description.classList.toggle("open");
+				button.setAttribute("aria-expanded", (!(button.getAttribute("aria-expanded") === 'true')).toString());
+			});
+		}
+	</script>
 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

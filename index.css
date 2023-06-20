@@ -435,7 +435,7 @@ dialog.project-details p {
 }
 
 /* The Close Button */
-.close {
+dialog .close {
 	background: none;
 	border: none;
 	position: absolute;
@@ -446,8 +446,8 @@ dialog.project-details p {
 	padding: 0;
 }
 
-.close:before,
-.close:after {
+dialog .close:before,
+dialog .close:after {
 	content: '';
 	position: absolute;
 	width: 2rem;
@@ -457,25 +457,25 @@ dialog.project-details p {
 	box-shadow:0 0 2px 0 #ccc;
 }
 
-.close:before {
+dialog .close:before {
 	transform: rotate(45deg);
 	left: 0;
 }
 
-.close:after {
+dialog .close:after {
 	transform: rotate(-45deg);
 	right: 0;
 }
 
-.close:hover,
-.close:focus {
+dialog .close:hover,
+dialog .close:focus {
 	cursor: pointer;
 }
 
-.close:hover:after,
-.close:hover:before,
-.close:focus:after,
-.close:focus:before {
+dialog .close:hover:after,
+dialog .close:hover:before,
+dialog .close:focus:after,
+dialog .close:focus:before {
 	background-color: #000;
 }
 
@@ -696,11 +696,15 @@ a:focus {
 		font-size: 2.7rem;
 	}
 
-	button:not(.collapseButton),
+	button,
 	a,
 	#indexSection a, 
 	a.code-button {
 		width: 100%;
+	}
+
+	button.collapseButton {
+		width: auto;
 	}
 
 
@@ -776,16 +780,16 @@ a:focus {
 		padding-left: 1rem;
 	}
 
-	.close:before,
-	.close:after {
-		width: 1.5rem;
+	dialog .close:before,
+	dialog .close:after {
+		width: 1.5rem !important;
 	}
 
-	.close:before {
+	dialog .close:before {
 		transform: translate(0.25rem) rotate(45deg);
 	}
 
-	.close:after {
+	dialog .close:after {
 		transform: translate(-0.25rem) rotate(-45deg);
 	}
 

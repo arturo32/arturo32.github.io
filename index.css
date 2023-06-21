@@ -575,7 +575,8 @@ a {
 	box-sizing: border-box;
 }
 
-img.full-image {
+img.full-image,
+video.full-image {
 	width: 100% !important;
 }
 

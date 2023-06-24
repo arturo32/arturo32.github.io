@@ -258,6 +258,7 @@ section {
 .project-container video {
 	position: relative;
 	z-index: 3;
+	tab-index: -1;
 }
 
 .container-cover {

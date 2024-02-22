@@ -501,40 +501,41 @@
 
 			</div>
 
-			<h3>Visual Math</h3>
+			<h3>Matemática Visual</h3>
 			<div class="columns c-3">
 
 				<div id="triagleLerp">
-					<h4>Triangle lerp</h4>
+					<h4>Interpolação triangular</h4>
 
 					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle
-							moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a
-							different color: red, blue and green and each edge interpolates between these colors. The circle changes colors
-							while moving."/>
+						<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif"
+							 alt="GIF de um círculo movendo dentro de um triângulo."/>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Linear interpolation but with areas! In a triangle!</p>
+					<p>Interpolação linear, mas com áreas! Em um triângulo!</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
 						<div class="modal-content">
 							<h3 id="triagleLerpTitle">Triangle Lerp</h3>
 
 							<p>
-								This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter
-								thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation
-								for the Drawing Project, but I had never heard of interpolating between three points at the time.
+								Este eu peguei de um
+								<a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">fio do
+								Twitter</a> de <a href="https://acegikmo.com/">Freya Holmér</a>. Eu já conhecia o
+								conceito de interpolação linear do Projeto de Desenho Gráfico, mas não tinha conhecimento
+								de interpolação entre três pontos ao mesmo tempo.
 							</p>
 
 							<p>
-								As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have
-								to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage
-								of that area relative to the total area of the larger triangle.
+								Como Freya diz em seu fio, para calcular a influência de cada vértice do triângulo em um
+								ponto arbitrário dentro dele, é necessário calcular a <em>área</em> do triângulo interno
+								<em>oposto</em> à esse ponto. Então, a porcentagem dessa área em relação à área total é
+								calculada.
 							</p>
 
 							<p>
-								A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes
-								(Phong Shading).
+								Uma técnica similar foi utilizada no projeto de Ray Tracer para que superfícies pareçam
+								mais suaves em malhas de triângulos (Phong Shading).
 							</p>
 
 							<div class="media-with-description">
@@ -548,9 +549,10 @@
 									</button>
 								</div>
 								<p id="triangleLerpDescription" class="gif-description">
-									A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with
-									edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green
-									and each edge interpolates between these colors. The circle changes colors while moving.
+									GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
+									conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
+									e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
+									também interpolam as cores de seus vértices.
 								</p>
 							</div>
 
@@ -565,31 +567,20 @@
 				</div>
 
 				<div>
-					<h4>Times table</h4>
+					<h4>Tabuada</h4>
 					<div class="project-container">
 						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+					<p>Lindos padrões emergem quando números são escritos em um círculo.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
 						<div class="modal-content">
-							<h3 id="timesTableTitle">Times table</h3>
+							<h3 id="timesTableTitle">Tabuada</h3>
 							<p>
-								...times table? That's right! The GIF in the thumbnail is simply a 2 times table, where each point
-								on the circumference is a number and each line connects a number to its double. Thus, 2 connects to
-								4, 3 connects to 6, and so on. In the image below we only have 12 numbers. So, from 6 and beyond we
-								do what's called clock arithmetic, or more precisely, modular arithmetic. 0 is 12, 1 is 13, 2 is 14,
-								and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
-								to 0 and 7 connects to 2. We can called it the <em>2 time table module 12</em>:
-							</p>
-							<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
-								green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
-								symmetrical about the horizontal axis."/>
-
-							<p>
-								I discovered this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a>. When you add more
-								numbers, i.e., change the module, a cardioid starts to appear in the 2 times table:
+								...tabuada? Isso mesmo! O GIF abaixo é apenas a tabuada de 2, onde cada ponto na
+								circunferência é um número e cada linha conecta um número com seu dobro. Então, 2 se
+								conecta com 4, 3 com 6, e por aí vai...
 							</p>
 
 							<div class="media-with-description">
@@ -603,36 +594,61 @@
 									</button>
 								</div>
 								<p id="timesTableDescription" class="gif-description">
-									A 2-second GIF showing a circle with many green lines connecting
-									different sides of its circumference. The number of these lines increases rapidly, forming an image of what
-									appears to be a heart from the side (a cardioid).
+									Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conecntando
+									diferentes pontos em sua circunferência. O número de pontos e linha cresce
+									rapidamente, formando uma imagem que parece um coração de lado (cardioide).
 								</p>
 							</div>
 
 							<p>
-								And when you choose bigger numbers to represent their times table, intriguing patterns starts to appear:
+								A imagem abaixo também é uma tabuada de 2, contudo a quantidade de números que fazem
+								parte não estão loucamente mudando o tempo todo e eles... aparecem escritos! São 12
+								números no total, seguindo a mesma lógica de antes: 2 se conecta com 4, 3 com 6...
+								Do 6 em diante nós fazemos o que é chamado aritmética de relógio ou, mais precisamente,
+								aritmética modular: 0 é 12, 1 é 13, 2 é 14 e assim por diante... Por isso 6 se conecta
+								com 0 e 7 com 2, por exemplo. Nós podemos chamar tudo isso de <em>tabuada de 2 módulo
+								12</em>:
+							</p>
+
+							<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png"
+								 style="width: 500px;" alt="Um círculo com 10 linhas verdes conectando 12 números
+								 escritos em sua circunferência de 0 a 11. Elas formam uma imagem que é simétrica no
+								 eixo horizontal."/>
+
+							<p>
+								Eu descobri isso em um <a href="https://youtu.be/qhbuKbxJsk8">vídeo do canal
+								Mathologer</a>. Quando você adiciona mais números, isto é, altera o módulo, uma figura
+								conhecida na matemática como cardioide começa a aparecer na tabuada de 2, como é
+								possível ver no primeiro GIF.
+							</p>
+
+							<p>
+								E quando você escolher números maiores para representar suas tabuadas, padrões
+								intrigantes começam aparecer:
 							</p>
 
 							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
-									each other forming small rectangles."/>
-								<figcaption>38 times table with 78 numbers.</figcaption>
+								<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png"
+									 alt="Um círculo com diversas linhas verdes cruzando umas as outras formando
+									 pequenos retângulos."/>
+								<figcaption>Tabuada de 38 com 78 números.</figcaption>
 							</figure>
 							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
-									each other forming a small cardioid in the center with lots of random lines surrounding it."/>
-								<figcaption>65 times table with 191 numbers.</figcaption>
+								<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg"
+									 alt="Um círculo com diversas linhas verdes cruzando umas as outras, formando um
+									 pequeno cardioide no centro, com linhas aleatórias em volta dele."/>
+								<figcaption>Tabuada 65 com 191 números.</figcaption>
 							</figure>
 							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
-									each other forming a beautiful pattern with radial symmetry."/>
-								<figcaption>17 times table with 288 numbers.</figcaption>
+								<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg"
+									 alt="Um círculo com várias linhas verdes cruzando umas as outras formando uma lindo
+									 padrão com simetria radial."/>
+								<figcaption>Tabuada de 17 com 288 números.</figcaption>
 							</figure>
 
 
 
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ"
-							   title="Código of the Times Table">Código</a>
+							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Código</a>
 
 						</div>
 						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
@@ -661,33 +677,36 @@
 				<!--							</div>-->
 
 				<div>
-					<h4>Vector field</h4>
+					<h4>Campo vetorial</h4>
 					<div class="project-container">
 						<img aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
 							color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>The beauty of a particular random number generator.</p>
+					<p>A beleza de um certo gerador de números aleatórios.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
 						<div class="modal-content">
-							<h3 id="perlinNoiseTitle">Perlin noise</h3>
+							<h3 id="perlinNoiseTitle">Campo vetorial</h3>
 							<p>
-								I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>,
-								one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his
-								channel on YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, I learned not
-								only about the methods of p5.js but also the math and algorithms behind them.
+								Eu fui introduzido ao p5.js pelos vídeos de <a href="https://shiffman.net/">Daniel
+								Shiffman</a>, um dos diretores do <a href="https://processingfoundation.org/">Processing
+								Foundation</a>. Em seu canal no YouTube,
+								<a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, não só aprendi
+								sobre as funcionalidades do p5.js, como também a matemática e algoritmos por trás delas.
 							</p>
 
 							<p>
-								As explained in the <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">Coding
-								Train playlist</a>, <em>Perlin noise</em> is a random number generator where each number that it outputs is
-								relatively close to the numbers that came before and after it.
+								Como explicado na
+								<a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">playlist
+								do Coding Train</a>, <em>Perlin noise</em> é um gerador de números randômicos onde cada
+								número gerado por ele é relativamente próximo aos números que vem antes e depois dele.
 							</p>
 
 							<p>
-								In my code, I use these values to represent the angle of rotation of each tiny bar, which you can see in the
-								GIF below. I use the sin function to map the colors blue and red to their rotation.
+								No meu código, eu utilizei esses valores para representar o ângulo de rotação de cada
+								traço, como é possível observar no GIF abaixo. Eu também utilizei função seno para mapear
+								as cores azul e vermelho em suas rotações.
 							</p>
 
 							<div class="media-with-description">
@@ -701,8 +720,8 @@
 									</button>
 								</div>
 								<p id="perlinNoiseVectorFieldDescription" class="gif-description">
-									A GIF with over 100 small rotating lines that change color from blue to red depending of their rotation.
-									They move in a synchronized but organic way.
+									GIF com 100 pequenas linhas que giram e mudam de cor dependendo de seus ângulos.
+									Elas se movem de maneira sincrônizada mas orgânica.
 								</p>
 							</div>
 
@@ -717,20 +736,28 @@
 
 
 				<div>
-					<h4>Light and shadow</h4>
+					<h4>Luz e sombra</h4>
 					<div class="project-container">
 						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/light-and-shadow/light-and-shadow.mp4"></video>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Lines and their interceptions with the environment.</p>
+					<p>Linhas e suas interseções com o ambiente.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
 						<div class="modal-content">
-							<h3 id="lightAndShadowTitle">Light and shadow</h3>
+							<h3 id="lightAndShadowTitle">Luz e sombra</h3>
 							<p>
-								This one I got from the <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>.
-								It is all about how you can simulate light and its shadows for games. I had followed just half of the tutorial.
-								Ah, I also have done this... thing:
+								Este eu peguei do <a href="https://ncase.me/sight-and-light/">artigo Sight and Light de
+								Nicky Case</a>. É sobre como você pode simular luz e suas sombras para jogos. Eu segui
+								apenas metade do tutorial e consegui fazer a pequena visualização interativa abaixo:
+							</p>
+
+							<button class="code-button colorful play-button">Começar</button>
+							<div id="lightShadowCanvas" class="interactiveCode"></div>
+							<button class="code-button colorful stop-button" style="display: none;">Parar</button>
+
+							<p>
+								Ah, também fiz... essa coisa:
 							</p>
 
 							<div class="media-with-description">
@@ -744,9 +771,9 @@
 									</button>
 								</div>
 								<p id="thirdEyeDescription" class="gif-description">
-									The GIF starts with two geometrically drawn eyes on a black background. Their pupils radiate
-									several white lines as they move outside the eyes toward the center above them. When they
-									converge, another eye is drawn around them.
+									O GIF começa com dois olhos geométricos em um fundo preto. As suas pupilas radiam
+									várias linhas brancas enquanto se movem para fora dos olho e em direção ao centro
+									acima deles. Quando convergem, outro olho é desenhao em volta deles.
 								</p>
 							</div>
 
@@ -759,20 +786,21 @@
 
 
 				<div>
-					<h4>Julia sets</h4>
+					<h4>Conjuntos de Julia</h4>
 					<div class="project-container">
 						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
 
-					<p>Move your mouse to generate beautiful products of a complex number function.</p>
+					<p>Mova seu mouse para gerar lindos produtos de uma função de números complexos.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
 						<div class="modal-content">
-							<h3 id="juliaSetsTitle">Julia sets</h3>
+							<h3 id="juliaSetsTitle">Conjuntos de Julia</h3>
 
 							<p>
-								The <em>Mandelbrot set</em> is a set of complex numbers that look pretty when plotted in a complex plane
+								O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que
+								is a set of complex numbers that look pretty when plotted in a complex plane
 								like the one below:
 							</p>
 
@@ -932,9 +960,9 @@
 								if you are not in a "powerful" computer. I wouldn't recommend above 1000.
 							</p>
 
-							<button class="code-button colorful play-button">Play it</button>
-							<div id="fourierCanvas" class="interactiveCódigo"></div>
-							<button class="code-button colorful stop-button" style="display: none;">Stop</button>
+							<button class="code-button colorful play-button">Começar</button>
+							<div id="fourierCanvas" class="interactiveCode"></div>
+							<button class="code-button colorful stop-button" style="display: none;">Parar</button>
 
 							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Código</a>
 
@@ -1410,10 +1438,11 @@
 	}
 </script>
 
+<!-- Light and shadow -->
+<script src="p5js/lightShadow.js"></script>
+
 <!-- Fourier -->
-<script src="p5js/fourier.js"></script>
-
-
+<script src="p5js/fourier.js"></script>f
 
 </body>
 </html>

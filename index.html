@@ -521,7 +521,7 @@
 									4, 3 connects to 6, and so on. In the image below we only have 12 numbers. So, from 6 and beyond we
 									do what's called clock arithmetic, or more precisely, modular arithmetic. 0 is 12, 1 is 13, 2 is 14,
 									and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
-									to 0 and 7 connects to 2. We can called it the <em>2 time table module 12</em>:
+									to 0 and 7 connects to 2. We can call it the <em>2 times table module 12</em>:
 								</p>
 								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
 								green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
@@ -611,7 +611,7 @@
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
 							<div class="modal-content">
-								<h3 id="perlinNoiseTitle">Perlin noise</h3>
+								<h3 id="perlinNoiseTitle">Vector field</h3>
 								<p>
 									I was first introduced to p5.js through the videos of <a href="https://shiffman.net/">Daniel Shiffman</a>,
 									one of the directors of <a href="https://processingfoundation.org/">The Processing Foundation</a>. In his
@@ -669,9 +669,15 @@
 								<h3 id="lightAndShadowTitle">Light and shadow</h3>
 								<p>
 									This one I got from the <a href="https://ncase.me/sight-and-light/">Nicky Case's article Sight and Light</a>.
-									It is all about how you can simulate light and its shadows for games. I had followed just half of the tutorial.
-									Ah, I also have done this... thing:
+									It is all about how you can simulate light and its shadows for games. I had followed
+									just half of the tutorial and produced the interaction below:
 								</p>
+
+								<button class="code-button colorful play-button">PLay it</button>
+								<div id="lightShadowCanvas" class="interactiveCode"></div>
+								<button class="code-button colorful stop-button" style="display: none;">Stop</button>
+
+								<p>Ah, I also have done this... thing:</p>
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
@@ -1349,6 +1355,9 @@
 				let frontPageAnimation = new p5(frontPage);
 			}
 		</script>
+
+		<!-- Light and shadow -->
+		<script src="p5js/lightShadow.js"></script>
 
 		<!-- Fourier -->
 		<script src="p5js/fourier.js"></script>

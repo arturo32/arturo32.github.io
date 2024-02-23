@@ -799,62 +799,74 @@
 							<h3 id="juliaSetsTitle">Conjuntos de Julia</h3>
 
 							<p>
-								O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que
-								is a set of complex numbers that look pretty when plotted in a complex plane
-								like the one below:
+								O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que fica bonitinho
+								quando plotado no plano complexo como a figura abaixo:
 							</p>
 
 							<figure role="group">
-								<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png" alt="An almost entirely black image with a white bordered structure
-									composed of two blobs: one in a cardioid format and the other, smaller, more round shape, glued next to each
-									other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a
-									fractal manner."/>
+								<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png"
+									 alt="Uma imagem quase toda preta com uma figura de bordas brancas composta de duas
+									 bolhas: uma em um formato de cardioide e outra menor e mais redonda. Suas bordas se
+									 tocam em um ponto e são seguidas por uma linha fina branca. Essas bolhas parecem se
+									 repetir na borda da estrutura, de maneira fractal."/>
 								<figcaption>
-									See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
+									Veja o <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">código do
+									conjunto Mandelbrot.</a>
 								</figcaption>
 							</figure>
 
-							<p>To generate this is relative simple. It all boils down to the function below:</p>
+							<p>É relativamente simples gerar essa imagem. Tudo se resume a função abaixo:</p>
 
 							<p class="equation">\(f_c(z) = z^2 + c\)</p>
 
-							<p>We will talk about the both complex numbers \(z\) and \(c\) soon. First, we need another pair of numbers:</p>
+							<p>
+								Nos faleremos dos números complexos \(z\) e \(c\) logo. Primeiro, precisamos de outro
+								par de números:
+							</p>
 
 							<ul>
-								<li>A positive number greater than 2. Let's call it the <em>threshold</em>;</li>
-								<li>Another positive number. This time a larger one. This will be our <em>number of iterations</em>.</li>
+								<li>Um número positivo maior que 2. Vamos chamá-lo de <em>limite</em>;</li>
+								<li>
+									Outro número positivo. Dessa vez um grande. Este será nosso <em>número de
+									iterações</em>.
+								</li>
 							</ul>
 
 							<p>
-								Now, we apply our function recursively to <em>each pixel</em> of an image representing the complex plane.
-								We do this by making \(c\) the coordinate of the current pixel and \(z\) starting with the value \(0 + 0i\).
-								As we iterate, \(z\) may or may not grow beyond our <em>threshold</em>. If it gets there before we reach the
-								<em>number of iterations</em>, we stop the recursion and paint the pixel <em>white</em>. If not, we paint it
-								<em>black</em>. That's it!
+								Agora, nós aplicamos nossa função recursivamente em <em>cada píxel</em> da imagem que
+								representa o plano complexo. Nós fazemos isso tornando \(c\) a coordenada do pixel atual
+								e \(z\) começando com o valor \(0 + 0i\). Enquanto iteramos a função em um píxel, \(z\)
+								pode ou não crescer acima de nosso <em>limite</em>. Se isso acontecer antes de
+								alcançarmos o <em>número de iterações</em>, nós paramos a recursão e pintamos o píxel de
+								<em>branco</em>. Se não, pintamos de <em>preto</em>. É isso!
 							</p>
 
 							<p>
-								And <em>Julia sets</em> are almost the same thing, with \(c\) and \(z\) switching places, i.e., \(z\) will
-								represent a pixel coordinate while \(c\) will be... an arbitrary constant! For each \(c\) we choose at the
-								start of our process, we can make entirely different sets. Each of them possessing a unique complexity and
-								beauty. And for making things even prettier we can add a little bit of math magic to the RGB values, changing
-								them by how fast some of the inputs can reach our <em>threshold</em>, like the image below made with
-								\(c = 0 - 0.8i\):
+								E <em>conjuntos de Julia</em> são quase a mesma coisa, com \(c\) e \(z\) trocando de
+								lugar, ou seja, \(z\) irá representar a coordenada do píxel atual enquanto \(c\) irá
+								ser... uma constante arbitrária! Para cada \(c\) que escolhemos no começo do processo,
+								nós podemos fazer uma imagem completamente diferente (um conjunto completamente
+								diferente!). Cada uma possuindo uma complexidade e beleza única. E para tornar as coisas
+								ainda mais bonitas, nós adicionamos uma pequena mágica matemática nos valores RGB dos
+								píxels, mudando eles conforme o quão rápido algumas das entradas alcançam o
+								<em>limite</em>, como na imagem abaixo feita com \(c = 0 - 0.8i\):
 							</p>
 
 							<figure role="group">
-								<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
-									that resembles a worm in a z format." class="full-image"/>
+								<img loading="lazy" src="media/miniatures/julia-set/julia.jpg"
+									 alt="Um conjunto de Julia muito colorido com um forma central preta que lembra uma
+									 minhoca em forma de Z." class="full-image"/>
 								<figcaption>
-									See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
+									Veja o <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">código desse
+									grande conjunto de Julia.</a>
 								</figcaption>
 							</figure>
 
 							<p>
-								Finally, the GIF of the thumbnail of this project was made by changing \(c\) as the coordinates of the cursor.
-								So at each new position of the mouse the function iterated thought all the pixels to render the image for that
-								particular set. To save the processor, I made the function skip some pixels. This is why the colors are a bit
-								washed out.
+								Finalmente, o GIF abaixo foi feito mudando \(c\) de acordo com as coordanadas do mouse.
+								Então, a cada nova posição do mouse, a função itera em todos os píxels para formar a
+								imagem daquele conjunto particular. Para poupar o processador, eu fiz a função pular
+								alguns píxels. Por isso as cores estão um pouco desaturadas.
 							</p>
 
 							<div class="media-with-description">
@@ -868,9 +880,10 @@
 									</button>
 								</div>
 								<p id="juliaSetDescription" class="gif-description">
-									A GIF of a colorful rectangle with a black circle inside. Its
-									colors are very pale pastels from pink to blue to yellow. As the cursor moves, the boundary of the circle
-									morphs drastically, with opposite sides of the circle merging in a psychedelic way.
+									GIF de um retângulo colorido com um círculo negro dentro dele. Suas cores são
+									pastéis bem pálidas que variam entre rosa, azul e amarelo. Assim que o mouse se
+									move, o círculo se transforma drasticamente, com seus lados opostos fundindo em
+									formas psicodélicas.
 								</p>
 							</div>
 
@@ -883,24 +896,29 @@
 
 
 				<div>
-					<h4>Spirals</h4>
+					<h4>Espirais</h4>
 					<div class="project-container">
 						<img aria-hidden="true" tabindex="-1" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
 							that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
 							spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Walk, turn slightly to the right, repeat. Suddenly, you see yourself surrounded by spiral fractals!</p>
+					<p>Ande, gire levemente para direta, repita. De repente, você se vê cercado por fractais espirais!</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
 						<div class="modal-content">
 							<h3 id="spiralsTitle">Spirals</h3>
-							<p>Matt Henderson's thread on Twitter about <a title="Matt Henderson's Twitter thread." href="https://twitter.com/matthen2/status/1249611168265547776?s=20">Euler spirals</a> inspired me in this one.</p>
 							<p>
-								It is really as simple as the description suggests: draw a line, rotate a <em>certain angle</em>, draw another line.
-								But with each repetition, you add this <em>certain angle</em>, accumulating it. In the end you have a approximation
-								of an <a href="https://en.wikipedia.org/wiki/Euler_spiral" title="Wikipedia's article.">Euler Spiral</a>. And, if you
-								choose the right angle you can have a Euler Spiral made of little Euler Spirals:
+								O fio de Matt Henderson no Twitter sobre <a title="fio de Matt Henderson no Twitter."
+								href="https://twitter.com/matthen2/status/1249611168265547776?s=20">espirais de
+								Euler</a> me inspirou nessa animação.</p>
+							<p>
+								É realmente simples como a descrição sugeste: desenhe uma linha, gire a um <em>certo
+								ângulo</em>, desenhe outra linha. Mas a cada repetição, você adicionada esse <em>certo
+								ângulo</em>, acumulando-o. No final você tem uma aproximação de uma
+								<a href="https://en.wikipedia.org/wiki/Euler_spiral" title="Artigo da Wikipidia.">
+									Espiral de Euler</a>. E, se você escolher o ângulo certo, você pode obter uma
+								Espiral de Euler feita de pequnas Espirais de Euler:
 							</p>
 
 							<div class="media-with-description">
@@ -914,9 +932,10 @@
 									</button>
 								</div>
 								<p id="spiralsDescription" class="gif-description">
-									A GIF showing a spiral a white spiral in a black square background
-									that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
-									spiraling inwards clockwise. The same pattern is found along the spiral line, smaller.
+									GIF mostrando uma espiral branca num fundo quadrado escuro que se abre no sentido
+									anti-horário no canto inferior direito, cruza o centro e se fecha no canto superior
+									esquerdo no sentido horário. O mesmo padrão é encontrado ao longo da linha da
+									espiral, em menor escala.
 								</p>
 							</div>
 
@@ -931,33 +950,36 @@
 				<div>
 					<h4>Fourier series</h4>
 					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/fourier/fourier.gif" alt="A GIF showing three circles on the left side, one revolving
-									on the circumference of the other, with a red dot revolving on the last smaller circle while drawing a
-									waving graph in the right side."/>
+						<img aria-hidden="true" tabindex="-1" src="media/miniatures/fourier/fourier.gif"
+							 alt="GIF de 3 círculos girando em torno de si, desenhando um gráfico de onda ao lado."/>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Circles around circles around circles...</p>
+					<p>Círculos ao redor de círculos ao redor de círculos...</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
 						<div class="modal-content">
 							<h3 id="fourierSeriesTitle">Fourier series</h3>
 
+							<!--TODO: trocar links da wikipedia para versão em português!-->
 							<p>
-								The Fourier series it's a way of using sine and cosine functions that can approximate other
-								functions when summed, a bit like the <a href="https://en.wikipedia.org/wiki/Taylor_series">Taylor series</a>,
-								which many learn in the Calculus course in university.
+								A série de Fourier é uma forma de usar as funções seno e cosseno para aproximar outras
+								funções. É um pouco parecido com a
+								<a href="https://en.wikipedia.org/wiki/Taylor_series">série de Taylor</a>, que muitas
+								pessoas aprendem na disciplina de cálculo na universidade.
 							</p>
 
 							<p>
-								A very famous example on the internet are GIFs that show the Fourier series being used to express a square wave
-								from sin functions. They beautifully represent the sines functions being added as circles that rotate around themselves,
-								with different frequencies. So I tried to do the same, but interactively, with the help of
-								<a href="https://youtu.be/Mm2eYfj0SgA">Coding Train's video</a>.
+								Um exemplo muito famoso na internet são GIFs que mostram a série de Fourier sendo usada
+								para expressar ondas quadradas a partir de funções seno. Eles lindamente representam as
+								funções sendo adicionadas como círculos que giram em torno de outros círculos com
+								frequências diferentes. Então eu tentei fazer o mesmo, só que de forma interativa, com a
+								ajuda de um <a href="https://youtu.be/Mm2eYfj0SgA">vídeo do Coding Train</a>.
 							</p>
 
 							<p>
-								You can click the button below if you want to play with the visualization. Just be careful with the amount of circles you add
-								if you are not in a "powerful" computer. I wouldn't recommend above 1000.
+								Você pode clicar no botão abaixo se quiser brincar com a visualização. Apenas tome
+								cuidado com a quantidade círculos adicionados. Eu não iria recomendar algo acima de 1000
+								se não estiver em um computador minimamente "poderoso".
 							</p>
 
 							<button class="code-button colorful play-button">Começar</button>
@@ -972,7 +994,7 @@
 				</div>
 			</div>
 
-			<h3>Other Projects</h3>
+			<h3>Outro projetos</h3>
 			<div class="columns c-3">
 				<div>
 					<h4>Ray Tracer</h4>
@@ -980,24 +1002,26 @@
 						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>3D ray tracer that can create photorealistic images.</p>
+					<p>Ray tracer 3D que consegue criar imagens fotorealísticas.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
 						<div class="modal-content">
 							<h3 id="rayTracerTitle">Ray Tracer</h3>
 							<p>
-								This project was developed by me and my friend <a href="https://github.com/JohnVithor">João Vítor</a>
-								throughout the course of Computer Graphics, taught by professor
-								<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>.
-								It creates images representing 3D scenes described by XML files. All of this using the magic of ray tracing.
+								Este projeto foi desenvolvido por mim e meu amigo
+								<a href="https://github.com/JohnVithor">João Vítor</a> através da disciplina Computação
+								Gráfica, lecionada pelo professor
+								<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan
+									Rodrigues dos Santos</a>. A aplicação desenvolvida cria imagens representando cenas
+								3D descritas por arquivos XML. Tudo isso utilizando a magia do ray tracing.
 							</p>
 
 							<p>
-								Ray tracing is a technique used to create 3D images where <em>photo-realism</em> is desired.
-								It works by <em>simulating</em> photons of <em>light</em> as <em>rays</em> (vectors) that are shot
-								at the scene from the viewer's perspective. The rays then travel through the scene being <em>reflected,
-								refracted or absorbed</em> by objects. All of these interactions are calculated for <em>each pixel</em>
-								of the image, defining its final color.
+								Ray tracing é uma técnica usada para criar imagens onde o <em>foto-realismo</em> é
+								desejado. Ele funciona <em>simulando</em> fótons de <em>luz</em> como <em>raios</em>
+								(vetores) que são lançados na cena da perspectiva da pessoa espectadora. Os raios, então,
+								viajam pela cena sendo <em>refletidos, refratados ou absorvidos</em> por objetos. Todas
+								essas interações são calculadas para cada píxel da imagem, definindo sua cor final.
 							</p>
 
 							<p>

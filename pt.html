@@ -46,8 +46,15 @@
 <body>
 <div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
 <header>
-	<h1>Arturo Fonseca</h1>
+
+	<label for="idiom">idioma:</label>
+	<select id="idiom">
+		<option>português</option>
+		<option>english</option>
+	</select>
+
 </header>
+<h1>Arturo Fonseca</h1>
 <main>
 	<section>
 		<nav id="indexSection" class="subsection">
@@ -84,7 +91,7 @@
 				Eu gosto bastante de aprender coisas novas e torná-las mais acessíveis para pessoas. Essa foi uma das
 				principais motivações por trás <span style="text-decoration: line-through">de um dos meus mais queridos
 				projetos pessoais</span> <em>do meu futuro TCC</em>: um site onde qualquer pessoa consegue visualizar e
-				entender <a href="https://github.com/arturo32/HowPointersWork"> como ponteiros funcionam</a> em
+				entender <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md"> como ponteiros funcionam</a> em
 				linguagens de programação. Ele ainda está em seu desenvolvimento inicial, mas eu estou determinado em
 				acabá-lo esse ano!
 			</p>
@@ -102,10 +109,10 @@
 
 			<div class="section-footer">
 				<p>
-					<a href="https://www.linkedin.com/in/arturo-fonseca/?locale=en_US"><span class="linkedin-icon icon" aria-hidden="true"></span>my LinkeIn</a>
+					<a href="https://www.linkedin.com/in/arturo-fonseca"><span class="linkedin-icon icon" aria-hidden="true"></span>meu LinkeIn</a>
 				</p>
 				<p>
-					<a href="https://github.com/arturo32"><span class="github-icon icon" aria-hidden="true"></span>my GitHub</a>
+					<a href="https://github.com/arturo32"><span class="github-icon icon" aria-hidden="true"></span>meu GitHub</a>
 				</p>
 			</div>
 		</div>
@@ -154,7 +161,7 @@
 
 							<p>Eu falo mais sobre ele na página do projeto abaixo.</p>
 
-							<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Código</a>
+							<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">Código</a>
 
 						</div>
 						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
@@ -301,7 +308,7 @@
 								Para a etapa final desse projeto eu pretendo ler o guia da terceira versão do Vue e
 								utlizá-lo juntamente ao CLI dessa vez. Também vai ser uma preparação para eu continuar o
 								desenvolvimento do projeto
-								<a href="https://github.com/arturo32/HowPointersWork">ComoPonteirosFuncionam</a>.
+								<a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">ComoPonteirosFuncionam</a>.
 							</p>
 							<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Código</a>
 
@@ -916,7 +923,7 @@
 								É realmente simples como a descrição sugeste: desenhe uma linha, gire a um <em>certo
 								ângulo</em>, desenhe outra linha. Mas a cada repetição, você adicionada esse <em>certo
 								ângulo</em>, acumulando-o. No final você tem uma aproximação de uma
-								<a href="https://en.wikipedia.org/wiki/Euler_spiral" title="Artigo da Wikipidia.">
+								<a href="https://pt.wikipedia.org/wiki/Espiral_de_Cornu" title="Artigo da Wikipidia.">
 									Espiral de Euler</a>. E, se você escolher o ângulo certo, você pode obter uma
 								Espiral de Euler feita de pequnas Espirais de Euler:
 							</p>
@@ -964,7 +971,7 @@
 							<p>
 								A série de Fourier é uma forma de usar as funções seno e cosseno para aproximar outras
 								funções. É um pouco parecido com a
-								<a href="https://en.wikipedia.org/wiki/Taylor_series">série de Taylor</a>, que muitas
+								<a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_Taylor">série de Taylor</a>, que muitas
 								pessoas aprendem na disciplina de cálculo na universidade.
 							</p>
 
@@ -1101,8 +1108,15 @@
 							</ul>
 
 							<p>
-								Eu fiquei I was amazed by how drawing lines in a computer screen was more complex than I thought. This was the first "big" project
-								that I participated and it was a great learning experience about planning, implementing and organizing a project in group.
+								Eu me surpreendi pelo fato de que desenhar linhas em um computador é bem mais complexo
+								do que pensava. Píxels vem em quantidades discretas, bem diferente do espaço contínuo
+								de uma folha de papel em nossa realidade, por exemplo. É necessário ter algorítmos
+								espertos que decidam que píxels devem ser "coloridos" o não.
+							</p>
+
+							<p>
+								Este foi o primeiro "grande" projeto que participei e foi uma grande aprendizado sobre
+								planjamento, implementação e organização de um projeto em grupo.
 							</p>
 
 							<div class="media-with-description">
@@ -1116,11 +1130,11 @@
 									</button>
 								</div>
 								<p id="drawingProjectDescription" class="gif-description">
-									A GIF showing 5 images of white geometric drawings on a black background.
+									GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..
 								</p>
 							</div>
 
-							<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Código</a>
+							<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject/blob/master/README(pt-br).md">Código</a>
 
 						</div>
 						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
@@ -1133,22 +1147,24 @@
 						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
-					<p>Educational project about sound and how humans perceive its origin in space.</p>
+					<p>Projeto educacional sobre som e como seres humanos localizam sua origem no espaço.</p>
 
 					<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
 						<div class="modal-content">
 							<h3 id="somImaginarioTitle">Som Imaginário</h3>
 
 							<p>
-								This was the final project of the Embedded Systems course taught by Professor
+								Este foi o projeto final da disciplia de Sistema Embarcados lecionada pela professora
 								<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.
 							</p>
 
 							<p>
-								It's an electronic education about the physics of sound and how humans can perceive its origin. It is intended for
-								primary and secondary school classrooms. The device, made with Arduino, two sound sensors, an LCD display,
-								a potentiometer and one stepper motor can indicate the origin of loud sounds, by measuring the difference in
-								the time it takes for the sound to reach each sensor.
+								Ele é sobre um jogo eletrônico educacional com a intenção de ensinar sobre como
+								ondas sonoras funcionam e como o ser humano consegue captar essas ondas e localizar
+								a origem de um certo som no espaço. É pensando para salas de aula do fundamental e
+								ensino médio. O dispositivo — feito com Arduino, dois sensores de som, um LCD, um
+								potenciômetro e um motor de passo — pode indicar a origem de sons altos e curtos,
+								medindo a diferença de tempo em que o som leva para chegar entre os sensores.
 							</p>
 
 							<div class="media-with-description">
@@ -1162,37 +1178,43 @@
 									</button>
 								</div>
 								<p id="somImaginarioDescription" class="gif-description">
-									A GIF of five images alternating: one is a
-									diagram of an electronic project with an arduino, two sound sensors, a lcd screen, a motor and
-									a potentiometer.
+									GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
+									foto desse dispositivo.
 								</p>
 							</div>
 
 
 							<p>
-								One of the game modes involves someone clapping their hands while the device tries to point to their location. Since
-								the device only has 2 sound sensors, it can point to the opposite location of a particular sound. This can lead to
-								discussions about why the device behave likes that and how it knows where to point to.
+								Um dos dois modos do jogo envolve alguém batendo palmas enquanto o dispositivo tenta
+								apontar para sua localização. Por conta que o dispositivo possui somente 2 sensores de
+								som, ele pode apontar ás vezes para a direção oposta da origem do som. Isso pode levar
+								a discussões sobre o porquê que o dispositvo se comporta dessa maneira e como ele
+								escolhe para onde apontar.
 							</p>
 
 							<p>
-								I was inspired by a <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">video from the Smarter Every Day YouTube channel</a>,
-								as well as a <a href="https://youtu.be/CqB95rj_txI">video from Steve Mould's channel</a>.
+								Fui inspirado por um <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">vídeo do
+								canal do  YouTube Smarter Every Day YouTube</a>, como também por um
+								<a href="https://youtu.be/CqB95rj_txI">vídeo do canal do Steve Mould</a>.
 							</p>
 
-							<p>The game also involved a mobile app that I couldn't implement in time. Below there are some screens that I prototyped:</p>
+							<p>O jogo também contava com um aplicativo de celular que eu não consegui implementar a
+								tempo. Abaixo algumas das telas que prototipei:</p>
 
 							<figure>
-								<img  src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt=""/>
+								<img  src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image"
+									  alt="Três tela do aplicativo Som Imaginário."/>
 								<figcaption>
-									Three screens of the Som Imaginário app, written in portuguese: the first one with a button that takes to the
-									"about" section (third screen) and other that opens a modal for choosing one of the two game modes (second screen).
+									Três telas do aplicativo do Som Imaginário: a primeira com dois botões — um que leva
+									para seção "Sobre" (terceira tela) e outro que abre um modal para escolher uma dos
+									dois modos de jogo (Segunda tela).
 								</figcaption>
 							</figure>
 
 							<p>
-								PS The name of the project it's a reference to a <a href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
-																					title="Matança do Porco Album" aria-label="Matança do Porco Album">brazilian band from the 70's</a>.
+								PS: O nome do projeto faz referência à uma
+								<a href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
+								   title="Matança do Porco Album" aria-label="Matança do Porco Album">banda dos anos 70</a>.
 							</p>
 
 
@@ -1215,39 +1237,43 @@
 			<h3>Origami</h3>
 			<div>
 				<p>
-					Without scissors or glue, intriguing forms can emerge from a flat sheet of paper. I discovered the art of origami when
-					I was 8 years old. Since then, I've learned that I can fold literally everything I can imagine - as in painting, it
-					doesn't have to be realistic - just from creativity, technique and a bit of suggestion. Below are some of my favorite
-					designs that I have had the opportunity to fold:
+					Sem tesoura ou cola, formas intrigantes podem emergir de uma folha de papel plana. Eu descobri a
+					arte do origami quando tinha 8 anos. Desde então, aprendi que posso dobrar tudo que imaginar — como
+					nas pinturas, o realismo não é necessário — utilizando somente criatividade, técnica e um pouco de
+					sugestão. Abaixo estão alguns dos modelos que tive a oportunidade de dobrar:
 				</p>
 
 				<div id="origami">
 					<div class="project-container">
 						<img  src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> by <br/> Román Díaz</div></a>
+						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> por <br/> Román Díaz</div></a>
 					</div>
 					<div class="project-container">
 						<img  src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> by <br/> Jose Anibal Voyer</div></a>
+						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> por <br/> Jose Anibal Voyer</div></a>
 					</div>
 					<div class="project-container">
 						<img  src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> by <br/> Satoshi Kamiya</div></a>
+						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> por <br/> Satoshi Kamiya</div></a>
 					</div>
 					<div class="project-container">
 						<img  src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><div>Clover Folding <br/> by <br/> Shuzo Fujimoto</div></a>
+						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding em uma mini caixa"><div>Clover Folding <br/> por <br/> Shuzo Fujimoto</div></a>
 					</div>
 				</div>
 
-				<p>Checkout my <a href="https://www.instagram.com/arturorigamis/">instagram</a> and <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>!</p>
+				<p>Dê uma olhada no meu <a href="https://www.instagram.com/arturorigamis/">instagram</a> e <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>!</p>
 			</div>
 
 
 
-			<h3>Photography</h3>
+			<h3>Fotografia</h3>
 			<div>
-				<p>It was through photographing my origamis that I began to pay more attention to lighting, composition and photography in general. I've found great pleasure in photographing nature and all its little living things.</p>
+				<p>
+					Foi através da experiência de fotografar meus origamis que eu comecei a prestar atenção em
+					iluminação, composição e fotografia no geral. Encontrei um grande prazer em fotografar a natureza
+					e todas suas pequenas coisas vivas.
+				</p>
 
 				<div id="photography">
 					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título">
@@ -1272,32 +1298,33 @@
 				</div>
 			</div>
 
-			<h3>3D things</h3>
+			<h3>Coisa 3D</h3>
 			<div>
 				<p>So I have followed some tutorials on YouTube of Blender and came up with some images that I would like to share: </p>
 				<div id="blender">
 					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/cup4.jpg" alt="An image of a cup of glass with a lot of little donuts falling inside it."/>
+						<img loading="lazy" src="media/miniatures/blender/cup4.jpg" alt="Imagem de uma xícara de vidro
+						com várias pequenas rosquinhas caindo dentro dela."/>
 						<figcaption class="container-cover">Tea?</figcaption>
 					</figure>
 
 					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/ico-cube.webp" alt="A GIF of little icosaedros forming a cube in a reverse time"/>
+						<img loading="lazy" src="media/miniatures/blender/ico-cube.webp" alt="GIF com tempo reverso de
+						de pequenos icosaedros formando um cubo e caindo em uma quadrado cinza."/>
 						<figcaption class="container-cover">Ico-cube</figcaption>
 					</figure>
 
 					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/donut12.jpg" alt="An image of a donut in a pink background with a pink icing on top with several colorful sprinkles."/>
+						<img loading="lazy" src="media/miniatures/blender/donut12.jpg" alt="Uma imagem de uma rosquinha
+						num fundo rosa e com cobertura rosa cheia de pequenos confeitos coloidos."/>
 						<figcaption class="container-cover">Donut</figcaption>
 					</figure>
 
 					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/sonho5.jpg" alt="Superior view inside a empty structure with three tall windows where the ocean can been seen."/>
+						<img loading="lazy" src="media/miniatures/blender/sonho5.jpg" alt="Vista superior dentro de uma
+						estrutura vazia com três janelas altas onde o oceano pode ser visto."/>
 						<figcaption class="container-cover">Dream</figcaption>
 					</figure>
-
-
-
 
 				</div>
 			</div>
@@ -1473,7 +1500,7 @@
 <script src="p5js/lightShadow.js"></script>
 
 <!-- Fourier -->
-<script src="p5js/fourier.js"></script>f
+<script src="p5js/fourier.js"></script>
 
 </body>
 </html>

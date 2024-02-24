@@ -39,10 +39,16 @@ body {
 }
 
 header {
-	height: var(--header-height);
+	height: calc(var(--header-height)*0.2);
+	justify-content: right;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	padding-right: var(--modal-horizontal-margin);
+	/*text-align: right;*/
+}
+
+#topHeader {
+	width: 100%;
 }
 
 
@@ -51,6 +57,10 @@ h1 {
 	font-size: 3.5rem;
 	letter-spacing: .2rem;
 	margin: 0 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(var(--header-height)*0.8);
 }
 
 h2 {

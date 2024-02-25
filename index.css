@@ -7,7 +7,7 @@
 	--RED: #d42a20;
 	--almost-black: #32302b;
 
-	--header-height: 25vh;
+	--header-height: 30vh;
 	--modal-horizontal-margin: 16vw;
 
 	--c2-column-gap: 12vw
@@ -39,11 +39,11 @@ body {
 }
 
 header {
-	height: calc(var(--header-height)*0.2);
+	height: calc(var(--header-height)*0.3);
 	/*justify-content: right;*/
 	/*display: flex;*/
 	/*align-items: center;*/
-	padding-right: calc(var(--modal-horizontal-margin)/2);
+	padding-right: 8vw;/*calc(var(--modal-horizontal-margin)/2);*/
 	position: relative;
 	text-align: right;
 	vertical-align: center;
@@ -68,7 +68,7 @@ header select {
 	/*text-decoration: underline;*/
 	border-bottom: 1px solid black;
 	border-bottom-color: var(--white-cream);
-
+	margin-right: 2px;
 }
 
 header select:hover,
@@ -81,15 +81,35 @@ select option:hover {
 	cursor: pointer;
 }
 
+.currFlag {
+	position: relative;
+	width: 25px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
 
-select:after {
-	background-image: url("media/br-flag.png");
-	width: 10px;
-	height: 10px;
 }
 
-#ukFlag {
+.currFlag::after {
+	content: "";
+	border-radius: 3px;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 
+}
+
+#ukFlag::after {
+	background-image: url("media/uk-flag.png");
+}
+
+#brFlag::after {
+	background-image: url("media/br-flag.png");
 }
 h1 {
 	color: var(--almost-black);
@@ -183,7 +203,7 @@ section {
 	margin-left: 8vw;
 	margin-right: 8vw;
 	padding-bottom: var(--header-height);
-	min-height: calc(100vh - var(--header-height));
+	/*min-height: calc(100vh - var(--header-height));*/
 	position: relative;
 }
 
@@ -735,13 +755,13 @@ a:focus {
 
 @media(max-width: 900px) {
 	:root {
-		--header-height: 30vh;
+		--header-height: 35vh;
 		--modal-horizontal-margin: 2vw;
 	}
 
-	header {
-		align-items: flex-end;
-	}
+	/*h1 {*/
+	/*	align-items: flex-end;*/
+	/*}*/
 
 	h1 {
 		font-size: 2.7rem;
@@ -760,8 +780,8 @@ a:focus {
 
 
 	section:not(.colorful) {
-		padding-bottom: calc(var(--header-height)/2);
-		padding-top: calc(var(--header-height)/2);
+		padding-bottom: calc(var(--header-height)/4);
+		padding-top: calc(var(--header-height)/4);
 	}
 
 	#indexSection {

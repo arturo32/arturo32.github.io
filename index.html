@@ -46,8 +46,13 @@
 <body>
 	<div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
 	<header>
-		<h1>Arturo Fonseca</h1>
+		<label for="language">language:</label>
+		<select id="language" onchange="window.location.href='pt.html'">
+			<option value="portuguese">português <i id="brFlag"></i></option>
+			<option value="english" selected >english <i id="ukFlag"></i></option>
+		</select>
 	</header>
+	<h1>Arturo Fonseca</h1>
 	<main>
 		<section>
 			<nav id="indexSection" class="subsection">
@@ -1343,8 +1348,7 @@
 		}
 	</script>
 
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 	<!-- P5.JS SCRIPTS -->
 	<script src="p5js/p5.min.js"></script>
@@ -1364,6 +1368,7 @@
 		<script src="p5js/fourier.js"></script>
 
 
-
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

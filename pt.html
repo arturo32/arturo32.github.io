@@ -47,10 +47,10 @@
 <div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
 <header>
 
-	<label for="idiom">idioma:</label>
-	<select id="idiom">
-		<option>português</option>
-		<option>english</option>
+	<label for="language">idioma:</label>
+	<select id="language" onchange="window.location.href='index.html'">
+		<option selected value="portuguese" id="brFlag">português</option>
+		<option value="english">english</option>
 	</select>
 
 </header>
@@ -1231,13 +1231,13 @@
 	</section>
 	<section class="colorful blue" aria-labelledby="othersTitle">
 		<div id="othersSection" class="subsection">
-			<h2 id="others">Others</h2>
+			<h2 id="others">Outros</h2>
 
 
 			<h3>Origami</h3>
 			<div>
 				<p>
-					Sem tesoura ou cola, formas intrigantes podem emergir de uma folha de papel plana. Eu descobri a
+					Sem tesoura ou cola, formas intrigantes podem emergir de uma simples folha de papel. Eu descobri a
 					arte do origami quando tinha 8 anos. Desde então, aprendi que posso dobrar tudo que imaginar — como
 					nas pinturas, o realismo não é necessário — utilizando somente criatividade, técnica e um pouco de
 					sugestão. Abaixo estão alguns dos modelos que tive a oportunidade de dobrar:
@@ -1482,8 +1482,7 @@
 	}
 </script>
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 <!-- P5.JS SCRIPTS -->
 <script src="p5js/p5.min.js"></script>
@@ -1502,5 +1501,8 @@
 <!-- Fourier -->
 <script src="p5js/fourier.js"></script>
 
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

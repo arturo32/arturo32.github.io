@@ -75,7 +75,7 @@ const frontPage = (p) => {
 	function isForbiddenArea(x, y) {
 		const MARGIN = 60;
 
-		let titleElement = p.select('header h1').elt;
+		let titleElement = p.select('h1').elt;
 		let siteTitleHeight = titleElement.offsetHeight + MARGIN*2;
 		let siteTitleWidth = titleElement.offsetWidth + MARGIN*2;
 		let siteTitleX = -MARGIN;

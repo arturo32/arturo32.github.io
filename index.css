@@ -40,18 +40,57 @@ body {
 
 header {
 	height: calc(var(--header-height)*0.2);
-	justify-content: right;
-	display: flex;
-	align-items: center;
-	padding-right: var(--modal-horizontal-margin);
-	/*text-align: right;*/
+	/*justify-content: right;*/
+	/*display: flex;*/
+	/*align-items: center;*/
+	padding-right: calc(var(--modal-horizontal-margin)/2);
+	position: relative;
+	text-align: right;
+	vertical-align: center;
+	line-height: calc(var(--header-height)*0.3);
+	/*font-size: 0.8rem;*/
 }
 
-#topHeader {
-	width: 100%;
+header label,
+header select {
+	font-size: 0.7rem;
+}
+
+header label {
+	margin: 0;
+}
+
+header select {
+	background-color: transparent;
+	border: none;
+	transition: border-bottom-color .3s;
+	animation-timing-function: ease-in-out;
+	/*text-decoration: underline;*/
+	border-bottom: 1px solid black;
+	border-bottom-color: var(--white-cream);
+
+}
+
+header select:hover,
+header select:focus {
+	border-bottom-color: #101010;
+}
+
+select:hover,
+select option:hover {
+	cursor: pointer;
 }
 
 
+select:after {
+	background-image: url("media/br-flag.png");
+	width: 10px;
+	height: 10px;
+}
+
+#ukFlag {
+
+}
 h1 {
 	color: var(--almost-black);
 	font-size: 3.5rem;
@@ -60,7 +99,7 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: calc(var(--header-height)*0.8);
+	height: calc(var(--header-height)*0.7);
 }
 
 h2 {

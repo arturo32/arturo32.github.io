@@ -22,15 +22,15 @@
 
 	<meta content="Arturo Fonseca" property="twitter:title">
 	
-	<meta content="Brazilian IT student interested in web development and computer graphics." property="twitter:description">
+	<meta content="Brazilian CS student interested in web development and computer graphics." property="twitter:description">
 	
 	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="twitter:image">
 
 	<meta content="Arturo Fonseca" property="og:title">
 
-	<meta content="Brazilian IT student interested in web development and computer graphics." property="og:description">
+	<meta content="Brazilian CS student interested in web development and computer graphics." property="og:description">
 
-	<meta name="description" content="Brazilian IT student interested in web development and computer graphics.">
+	<meta name="description" content="Brazilian CS student interested in web development and computer graphics.">
 
 	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="og:image">
 	<!--<meta content="https://arturo32.github.io/media/show.jpg" property="og:image">-->
@@ -71,14 +71,23 @@
 			</nav>
 		</section>
 
+		<script src="p5js/p5.min.js"></script>
+		<!-- Front page animation-->
+		<script src="p5js/front-page.js"></script>
+		<script>
+			if(window.innerWidth > 1000) {
+				let frontPageAnimation = new p5(frontPage);
+			}
+		</script>
+
 		<section class="colorful red" aria-labelledby="aboutTitle">
 			<div id="aboutSection" class="subsection">
 				
 				<h2 id="about">About me</h2>
 				<img  id="myPicture" src="media/miniatures/me.jpg" alt="A photo of me. I have long brown hair, white skin, long and skinny face. The background is a blueish wall of a room. I am wearing a green indian shirt."/>
 				<p>
-					Hello! My name is Arturo Fonseca de Souza. I am a 24 year old IT student at the Universidade Federal do Rio Grande do Norte
-					(Brazil). For the last 2 years I have been working with <em>web development</em> in projects funded by my university,
+					Hello! My name is Arturo Fonseca de Souza. I am a 24 year old Computer Science student at the Universidade Federal do Rio Grande do Norte
+					(Brazil). I have a degree in IT from the same university. For the last 3 years I have been working with <em>web development</em> in projects funded by my university,
 					furthering my knowledge in the <em>backend</em> side as well as the <em>frontend</em>.
 				</p>
 
@@ -679,7 +688,7 @@
 									just half of the tutorial and produced the interaction below:
 								</p>
 
-								<button class="code-button colorful play-button">PLay it</button>
+								<button class="code-button colorful play-button">Play it</button>
 								<div id="lightShadowCanvas" class="interactiveCode"></div>
 								<button class="code-button colorful stop-button" style="display: none;">Stop</button>
 
@@ -1352,15 +1361,6 @@
 
 
 	<!-- P5.JS SCRIPTS -->
-	<script src="p5js/p5.min.js"></script>
-
-		<!-- Front page animation-->
-		<script src="p5js/front-page.js"></script>
-		<script>
-			if(window.innerWidth > 1000) {
-				let frontPageAnimation = new p5(frontPage);
-			}
-		</script>
 
 		<!-- Light and shadow -->
 		<script src="p5js/lightShadow.js"></script>

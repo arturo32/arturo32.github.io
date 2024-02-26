@@ -73,6 +73,16 @@
 		</nav>
 	</section>
 
+	<script src="p5js/p5.min.js"></script>
+
+	<!-- Front page animation-->
+	<script src="p5js/front-page.js"></script>
+	<script>
+		if(window.innerWidth > 1000) {
+			let frontPageAnimation = new p5(frontPage);
+		}
+	</script>
+
 	<section class="colorful red" aria-labelledby="aboutTitle">
 		<div id="aboutSection" class="subsection">
 
@@ -1486,15 +1496,6 @@
 
 
 <!-- P5.JS SCRIPTS -->
-<script src="p5js/p5.min.js"></script>
-
-<!-- Front page animation-->
-<script src="p5js/front-page.js"></script>
-<script>
-	if(window.innerWidth > 1000) {
-		let frontPageAnimation = new p5(frontPage);
-	}
-</script>
 
 <!-- Light and shadow -->
 <script src="p5js/lightShadow.js"></script>

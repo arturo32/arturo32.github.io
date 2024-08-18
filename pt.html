@@ -10,7 +10,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
-	<link rel="manifest" href="media/site.webmanifest">
+	<link rel="manifest" href="site.webmanifest">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -526,8 +526,8 @@
 					<h4>Interpolação triangular</h4>
 
 					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif"
-							 alt="GIF de um círculo movendo dentro de um triângulo."/>
+						<img loading="lazy" aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif"
+							 alt="GIF de um círculo movendo dentro de um triângulo." height="299" width="300"/>
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
 					<p>Interpolação linear, mas com áreas! Em um triângulo!</p>
@@ -558,7 +558,8 @@
 
 							<div class="media-with-description">
 								<div class="gif-with-toggle">
-									<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="Triangle lerp GIF"/>
+									<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif"
+										 alt="GIF interpolação triangular"/>
 									<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
 										<svg viewBox="0 0 100 100" class="triangle">
 											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
@@ -696,9 +697,13 @@
 
 				<div>
 					<h4>Campo vetorial</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
-							color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
+					<div class="project-container" style="height: 50vw;">
+						<picture>
+							<source srcset="media/default.png" />
+							<img loading="lazy" aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif"
+								 alt="GIF de linhas girando de maneira orgânica."/>
+						</picture>
+
 						<button class="container-cover" type="button">Saiba <br> mais</button>
 					</div>
 					<p>A beleza de um certo gerador de números aleatórios.</p>
@@ -729,7 +734,8 @@
 
 							<div class="media-with-description">
 								<div class="gif-with-toggle">
-									<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="Vector field GIF"/>
+									<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif"
+										 alt="GIF de campo vetorial" height="54vw" width="54vw"/>
 									<button id="perlinNoiseVectorFieldDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="perlinNoiseVectorFieldDescription">
 										<svg viewBox="0 0 100 100" class="triangle">
 											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
@@ -739,7 +745,7 @@
 								</div>
 								<p id="perlinNoiseVectorFieldDescription" class="gif-description">
 									GIF com 100 pequenas linhas que giram e mudam de cor dependendo de seus ângulos.
-									Elas se movem de maneira sincrônizada mas orgânica.
+									Elas se movem de maneira sincrônizada, mas orgânica.
 								</p>
 							</div>
 

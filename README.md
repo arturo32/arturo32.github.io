@@ -12,4 +12,8 @@ My portifolio!
 - Update about-me text (I'm 26 now!).
 
 
-static-i18n --allowHtml=true --o=. --outputOther=pt2.html  --outputDefault=pt2.html  --localesPath=locales -l en -i pt src
+### Generate translation
+```bash
+static-i18n --fileFormat=yaml --allowHtml=true --o=. --outputOther=pt2.html  --outputDefault=pt2.html  --localesPath=locales -l en -i pt src
+```
+

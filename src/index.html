@@ -133,7 +133,7 @@
 					<div>
 						<h4 data-t="projects.hpw.title">How Pointers Work</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/how-pointers-work/how-pointers-work.gif" data-attr-t alt-t="projects.hpw.preview" alt="GIF of the website being used."/>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt=""/>
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 
@@ -176,12 +176,7 @@
 					<div>
 						<h4 data-t="projects.ecoleta.title">Ecoleta (React)</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/ecoleta/ecoleta.webp"
-								 data-attr-t
-								 alt-t="projects.ecoleta.preview"
-								 alt="A GIF showing the flow of the site: A landing page, registration of a
-								recycling collection point with a lot of fields like its name, image, address (with a map) and, at the end, what
-								types of material that point accepts."/>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/ecoleta/ecoleta.webp" alt=""/>
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 
@@ -220,59 +215,58 @@
 
 
 					<div>
-						<h4>Converter (Vue.js)</h4>
+						<h4 data-t="projects.converter.title">Converter (Vue.js)</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
-							top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
-							the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
-							with empty fields."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/converter/converter-vue-js.gif" alt=""/>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>Convert monetary values between numerous international currencies!</p>
+						<p data-t="projects.converter.description">Convert monetary values between numerous international currencies!</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
 							<div class="modal-content">
-								<h3 id="converterTitle">Converter (Vue.js)</h3>
-								<p>
+								<h3 id="converterTitle" data-t="projects.converter.title">Converter (Vue.js)</h3>
+								<p data-t="projects.converter.p1">
 									This is one of many small projects that I did while learning for the first time <em>Vue.js</em>, a
 									JavaScript's framework for building frontend interfaces. I did it following a
 									<a href="https://youtu.be/tIEa3MRBpI0">video from Programador BR</a> but soon I got carried away with
 									the reactiveness of the data biding that Vue offer and tried to exploit it as much as I could.
 								</p>
 
-								<img  src="media/miniatures/converter/converter-vue-js.gif" alt="A GIF showing an all white static website with a field at the
+								<img src="media/miniatures/converter/converter-vue-js.gif"
+									 data-attr-t
+									 alt-t="projects.converter.preview"
+									 alt="A GIF showing an all white static website with a field at the
 								top center and 6 squares below it. The top field it's used to choose a base currency and type its value. While typing,
 								the first 3 squares shows the value typed converted to USD, EUR and CAD. The three last squares do the inverted conversion,
 								with empty fields." class="full-image"/>
 
-								<p>
+								<p data-t="projects.converter.p2">
 									In this currency converter you can choose a base currency and type the value that you want to convert from
 									in the top text field. As you type, the value is instantaneously converted to three main different currencies:
 									the US Dollar, Euro and Canadian Dollar. But at each box of these types of currency you can type individual values
 									just for their type. Also, the inversion conversion is available in three more boxes below.
 								</p>
 
-								<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
 
 					<div>
-						<h4>(Re)learning Vue.js</h4>
+						<h4 data-t="projects.relearningVue.title">(Re)learning Vue.js</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
-							yellow rectangles, each with a title and subtitle, some of them with buttons and input fields."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt=""/>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>Back to basics.</p>
+						<p data-t="projects.relearningVue.description">Back to basics.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
 							<div class="modal-content">
-								<h3 id="learningVueTitle">(Re)learning Vue.js</h3>
-								<p>
+								<h3 id="learningVueTitle" data-t="projects.relearningVue.title">(Re)learning Vue.js</h3>
+								<p data-t="projects.relearningVue.p1">
 									After 3 years of my first <em>Vue.js</em> projects, I felt the need to
 									re-learn it from the beginning, starting from the <a href="https://v2.vuejs.org/v2/guide/">Vue 2 guide</a>.
 									After running through the basics (conditional rendering, data biding, computed properties, etc) with a
@@ -281,57 +275,66 @@
 									parts that make possible frontend web development of complex applications.
 								</p>
 
-								<img  src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="An image showing a website with greenish background and 8
-								yellow rectangles, each with a title and subtitle, some of them with buttons and input fields." class="full-image"/>
+								<img  src="media/miniatures/re-learning-vue/re-learning-vue.png"
+									  data-attr-t
+									  alt-t="projects.relearningVue.preview"
+									  alt="An image showing a website with greenish background and 8 
+									  yellow rectangles, each with a title and subtitle, some of them with buttons and input fields." 
+									  class="full-image"/>
 
-								<p>
+								<p data-t="projects.relearningVue.p2">
 									So, using <a title="Creating a Vue.js app using SFC without CLI."
 												 href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/">
 									this guide</a>, I learned how to configure <em>Webpack</em> and <em>Babel</em> for bundling and (trans)compiling all the JS and Vue's files
 									in a way that browsers can understand.
 								</p>
 
-								<p>
+								<p data-t="projects.relearningVue.p3">
 									For the final stage of this project I plan to read the guide of Vue version 3 and use
 									it with the CLI this time. It will be also a preparation for keep going with my
 									<a href="https://github.com/arturo32/HowPointersWork">HowPointersWork</a> project.
 								</p>
-								<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/learning-vue" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
 
 					<div>
-						<h4>First Spring project</h4>
+						<h4 data-t="projects.firstSpringProject.title">First Spring project</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>A school management system made using Java with Spring.</p>
+						<p data-t="projects.description.title">A school management system made using Java with Spring.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="firstSpringProjectTitle">
 							<div class="modal-content">
-								<h3 id="firstSpringProjectTitle">First Spring project</h3>
-								<p>
+								<h3 id="firstSpringProjectTitle" data-t="projects.firstSpringProject.title">First Spring project</h3>
+								<p data-t="projects.firstSpringProject.p1">
 									I made this site back in 2020, when I was trying get into a project funded by my university
 									(and the federal Ministry of Health!) and this was part of their admission process. I passed
 									and stayed in the project for almost 2 years.
 								</p>
 
-								<p>
+								<p data-t="projects.firstSpringProject.p2">
 									It's about a school management system where you can do CRUD operations on classes (Turma),
 									teachers (Professor) and students (Aluno).
 								</p>
 
 								<figure>
-									<img alt="UML diagram" loading="lazy" class="full-image" src="media/miniatures/first-spring-project/firstSpringProjectUml.jpg">
-									<figcaption>UML diagram of the entities.</figcaption>
+									<img
+										data-attr-t
+										alt-t="projects.firstSpringProject.img.uml.alt"
+										alt="UML diagram" 
+										loading="lazy" class="full-image" 
+										src="media/miniatures/first-spring-project/firstSpringProjectUml.jpg">
+									<figcaption data-t="projects.firstSpringProject.img.uml.caption">UML diagram of the entities.</figcaption>
 								</figure>
 
-								<p>
+								<p data-t="projects.firstSpringProject.p3">
 									It follows the MVC pattern: the backend was made with <em>Java + Spring</em> and uses <em>PostgreSQL</em>
 									as the database manager while the frontend was made with basic HTML/CSS with <em>Thymeleaf</em>.
 								</p>
@@ -343,10 +346,10 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
-									<p id="firstSpringProjectDescription" class="gif-description">
+									<p id="firstSpringProjectDescription" class="gif-description" data-t="projects.firstSpringProject.img.result">
 										Screen capture showing the usage of the site with the initial page consisted of 6 buttons for create and visualize the entities.
 									</p>
 								</div>
@@ -362,105 +365,130 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
-									<p id="firstSpringProjectOldVersionDescription" class="gif-description">
+									<p id="firstSpringProjectOldVersionDescription" class="gif-description" data-t="projects.firstSpringProject.img.css">
 										Screen capture the initial page consisted of 3 buttons, each turning into 2 buttons in an animation when the cursor hovers over them.
 									</p>
 								</div>
 
-								<a class="code-button colorful" href="https://github.com/arturo32/FirstSpringProject">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/FirstSpringProject" data-t="code">Code</a>
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
 
 					<div>
-						<h4>Selo ou não sê-lo (Tumblr)</h4>
+						<h4 data-t="projects.seloOuNaoSelo.title">Selo ou não sê-lo (Tumblr)</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an image of a brown
-						paper as the background and articles written in a yellowish background in the center." />
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="" />
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>Making a website for my sister... on Tumblr.</p>
+						<p data-t="projects.seloOuNaoSelo.description">Making a website for my sister... on Tumblr.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="seloNaoSeloTitle">
 							<div class="modal-content">
-								<h3 id="seloNaoSeloTitle">Selo ou não sê-lo (Tumblr)</h3>
-								<p>
+								<h3 id="seloNaoSeloTitle" data-t="projects.seloOuNaoSelo.title">Selo ou não sê-lo (Tumblr)</h3>
+								<p data-t="projects.seloOuNaoSelo.p1">
 									My sister, <a href="https://instagram.com/luiza_fs">Luiza Fonseca</a>, is a visual artist and designer
 									who sometimes asks me for help when she needs to make a website. It was no different when she
 									had to do a project about making collective art while connecting different artists through letters!
 								</p>
 
-								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Image of the first page of the site."/>
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp"
+									 data-attr-t
+									 alt-t="projects.seloOuNaoSelo.img.firstPage"
+									 alt="Image of the first page of the site."/>
 
-								<p>
+								<p data-t="projects.seloOuNaoSelo.p2">
 									She designed the entire site beforehand and decided to use the Tumblr platform to host it (which was
 									a bit challenging due to its limitations, but less so than I had imagined). From there, I tried to implement it
 									as close to her vision as possible. The titles and even the look of the cursor were drawn by her, creating
 									a really unique look.
 								</p>
 
-								<p>
+								<p data-t="projects.seloOuNaoSelo.p3">
 									One small thing that I enjoyed doing in this project was the navigation drawer for mobile. I saw somewhere a menu
 									icon that transformed itself in a close button and I really wanted to try with pure CSS. It worked, as you can see below.
 								</p>
 
-								<img loading="lazy" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp" alt="A GIF showing the mobile version of the site with a menu
-							button with two parallel lines that cross each other forming an X when clicked. The action brings up the hidden menu drawer."/>
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img
+											data-attr-t
+											alt-t="projects.seloOuNaoSelo.img.closeButton.alt"
+											alt="GIF showing close button animation."
+											src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp">
+										<button id="seloDescriptionToggle" class="collapseButton" aria-expanded="false"
+												aria-controls="seloDescription">
+											<svg viewBox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+											</svg>
+											Descrição do GIF
+										</button>
+									</div>
+									<p id="seloDescription" class="gif-description" data-t="projects.seloOuNaoSelo.img.closeButton.description">
+										A GIF showing the mobile version of the site with a menu button with two parallel lines that cross
+										each other forming an X when clicked. The action brings up the hidden menu drawer.
+									</p>
+								</div>
 
-								<p>
+								<p data-t="projects.seloOuNaoSelo.p4">
 									The name of the site is a pun in portuguese referencing the famous Shakespeare's phrase "to be or
 									not to be" using the word for "stamp" which is "<i>selo</i>" in brazilian portuguese.
 								</p>
 
-								<img  class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="A GIF showing a site on Tumblr with an
-							image of a brown paper as the background and articles written in a yellowish background in the center."/>
+								<img  class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp"
+									  data-attr-t
+									  alt-t="projects.seloOuNaoSelo.preview"
+									  alt="A GIF showing a site on Tumblr with an
+									  image of a brown paper as the background and articles written in a yellowish background in the center."/>
 								<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
 
 					<div>
-						<h4>This very own website</h4>
+						<h4 data-t="projects.thisSite.title">This very own website</h4>
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt="An image showing a part of this site that moves as
-							you scroll the page, trying to be in sync to where you are (in the project's section)."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt=""/>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>We are here.</p>
+						<p data-t="projects.description.title">We are here.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
 							<div class="modal-content">
-								<h3 id="thisVeryOwnWebSiteTitle">This very own website</h3>
-								<p>
+								<h3 id="thisVeryOwnWebSiteTitle" data-t="projects.thisSite.title">This very own website</h3>
+								<p data-t="projects.thisSite.p1">
 									This portfolio was made motivated by the <a href="https://sgi.mit.edu/">Summer Geometry Initiative (SGI)</a>
 									by the Massachusetts Institute of Technology (MIT): a six-week summer research program about geometry
 									processing. Unfortunately I didn't enter the program, but all the experience that I
-									adquired in the proccess was extremely valueable for me. This site it's a proof of
+									acquired in the process was extremely valuable for me. This site it's a proof of
 									that! :)
 								</p>
 
-								<p>
+								<p data-t="projects.thisSite.p2">
 									I made it without much JavaScript (or any of its frameworks/libraries) and tried to keep it simple and a little
 									bit unique. During development, I focused in learning how to develop <em>accessible</em> websites,
 									especially for people who use the keyboard and screen readers to navigate on the web.
 								</p>
 
-								<p>
+								<p data-t="projects.thisSite.p3">
 									Well, actually I use one JS library in this site which is the <a href="https://www.mathjax.org/">MathJax library</a>
 									for displaying mathematical equations written in \( \LaTeX\) which is also accessible to screen reader users.
 								</p>
 
-								<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="A print-screen of the initial page of this site."/>
-								<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Code</a>
+								<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg"
+									 data-attr-t
+									 alt-t="projects.thisSite.img.print"
+									 alt="A print-screen of the initial page of this site."/>
+								<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io" data-t="code">Code</a>
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -470,16 +498,13 @@
 				<div class="columns c-3">
 
 					<div id="triagleLerp">
-						<h4>Triangle lerp</h4>
+						<h4 data-t="projects.lerp.title">Triangle lerp</h4>
 
 						<div class="project-container">
-							<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="A GIF with black background showing a triangle with a circle
-							moving in a circular motion inside it, with edges connecting it with the triangle vertices. Each vertex is in a
-							different color: red, blue and green and each edge interpolates between these colors. The circle changes colors
-							while moving."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt=""/>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>Linear interpolation but with areas! In a triangle!</p>
+						<p data-t="projects.lerp.description">Linear interpolation but with areas! In a triangle!</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
 							<div class="modal-content">
@@ -509,7 +534,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="triangleLerpDescription" class="gif-description">
@@ -521,11 +546,11 @@
 
 
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix" data-t="code">Code</a>
 
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -533,7 +558,7 @@
 						<h4>Times table</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Wonderful patterns emerge when numbers are written in a circle.</p>
 
@@ -564,7 +589,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="timesTableDescription" class="gif-description">
@@ -597,10 +622,10 @@
 
 
 								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ"
-								   title="Code of the Times Table">Code</a>
+								   title="Code of the Times Table" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -610,17 +635,17 @@
 <!--								<h4>PI blocks</h4>-->
 <!--								<div class="project-container">-->
 <!--									<img  src="media/miniatures/pi-blocks.gif" />-->
-<!--									<button type="button">Learn <br> more</button>-->
+<!--									<button type="button" data-t="learnMore">Learn <br> more</button>-->
 <!--								</div>-->
 <!--								<p>When PI is found in unexpected places.</p>-->
 
 <!--								<dialog class="project-details modal" aria-modal="true" aria-labelledby="piBlocksTitle">-->
 <!--									<div class="modal-content">-->
-<!--										<button type="button" class="close" aria-label="Close" title="Close"></button>-->
+<!--										<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>-->
 <!--										<h3 id="piBlocksTitle">PI blocks</h3>-->
 <!--										<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>-->
 <!--										<p>Soon!</p>-->
-<!--										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Code</a>-->
+<!--										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk" data-t="code">Code</a>-->
 <!--									</div>-->
 <!--								</dialog>-->
 <!--							</div>-->
@@ -630,7 +655,7 @@
 						<div class="project-container">
 							<img aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
 							color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>The beauty of a particular random number generator.</p>
 
@@ -662,7 +687,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="perlinNoiseVectorFieldDescription" class="gif-description">
@@ -673,10 +698,10 @@
 
 
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -685,7 +710,7 @@
 						<h4>Light and shadow</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/light-and-shadow/light-and-shadow.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Lines and their interceptions with the environment.</p>
 
@@ -711,7 +736,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="thirdEyeDescription" class="gif-description">
@@ -721,10 +746,10 @@
 									</p>
 								</div>
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -733,7 +758,7 @@
 						<h4>Julia sets</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 
 						<p>Move your mouse to generate beautiful products of a complex number function.</p>
@@ -753,7 +778,7 @@
 									other, follewed by a straight thin line. These blobs appear to repeat around the edge of this structure, in a
 									fractal manner."/>
 									<figcaption>
-										See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">code of the Mandelbrot set.</a>
+										See <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ" data-t="code">Code of the Mandelbrot set.</a>
 									</figcaption>
 								</figure>
 
@@ -789,7 +814,7 @@
 									<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="A very colorful julia set with a black center
 									that resembles a worm in a z format." class="full-image"/>
 									<figcaption>
-										See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">code of this big Julia set.</a>
+										See <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA" data-t="code">Code of this big Julia set.</a>
 									</figcaption>
 								</figure>
 
@@ -807,7 +832,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="juliaSetDescription" class="gif-description">
@@ -817,10 +842,10 @@
 									</p>
 								</div>
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -831,7 +856,7 @@
 							<img aria-hidden="true" tabindex="-1" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
 							that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
 							spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Walk, turn slightly to the right, repeat. Suddenly, you see yourself surrounded by spiral fractals!</p>
 
@@ -853,7 +878,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="spiralsDescription" class="gif-description">
@@ -864,10 +889,10 @@
 								</div>
 
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -877,7 +902,7 @@
 							<img aria-hidden="true" tabindex="-1" src="media/miniatures/fourier/fourier.gif" alt="A GIF showing three circles on the left side, one revolving
 									on the circumference of the other, with a red dot revolving on the last smaller circle while drawing a
 									waving graph in the right side."/>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Circles around circles around circles...</p>
 
@@ -907,10 +932,10 @@
 								<div id="fourierCanvas" class="interactiveCode"></div>
 								<button class="code-button colorful stop-button" style="display: none;">Stop</button>
 
-								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Code</a>
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 				</div>
@@ -921,7 +946,7 @@
 						<h4>Ray Tracer</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>3D ray tracer that can create photorealistic images.</p>
 
@@ -962,7 +987,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="rayTracerDescription" class="gif-description">
@@ -974,10 +999,10 @@
 									</p>
 								</div>
 
-								<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -985,7 +1010,7 @@
 						<h4>Drawing Project</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Almost like Microsoft Paint! But with a keyboard instead of a mouse.</p>
 
@@ -1024,7 +1049,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="drawingProjectDescription" class="gif-description">
@@ -1032,10 +1057,10 @@
 									</p>
 								</div>
 
-								<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 
@@ -1043,7 +1068,7 @@
 						<h4>Som Imaginário</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
-							<button class="container-cover" type="button">Learn <br> more</button>
+							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 						<p>Educational project about sound and how humans perceive its origin in space.</p>
 
@@ -1070,7 +1095,7 @@
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
 											</svg>
-											GIF description
+											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
 									<p id="somImaginarioDescription" class="gif-description">
@@ -1110,10 +1135,10 @@
 
 
 
-								<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Code</a>
+								<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario" data-t="code">Code</a>
 
 							</div>
-							<button type="button" class="close" aria-label="Close" title="Close"></button>
+							<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>
 						</dialog>
 					</div>
 				</div>

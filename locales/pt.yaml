@@ -2,6 +2,7 @@ language: 'idioma:'
 learnMore: 'Saiba <br> mais'
 code: 'Código'
 close: 'Fechar'
+gifDescription: 'Descrição do GIF'
 
 about:
     title: 'Sobre'
@@ -30,6 +31,7 @@ about:
 
 projects:
     title: 'Projetos'
+    visualMathTitle: 'Matemática Visual'
     hpw:
         title: 'Como Ponteiros Funcionam'
         preview: 'GIF do site sendo usado.'
@@ -106,6 +108,14 @@ projects:
         preview: 'Captura de tela mostrando o uso do site com a página inicial composta de 6 botões
                   para criar e visualizar as entidades.'
         description: 'Um sistema de gerenciamento escolar feito utilizando Java com Spring.'
+        img:
+            uml:
+                alt: 'Diagrama UML'
+                caption: 'Diagrama UML das entidades.'
+            result: 'Captura de tela mostrando o uso do site com a página inicial composta de 6 botões
+                     para criar e visualizar as entidades.'
+            css: 'Captura de tela da página inicial composta por 3 botões, cada um se transformando em
+                  mais dois em uma animação quando o mouse passa por cima deles.'
         p1: 'Fiz esse site em 2020, quando eu estava tentando entrar em uma bolsa financiada pela
              minha universidade (e o Ministério da Saúde!) e isso fazia parte do seu processo de
              seleção. Eu passei e me mantive no projeto por quase 2 anos.'
@@ -122,9 +132,16 @@ projects:
              mais dois em uma animação quando o mouse passa por cima deles.'
     seloOuNaoSelo:
         title: 'Selo ou não sê-lo (Tumblr)'
-        preview: 'GIF mostrando a versão mobile do site um botão de menu feito de duas linhas paralelas
-                  que se cruzam quando clicado, formando um X. O menu é revelado.'
+        preview: 'GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.'
         description: 'Fazendo um site para minha irmã... no Tumblr!'
+        img:
+            firstPage: 'Print da página inicial do site.'
+            closeButton:
+                alt: 'GIF mostrando a animação de um botão de fechar'
+                description: 'GIF mostrando a versão mobile do site um botão de menu feito de duas linhas paralelas
+                              que se cruzam quando clicado, formando um X. O menu é revelado.'
+            mobile: 'GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.'
+            brown:
         p1: 'Minha irmã, <a href="https://instagram.com/luiza_fs">Luiza Fonseca</a>, é uma artista
              visual e designer que às vezes me pede ajuda quando ela precisa fazer um site. Não foi
              diferente quando ela teve que fazer um projeto sobre produzir arte colectivamente
@@ -137,12 +154,13 @@ projects:
         p3: 'Algo que gostei de ter feito nesse projeto foi o botão do menu para mobile. Eu vi em
              algum lugar um ícone de menu que se transformava em um botão de fechar e eu
              queria copiar com CSS puro. Funcionou, como é possível ver abaixo.'
-        p4: 'GIF mostrando a versão mobile do site um botão de menu feito de duas linhas paralelas
-             que se cruzam quando clicado, formando um X. O menu é revelado.'
+        p4: ''
     thisSite:
         title: 'Este site aqui'
         preview: 'Imagem do próprio site que se move junto com a navegação.'
         description: 'Você está aqui.'
+        img:
+            print: 'Print da página inicial deste site.'
         p1: 'Este portfólio foi motivado pelo <a href="https://sgi.mit.edu/">Summer Geometry
              Initiative (SGI)</a> do Massachusetts Institute of Technology (MIT): um curso de 6
              semanas focado em pesquisa na área de processamento geométrico. Infelizmente acabei não
@@ -157,6 +175,11 @@ projects:
              equações matemáticas escritas em \( \LaTeX\). As equações também são acessíveis para
              usuários de leitores de tela.'
 
-
+        # visual math
+        lerp:
+            title:
+            preview:
+            description:
+            p1:
 others:
     title: 'Outros'

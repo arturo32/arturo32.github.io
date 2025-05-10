@@ -10,18 +10,24 @@ about:
         me: 'Uma foto minha sorrindo. Eu sou branco, tenho um longo cabelo castanho e um rosto fino.
             Atrás de mim há uma cortina cinza. Estou usando uma camisa branca.'
 
-    p1: "Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 24 anos e sou graduado em TI pela Universidade Federal do Rio Grande do Norte (UFRN).
-        Atualmente estou cursando Ciência da Computação também na UFRN. Nos últimos 3 anos eu venho trabalhando com <em>desenvolvimento web</em>
-        em projetos de bolsas da minha universidade, aprofundando meu conhecimento tanto em tecnologias de <em>backend</em> como de <em>frontend</em>."
+    p1: "Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 24 anos e sou graduado em TI pela
+        Universidade Federal do Rio Grande do Norte (UFRN). Atualmente estou cursando Ciência da
+        Computação também na UFRN. Nos últimos 3 anos eu venho trabalhando com <em>desenvolvimento web</em>
+        em projetos de bolsas da minha universidade, aprofundando meu conhecimento tanto em
+        tecnologias de <em>backend</em> como de <em>frontend</em>."
     p2: 'Eu gosto bastante de aprender coisas novas e torná-las mais acessíveis para pessoas.
-        Essa foi uma das principais motivações por trás <span style="text-decoration: line-through">de um dos meus mais queridos projetos pessoais</span>
-        <em>do meu futuro TCC</em>: um site onde qualquer pessoa consegue visualizar e entender
-        <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md"> como ponteiros funcionam</a> em linguagens de programação.
-        Ele ainda está em seu desenvolvimento inicial, mas eu estou determinado em acabá-lo esse ano!'
+        Essa foi uma das principais motivações por trás <span style="text-decoration: line-through">de
+        um dos meus mais queridos projetos pessoais</span> <em>do meu futuro TCC</em>: um site onde
+        qualquer pessoa consegue visualizar e entender
+        <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">como ponteiros funcionam</a>
+        em linguagens de programação. Ele ainda está em seu desenvolvimento inicial, mas eu estou
+        determinado em acabá-lo esse ano!'
     p3: 'Além de desenvolver aplicações web, eu tenho uma grande paixão por geometria e matemática no geral.
-        Isso me levou a descobrir as maravilhas da <em>computação gráfica</em>. Por isso é possível encontrar muitos projetos pessoais ou de
-        disciplinas que envolvam geometria, vetores e gráficos neste site.'
-    p4: 'Meus outros interesses envolvem dobrar origami, tirar fotos, mexer um pouco com eletrônica e assistir vídeos sobre teoria musical!'
+        Isso me levou a descobrir as maravilhas da <em>computação gráfica</em>. Por isso é possível
+        encontrar muitos projetos pessoais ou de disciplinas que envolvam geometria, vetores e
+        gráficos neste site.'
+    p4: 'Meus outros interesses envolvem dobrar origami, tirar fotos, mexer um pouco com eletrônica
+        e assistir vídeos sobre teoria musical!'
 
     linkedin:
         text: '<span class="linkedin-icon icon" aria-hidden="true"></span>meu LinkeIn'
@@ -32,6 +38,9 @@ about:
 projects:
     title: 'Projetos'
     visualMathTitle: 'Matemática Visual'
+    othersTitle: 'Outros'
+
+    # websites
     hpw:
         title: 'Como Ponteiros Funcionam'
         preview: 'GIF do site sendo usado.'
@@ -175,11 +184,241 @@ projects:
              equações matemáticas escritas em \( \LaTeX\). As equações também são acessíveis para
              usuários de leitores de tela.'
 
-        # visual math
-        lerp:
-            title:
-            preview:
-            description:
-            p1:
-others:
-    title: 'Outros'
+
+    # visual math
+    lerp:
+        title: 'Interpolação triangular'
+        preview: 'GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
+             conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
+             e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
+             também interpolam as cores de seus vértices.'
+        description:  'Interpolação linear, mas com áreas! Em um triângulo!'
+        p1: 'Este eu peguei de um
+             <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">fio do
+             Twitter</a> de <a href="https://acegikmo.com/">Freya Holmér</a>. Eu já conhecia o
+             conceito de interpolação linear do Projeto de Desenho Gráfico, mas não tinha conhecimento
+             de interpolação entre três pontos ao mesmo tempo.'
+        p2: 'Como Freya diz em seu fio, para calcular a influência de cada vértice do triângulo em um
+             ponto arbitrário dentro dele, é necessário calcular a <em>área</em> do triângulo interno
+             <em>oposto</em> à esse ponto. Então, a porcentagem dessa área em relação à área total é
+             calculada.'
+        p3: 'Uma técnica similar foi utilizada no projeto de Ray Tracer para que superfícies pareçam
+             mais suaves em malhas de triângulos (Phong Shading).'
+        p4: 'GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
+             conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
+             e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
+             também interpolam as cores de seus vértices.'
+    timesTable:
+        title: 'Tabuada'
+        preview: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conecntando
+             diferentes pontos em sua circunferência. O número de pontos e linha cresce
+             rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
+        description: 'Lindos padrões emergem quando números são escritos em um círculo.'
+        p1: '...tabuada? Isso mesmo! O GIF abaixo é apenas a tabuada de 2, onde cada ponto na
+             circunferência é um número e cada linha conecta um número com seu dobro. Então, 2 se
+             conecta com 4, 3 com 6, e por aí vai...'
+        p2: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conecntando
+             diferentes pontos em sua circunferência. O número de pontos e linha cresce
+             rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
+        p3: 'A imagem abaixo também é uma tabuada de 2, contudo a quantidade de números que fazem
+             parte não estão loucamente mudando o tempo todo e eles... aparecem escritos! São 12
+             números no total, seguindo a mesma lógica de antes: 2 se conecta com 4, 3 com 6...
+             Do 6 em diante nós fazemos o que é chamado aritmética de relógio ou, mais precisamente,
+             aritmética modular: 0 é 12, 1 é 13, 2 é 14 e assim por diante... Por isso 6 se conecta
+             com 0 e 7 com 2, por exemplo. Nós podemos chamar tudo isso de <em>tabuada de 2 módulo
+             12</em>:'
+        p4: 'Eu descobri isso em um <a href="https://youtu.be/qhbuKbxJsk8">vídeo do canal
+             Mathologer</a>. Quando você adiciona mais números, isto é, altera o módulo, uma figura
+             conhecida na matemática como cardioide começa a aparecer na tabuada de 2, como é
+             possível ver no primeiro GIF.'
+        p5: 'E quando você escolher números maiores para representar suas tabuadas, padrões
+             intrigantes começam aparecer:'
+    vectors:
+        title: 'Campo vetorial'
+        preview: 'GIF com 100 pequenas linhas que giram e mudam de cor dependendo de seus ângulos.
+                  Elas se movem de maneira sincrônizada mas orgânica.'
+        description: 'A beleza de um certo gerador de números aleatórios.'
+        p1: 'Eu fui introduzido ao p5.js pelos vídeos de <a href="https://shiffman.net/">Daniel
+             Shiffman</a>, um dos diretores do <a href="https://processingfoundation.org/">Processing
+             Foundation</a>. Em seu canal no YouTube,
+             <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, não só aprendi
+             sobre as funcionalidades do p5.js, como também a matemática e algoritmos por trás delas.'
+        p2: 'Como explicado na
+             <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">playlist
+             do Coding Train</a>, <em>Perlin noise</em> é um gerador de números randômicos onde cada
+             número gerado por ele é relativamente próximo aos números que vem antes e depois dele.'
+        p3: 'No meu código, eu utilizei esses valores para representar o ângulo de rotação de cada
+             traço, como é possível observar no GIF abaixo. Eu também utilizei função seno para mapear
+             as cores azul e vermelho em suas rotações.'
+        p4: 'GIF com 100 pequenas linhas que giram e mudam de cor dependendo de seus ângulos.
+             Elas se movem de maneira sincrônizada mas orgânica.'
+    lightShadow:
+        title: 'Luz e sombra'
+        preview: 'O GIF começa com dois olhos geométricos em um fundo preto. As suas pupilas radiam
+             várias linhas brancas enquanto se movem para fora dos olho e em direção ao centro
+             acima deles. Quando convergem, outro olho é desenhado em volta deles.'
+        description: 'Linhas e suas interseções com o ambiente.'
+        p1: 'Este eu peguei do <a href="https://ncase.me/sight-and-light/">artigo Sight and Light de
+             Nicky Case</a>. É sobre como você pode simular luz e suas sombras para jogos. Eu segui
+             apenas metade do tutorial e consegui fazer a pequena visualização interativa abaixo:'
+        p2: 'Ah, também fiz... essa coisa:'
+        p3: 'O GIF começa com dois olhos geométricos em um fundo preto. As suas pupilas radiam
+             várias linhas brancas enquanto se movem para fora dos olho e em direção ao centro
+             acima deles. Quando convergem, outro olho é desenhao em volta deles.'
+    julia:
+        title: 'Conjuntos de Julia'
+        preview: 'GIF de um retângulo colorido com um círculo negro dentro dele. Suas cores são
+             pastéis bem pálidas que variam entre rosa, azul e amarelo. Assim que o mouse se
+             move, o círculo se transforma drasticamente, com seus lados opostos fundindo em
+             formas psicodélicas.'
+        description: 'Mova seu mouse para gerar lindos produtos de uma função de números complexos.'
+        p1: 'O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que fica bonitinho
+             quando plotado no plano complexo como a figura abaixo:'
+        p2: 'É relativamente simples gerar essa imagem. Tudo se resume a função abaixo:'
+        p3: 'Nos faleremos dos números complexos \(z\) e \(c\) logo. Primeiro, precisamos de outro
+             par de números:'
+        p4: 'Agora, nós aplicamos nossa função recursivamente em <em>cada píxel</em> da imagem que
+             representa o plano complexo. Nós fazemos isso tornando \(c\) a coordenada do pixel atual
+             e \(z\) começando com o valor \(0 + 0i\). Enquanto iteramos a função em um píxel, \(z\)
+             pode ou não crescer acima de nosso <em>limite</em>. Se isso acontecer antes de
+             alcançarmos o <em>número de iterações</em>, nós paramos a recursão e pintamos o píxel de
+             <em>branco</em>. Se não, pintamos de <em>preto</em>. É isso!'
+        p5: 'E <em>conjuntos de Julia</em> são quase a mesma coisa, com \(c\) e \(z\) trocando de
+             lugar, ou seja, \(z\) irá representar a coordenada do píxel atual enquanto \(c\) irá
+             ser... uma constante arbitrária! Para cada \(c\) que escolhemos no começo do processo,
+             nós podemos fazer uma imagem completamente diferente (um conjunto completamente
+             diferente!). Cada uma possuindo uma complexidade e beleza única. E para tornar as coisas
+             ainda mais bonitas, nós adicionamos uma pequena mágica matemática nos valores RGB dos
+             píxels, mudando eles conforme o quão rápido algumas das entradas alcançam o
+             <em>limite</em>, como na imagem abaixo feita com \(c = 0 - 0.8i\):'
+        p7: 'Finalmente, o GIF abaixo foi feito mudando \(c\) de acordo com as coordanadas do mouse.
+             Então, a cada nova posição do mouse, a função itera em todos os píxels para formar a
+             imagem daquele conjunto particular. Para poupar o processador, eu fiz a função pular
+             alguns píxels. Por isso as cores estão um pouco desaturadas.'
+        p8: 'GIF de um retângulo colorido com um círculo negro dentro dele. Suas cores são
+             pastéis bem pálidas que variam entre rosa, azul e amarelo. Assim que o mouse se
+             move, o círculo se transforma drasticamente, com seus lados opostos fundindo em
+             formas psicodélicas.'
+    spirals:
+        title: 'Espirais'
+        preview: 'GIF mostrando uma espiral branca num fundo quadrado escuro que se abre no sentido
+             anti-horário no canto inferior direito, cruza o centro e se fecha no canto superior
+             esquerdo no sentido horário. O mesmo padrão é encontrado ao longo da linha da
+             espiral, em menor escala.'
+        description: 'Ande, gire levemente para direta, repita. De repente, você se vê cercado por fractais espirais!'
+        p1: 'O fio de Matt Henderson no Twitter sobre <a href="https://twitter.com/matthen2/status/1249611168265547776?s=20" title="fio de Matt Henderson no Twitter.">espirais de
+             Euler</a> me inspirou nessa animação.'
+        p2: 'É realmente simples como a descrição sugeste: desenhe uma linha, gire a um <em>certo
+             ângulo</em>, desenhe outra linha. Mas a cada repetição, você adicionada esse <em>certo
+             ângulo</em>, acumulando-o. No final você tem uma aproximação de uma
+             <a href="https://pt.wikipedia.org/wiki/Espiral_de_Cornu" title="Artigo da Wikipidia.">
+             Espiral de Euler</a>. E, se você escolher o ângulo certo, você pode obter uma
+             Espiral de Euler feita de pequnas Espirais de Euler:'
+        p3: 'GIF mostrando uma espiral branca num fundo quadrado escuro que se abre no sentido
+             anti-horário no canto inferior direito, cruza o centro e se fecha no canto superior
+             esquerdo no sentido horário. O mesmo padrão é encontrado ao longo da linha da
+             espiral, em menor escala.'
+    fourier:
+        title: 'Série de Fourier'
+        preview: 'GIF de 3 círculos girando em torno de si, desenhando um gráfico de onda ao lado.'
+        description: 'Círculos ao redor de círculos ao redor de círculos...'
+        p1: 'A série de Fourier é uma forma de usar as funções seno e cosseno para aproximar outras
+             funções. É um pouco parecido com a
+             <a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_Taylor">série de Taylor</a>, que muitas
+             pessoas aprendem na disciplina de cálculo na universidade.'
+        p2: 'Um exemplo muito famoso na internet são GIFs que mostram a série de Fourier sendo usada
+             para expressar ondas quadradas a partir de funções seno. Eles lindamente representam as
+             funções sendo adicionadas como círculos que giram em torno de outros círculos com
+             frequências diferentes. Então eu tentei fazer o mesmo, só que de forma interativa, com a
+             ajuda de um <a href="https://youtu.be/Mm2eYfj0SgA">vídeo do Coding Train</a>.'
+        p3: 'Você pode clicar no botão abaixo se quiser brincar com a visualização. Apenas tome
+             cuidado com a quantidade círculos adicionados. Eu não iria recomendar algo acima de 1000
+             se não estiver em um computador minimamente "poderoso".'
+
+
+
+    # others
+    raytracer:
+        title: 'Ray Tracer'
+        preview: 'GIF feito de 5 imagens que se alternam:
+             primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo;
+             segunda imagem: uma rosquinha no espaço que reflete 100% do ambiente;
+             terceira imagem: um dragão de Stanford espelhado sentado em um campo verde;
+             quarta imagem: duas esferas espelhadas flutuando no mesmo campo da imagem anterior;
+             quinta imagem: um bule de Utah verde inclinado sob um espelho quadrado refletindo o
+             céu do mesmo campo das imagens anteriores.'
+        description: 'Ray tracer 3D que consegue criar imagens fotorealísticas.'
+        p1: 'Este projeto foi desenvolvido por mim e meu amigo
+             <a href="https://github.com/JohnVithor">João Vítor</a> através da disciplina Computação
+             Gráfica, lecionada pelo professor
+             <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan
+             Rodrigues dos Santos</a>. A aplicação desenvolvida cria imagens representando cenas
+             3D descritas por arquivos XML. Tudo isso utilizando a magia do ray tracing.'
+        p2: 'Ray tracing é uma técnica usada para criar imagens onde o <em>foto-realismo</em> é
+             desejado. Ele funciona <em>simulando</em> fótons de <em>luz</em> como <em>raios</em>
+             (vetores) que são lançados na cena da perspectiva da pessoa espectadora. Os raios, então,
+             viajam pela cena sendo <em>refletidos, refratados ou absorvidos</em> por objetos. Todas
+             essas interações são calculadas para cada píxel da imagem, definindo sua cor final.'
+        p3: 'Fazer esse projeto foi desafiante por conta de seu tamanho. Tivemos que considerar
+             a <em>câmera</em>, <em>objetos</em> e suas <em>interações com os raios</em>, diferentes
+             <em>tipos de ilumuninações</em>, diferentes <em>modelos de luz</em>, parsear
+             <em>arquivos XML</em> e <em>arquivos .obj</em>... Ao mesmo tempo, foi muito gratificante
+             porque a cada etapa do projeto nos podíamos <em>ver</em> o resultado do que tínhamos feito
+             até então.'
+        p4: 'No final, nós não podíamos acreditar nas imagens que o nosso próprio programa produzia!
+             O plano de fundo esférico (opcional) fez com que as surpefíces reflexivas se tornassem
+             muito mais interessantes!'
+        p5: 'GIF feito de 5 imagens que se alternam:
+             primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo;
+             segunda imagem: uma rosquinha no espaço que reflete 100% do ambiente;
+             terceira imagem: um dragão de Stanford espelhado sentado em um campo verde;
+             quarta imagem: duas esferas espelhadas flutuando no mesmo campo da imagem anterior;
+             quinta imagem: um bule de Utah verde inclinado sob um espelho quadrado refletindo o
+             céu do mesmo campo das imagens anteriores.'
+    drawing:
+        title: 'Projeto de Desenho Gráfico'
+        preview: 'GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..'
+        description: 'Quase a mesma coisa que o Paint! Mas usando o teclado ao invés do mouse.'
+        p1: 'Este foi o projeto final da disciplina de Introdução à Técnicas de Programção, lecionada
+             pelo professor Gustavo Girão no meu segundo semestre na universidade. Foi feito por mim
+             e meu amigo <a href="https://github.com/artursantiago">Artur Santiago</a> utilizando a
+             linguagem de programção C.'
+        p2: 'O projeto é sobre desenhar imagens rasterizadas no formato PPM com comandos em um
+             arquivo de texto. Isto é o que ele consegue desenhar:'
+        p3: 'Eu me surpreendi pelo fato de que desenhar linhas em um computador é bem mais complexo
+             do que pensava. Píxels vem em quantidades discretas, bem diferente do espaço contínuo
+             de uma folha de papel em nossa realidade, por exemplo. É necessário ter algorítmos
+             espertos que decidam que píxels devem ser "coloridos" o não.'
+        p4: 'Este foi o primeiro "grande" projeto que participei e foi uma grande aprendizado sobre
+             planejamento, implementação e organização de um projeto em grupo.'
+        p5: 'GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..'
+    som:
+        title: 'Som Imaginário'
+        preview: 'GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
+             foto desse dispositivo.'
+        description: 'Projeto educacional sobre som e como seres humanos localizam sua origem no espaço.'
+        p1: 'Este foi o projeto final da disciplina de Sistema Embarcados lecionada pela professora
+             <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.'
+        p2: 'Ele é sobre um jogo eletrônico educacional com a intenção de ensinar sobre como
+             ondas sonoras funcionam e como o ser humano consegue captar essas ondas e localizar
+             a origem de um certo som no espaço. É pensando para salas de aula do fundamental e
+             ensino médio. O dispositivo — feito com Arduino, dois sensores de som, um LCD, um
+             potenciômetro e um motor de passo — pode indicar a origem de sons altos e curtos,
+             medindo a diferença de tempo em que o som leva para chegar entre os sensores.'
+        p3: 'GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
+             foto desse dispositivo.'
+        p4: 'Um dos dois modos do jogo envolve alguém batendo palmas enquanto o dispositivo tenta
+             apontar para sua localização. Por conta que o dispositivo possui somente 2 sensores de
+             som, ele pode apontar ás vezes para a direção oposta da origem do som. Isso pode levar
+             a discussões sobre o porquê que o dispositvo se comporta dessa maneira e como ele
+             escolhe para onde apontar.'
+        p5: 'Fui inspirado por um <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">vídeo do
+             canal do YouTube Smarter Every Day YouTube</a>, como também por um
+             <a href="https://youtu.be/CqB95rj_txI">vídeo do canal do Steve Mould</a>.'
+        p6: 'O jogo também contava com um aplicativo de celular que eu não consegui implementar a
+             tempo. Abaixo algumas das telas que prototipei:'
+        p7: 'PS: O nome do projeto faz referência à uma
+             <a aria-label="Matança do Porco Album"
+             href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
+             title="Matança do Porco Album">banda dos anos 70</a>.'
+

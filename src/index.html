@@ -494,7 +494,7 @@
 
 				</div>
 
-				<h3>Visual Math</h3>
+				<h3 data-t="projects.visualMathTitle">Visual Math</h3>
 				<div class="columns c-3">
 
 					<div id="triagleLerp">
@@ -508,28 +508,31 @@
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
 							<div class="modal-content">
-								<h3 id="triagleLerpTitle">Triangle Lerp</h3>
+								<h3 id="triagleLerpTitle" data-t="projects.lerp.title">Triangle Lerp</h3>
 
-								<p>
+								<p data-t="projects.lerp.p1">
 									This one I've taken from a <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">Twitter
 									thread</a> by <a href="https://acegikmo.com/">Freya Holmér</a>. I was used to the idea of linear interpolation
 									for the Drawing Project, but I had never heard of interpolating between three points at the time.
 								</p>
 
-								<p>
+								<p data-t="projects.lerp.p2">
 									As Freya says in her thread, to calculate the influence of each triangle vertex in an arbitrary point you have
 									to take the <em>area</em> of the inner triangle <em>opposite</em> to that vertex. Then calculate the percentage
 									of that area relative to the total area of the larger triangle.
 								</p>
 
-								<p>
+								<p data-t="projects.lerp.p3">
 									A similar approach was used in the Ray Tracer project to make surfaces appear smoother in triangle meshes
 									(Phong Shading).
 								</p>
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="Triangle lerp GIF"/>
+										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif"
+											 data-attr-t
+											 alt-t="projects.lerp.img.triangleLerp.alt"
+											 alt="Triangle lerp GIF"/>
 										<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
 											<svg viewBox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
@@ -537,7 +540,7 @@
 											<span data-t=gifDescription">GIF description</span>
 										</button>
 									</div>
-									<p id="triangleLerpDescription" class="gif-description">
+									<p id="triangleLerpDescription" class="gif-description" data-t="projects.lerp.img.triangleLerp.description">
 										A GIF with black background showing a triangle with a circle moving in a circular motion inside it, with
 										edges connecting it with the triangle vertices. Each vertex is in a different color: red, blue and green
 										and each edge interpolates between these colors. The circle changes colors while moving.
@@ -555,17 +558,17 @@
 					</div>
 
 					<div>
-						<h4>Times table</h4>
+						<h4 data-t="projects.timesTable.title">Times table</h4>
 						<div class="project-container">
 							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p>Wonderful patterns emerge when numbers are written in a circle.</p>
+						<p data-t="projects.timesTable.description">Wonderful patterns emerge when numbers are written in a circle.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
 							<div class="modal-content">
-								<h3 id="timesTableTitle">Times table</h3>
-								<p>
+								<h3 id="timesTableTitle" data-t="projects.timesTable.title">Times table</h3>
+								<p data-t="projects.timesTable.p1">
 									...times table? That's right! The GIF in the thumbnail is simply a 2 times table, where each point
 									on the circumference is a number and each line connects a number to its double. Thus, 2 connects to
 									4, 3 connects to 6, and so on. In the image below we only have 12 numbers. So, from 6 and beyond we
@@ -573,9 +576,12 @@
 									and so on... This relation between the numbers is called <em>congruence</em>. That's why 6 connects
 									to 0 and 7 connects to 2. We can call it the <em>2 times table module 12</em>:
 								</p>
-								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="A circle with 10
-								green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
-								symmetrical about the horizontal axis."/>
+								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;"
+									 data-attr-t
+									 alt-t="projects.lerp.img.triangleLerp.alt"
+									 alt="A circle with 10
+									 green lines connecting 12 labeled numbers on its circumference from 0 to 11. They form an image that is
+									 symmetrical about the horizontal axis."/>
 
 								<p>
 									I discovered this in the <a href="https://youtu.be/qhbuKbxJsk8">Mathologer video</a>. When you add more

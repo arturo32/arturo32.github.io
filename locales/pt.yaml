@@ -193,6 +193,13 @@ projects:
              e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
              também interpolam as cores de seus vértices.'
         description:  'Interpolação linear, mas com áreas! Em um triângulo!'
+        img:
+            triangleLerp:
+                alt: "GIF da interpolação triangular"
+                description: 'GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
+             conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
+             e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
+             também interpolam as cores de seus vértices.'
         p1: 'Este eu peguei de um
              <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">fio do
              Twitter</a> de <a href="https://acegikmo.com/">Freya Holmér</a>. Eu já conhecia o
@@ -204,16 +211,16 @@ projects:
              calculada.'
         p3: 'Uma técnica similar foi utilizada no projeto de Ray Tracer para que superfícies pareçam
              mais suaves em malhas de triângulos (Phong Shading).'
-        p4: 'GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
-             conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
-             e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
-             também interpolam as cores de seus vértices.'
     timesTable:
         title: 'Tabuada'
         preview: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conecntando
              diferentes pontos em sua circunferência. O número de pontos e linha cresce
              rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
         description: 'Lindos padrões emergem quando números são escritos em um círculo.'
+        img:
+            2table: 'Um círculo com 10 linhas verdes conectando 12 números
+                     escritos em sua circunferência de 0 a 11. Elas formam uma imagem que é simétrica no
+                     eixo horizontal.'
         p1: '...tabuada? Isso mesmo! O GIF abaixo é apenas a tabuada de 2, onde cada ponto na
              circunferência é um número e cada linha conecta um número com seu dobro. Então, 2 se
              conecta com 4, 3 com 6, e por aí vai...'

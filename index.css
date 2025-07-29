@@ -563,10 +563,23 @@ dialog .close:focus:before {
 	column-gap: var(--c2-column-gap);
 }
 
+.columns.c-2 .project-container {
+	aspect-ratio: 2/1;
+}
+
+.columns.columns.c-2  img,
+.columns.columns.c-2 video {
+	object-fit: cover;
+}
+
 .columns.c-3 {
 	grid-template-columns: repeat(3, 1fr);
 	row-gap: 11vh;
 	column-gap: 10vw;
+}
+
+.columns.c-3 .project-container {
+	aspect-ratio: 1/1;
 }
 
 .column {
@@ -601,6 +614,7 @@ dialog .close:focus:before {
 .columns video {
 	width: 100%;
 	border-radius: 25px;
+	object-fit: contain;
 }
 
 .divider {

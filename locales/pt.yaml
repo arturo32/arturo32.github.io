@@ -126,7 +126,9 @@ projects:
                 caption: 'Diagrama UML das entidades.'
             result: 'Captura de tela mostrando o uso do site com a página inicial composta de 6 botões
                      para criar e visualizar as entidades.'
-            css: 'Captura de tela da página inicial composta por 3 botões, cada um se transformando em
+            css:
+                alt: 'Botões animados'
+                caption: 'Captura de tela da página inicial composta por 3 botões, cada um se transformando em
                   mais dois em uma animação quando o mouse passa por cima deles.'
         p1: 'Fiz esse site em 2020, quando eu estava tentando entrar em uma bolsa financiada pela
              minha universidade (e o Ministério da Saúde!) e isso fazia parte do seu processo de
@@ -221,7 +223,9 @@ projects:
              rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
         description: 'Lindos padrões emergem quando números são escritos em um círculo.'
         img:
-            timesTable: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conectando
+            timesTable:
+                alt: 'Cardióide'
+                description: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conectando
                         diferentes pontos em sua circunferência. O número de pontos e linha cresce
                         rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
             2table: 'Um círculo com 10 linhas verdes conectando 12 números
@@ -381,7 +385,9 @@ projects:
              céu do mesmo campo das imagens anteriores.'
         description: 'Ray tracer 3D que consegue criar imagens fotorrealísticas.'
         img:
-            spheres: 'GIF feito de 5 imagens que se alternam:
+            spheres:
+                alt: 'Esferas, rosquinha, dragão e bule'
+                description: 'GIF feito de 5 imagens que se alternam:
                      primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo;
                      segunda imagem: uma rosquinha no espaço que reflete 100% do ambiente;
                      terceira imagem: um dragão de Stanford espelhado sentado em um campo verde;
@@ -413,7 +419,9 @@ projects:
         preview: 'GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..'
         description: 'Quase a mesma coisa que o Paint! Mas usando o teclado ao invés do mouse.'
         img:
-            geometries: 'GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..'
+            geometries:
+                alt: 'Geometrias de linha'
+                description: 'GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..'
         p1: 'Este foi o projeto final da disciplina de Introdução à Técnicas de Programação, lecionada
              pelo professor Gustavo Girão no meu segundo semestre na universidade. Foi feito por mim
              e meu amigo <a href="https://github.com/artursantiago">Artur Santiago</a> utilizando a
@@ -437,8 +445,10 @@ projects:
         title: 'Som Imaginário'
         description: 'Projeto educacional sobre som e como seres humanos localizam sua origem no espaço.'
         img:
-            device: 'GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
-             foto desse dispositivo.'
+            device:
+                alt: 'Dispositivo'
+                description: 'GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
+                            foto desse dispositivo.'
             screens:
                 alt: 'Três tela do aplicativo Som Imaginário.'
                 description: 'Três telas do aplicativo do Som Imaginário: a primeira com dois botões — um que leva

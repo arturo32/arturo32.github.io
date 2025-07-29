@@ -1,5 +1,5 @@
-# My portifolio!
-My portifolio!
+# My portfolio!
+My portfolio!
 
 <p align="center">
  <img src="./media/demo.gif"
@@ -13,6 +13,6 @@ My portifolio!
 
 ### Generate translation
 ```bash
-static-i18n --fileFormat=yaml --allowHtml=true --o=. --outputOther=pt.html  --outputDefault=pt2.html  --localesPath=locales -l en -i pt src
+static-i18n --fileFormat=yaml --allowHtml=true --o=. --outputOther=pt.html  --outputDefault=pt.html  --localesPath=locales --files=index.html  -l en -i pt .
 ```
 

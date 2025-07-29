@@ -14,6 +14,6 @@ My portifolio!
 
 ### Generate translation
 ```bash
-static-i18n --fileFormat=yaml --allowHtml=true --o=. --outputOther=pt2.html  --outputDefault=pt2.html  --localesPath=locales -l en -i pt src
+static-i18n --fileFormat=yaml --allowHtml=true --o=. --outputOther=pt.html  --outputDefault=pt2.html  --localesPath=locales -l en -i pt src
 ```
 

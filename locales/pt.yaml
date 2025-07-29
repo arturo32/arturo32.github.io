@@ -52,7 +52,7 @@ projects:
             eu pensei em escrever um programa que pudesse ajudá-los a visualizar o que acontece na memória do computador quando eles rodam seus programas.'
         p2: 'Então há 2 anos eu comecei a desenvolver um site que mostra a alocação de memória de variáveis e seus ponteiros ao
             mesmo tempo em que são digitados pelo usuário em um console.'
-        p3: 'Até agora o site pode identificar declaração e atribuição de variáveis e ponteiros, seus tipos e derreferenciamento de ponteiros.
+        p3: 'Até agora o site pode identificar declaração e atribuição de variáveis e ponteiros, seus tipos e desreferenciamento de ponteiros.
             Ele ainda não pode identificar arrays (que podem ser vistos como um tipo de ponteiro nas linguagens C e C++).
             Eu planejo migrar para o framework Vue.js e remover a biblioteca p5.js, deixando a visualização de células de memórias mais interativas.'
         p4: 'Eu falo mais sobre ele na página do projeto abaixo.'
@@ -112,7 +112,7 @@ projects:
              (<span style="font-style: italic">bundle</span>) e (trans)compilar todos arquivos de JS
              e Vue para uma forma que navegadores consigam entender.'
         p3: 'Para a etapa final desse projeto eu pretendo ler o guia da terceira versão do Vue e
-             utlizá-lo juntamente ao CLI dessa vez. Também vai ser uma preparação para eu continuar o
+             utilizá-lo juntamente ao CLI dessa vez. Também vai ser uma preparação para eu continuar o
              desenvolvimento do projeto
              <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">ComoPonteirosFuncionam</a>.'
     firstSpringProject:
@@ -216,7 +216,7 @@ projects:
              mais suaves em malhas de triângulos (Phong Shading).'
     timesTable:
         title: 'Tabuada'
-        preview: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conecntando
+        preview: 'Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conectando
              diferentes pontos em sua circunferência. O número de pontos e linha cresce
              rapidamente, formando uma imagem que parece um coração de lado (cardioide).'
         description: 'Lindos padrões emergem quando números são escritos em um círculo.'
@@ -290,7 +290,7 @@ projects:
              formas psicodélicas.'
         description: 'Mova seu mouse para gerar lindos produtos de uma função de números complexos.'
         img:
-            mandelbroat: 'Uma imagem quase toda preta com uma figura de bordas brancas composta de duas
+            mandelbrot: 'Uma imagem quase toda preta com uma figura de bordas brancas composta de duas
                          bolhas: uma em um formato de cardioide e outra menor e mais redonda. Suas bordas se
                          tocam em um ponto e são seguidas por uma linha fina branca. Essas bolhas parecem se
                          repetir na borda da estrutura, de maneira fractal.'
@@ -379,7 +379,7 @@ projects:
              quarta imagem: duas esferas espelhadas flutuando no mesmo campo da imagem anterior;
              quinta imagem: um bule de Utah verde inclinado sob um espelho quadrado refletindo o
              céu do mesmo campo das imagens anteriores.'
-        description: 'Ray tracer 3D que consegue criar imagens fotorealísticas.'
+        description: 'Ray tracer 3D que consegue criar imagens fotorrealísticas.'
         img:
             spheres: 'GIF feito de 5 imagens que se alternam:
                      primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo;
@@ -477,14 +477,30 @@ others:
             nas pinturas, o realismo não é necessário — utilizando somente criatividade, técnica e um pouco de
             sugestão. Abaixo estão alguns dos modelos que tive a oportunidade de dobrar:'
         unicornio:
-            alt:
-            description:
+            alt: 'Unicornio'
+            description: '<div>Unicornio <br/> por <br/> Román Díaz</div>'
         avispa:
-            alt:
-            description:
+            alt: 'Avispa 3'
+            description: '<div>Avispa <br/> por <br/> Jose Anibal Voyer</div>'
         lyrebird:
-            alt:
-            description:
+            alt: 'Lyrebird'
+            description: '<div>Lyrebird <br/> por <br/> Satoshi Kamiya</div>'
         box:
-            alt:
-            description:
+            alt: 'Mini Clover Folding in a mini box'
+            description: '<div>Clover Folding <br/> por <br/> Shuzo Fujimoto</div>'
+        instagram: 'Dê uma olhada no meu <a href="https://www.instagram.com/arturorigamis/">instagram</a> e <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>!'
+
+photography:
+    title: 'Fotografia'
+    description: 'Foi através da experiência de fotografar meus origamis que eu comecei a prestar atenção em
+					iluminação, composição e fotografia no geral. Encontrei um grande prazer em fotografar a natureza
+					e todas suas pequenas coisas vivas.'
+3dthings:
+    title: 'Coisas 3D'
+    description: 'Resumindo: segui alguns tutoriais de Blender no YouTube e fiz algumas imagens que gostaria de
+					compartilhar:'
+    img:
+        tea: 'Imagem de uma xícara de vidro com várias pequenas rosquinhas caindo dentro dela.'
+        icoCube: 'GIF com tempo reverso de pequenos icosaedros formando um cubo e caindo em uma quadrado cinza.'
+        donut: 'Uma imagem de uma rosquinha num fundo rosa e com cobertura rosa cheia de pequenos confeitos coloridos.'
+        dream: 'Vista superior dentro de uma estrutura vazia com três janelas altas onde o oceano pode ser visto.'

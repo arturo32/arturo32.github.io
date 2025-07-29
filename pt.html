@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
 	<link rel="manifest" href="media/site.webmanifest">
-
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -21,16 +21,16 @@
 
 
 	<meta content="Arturo Fonseca" property="twitter:title">
-
-	<meta content="Estudante de TI interessado em desenvolvimento web e computação gráfica." property="twitter:description">
-
+	
+	<meta content="Brazilian CS student interested in web development and computer graphics." property="twitter:description">
+	
 	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="twitter:image">
 
 	<meta content="Arturo Fonseca" property="og:title">
 
-	<meta content="Estudante de TI interessado em desenvolvimento web e computação gráfica." property="og:description">
+	<meta content="Brazilian CS student interested in web development and computer graphics." property="og:description">
 
-	<meta name="description" content="Estudante de TI interessado em desenvolvimento web e computação gráfica.">
+	<meta name="description" content="Brazilian CS student interested in web development and computer graphics.">
 
 	<meta content="https://arturo32.github.io/media/show-twitter.jpg" property="og:image">
 	<!--<meta content="https://arturo32.github.io/media/show.jpg" property="og:image">-->
@@ -38,1474 +38,1040 @@
 	<meta property="og:type" content="website">
 
 	<meta property="og:url" content="https://arturo32.github.io/">
-
+	
 	<meta content="summary_large_image" name="twitter:card">
 
 	<meta name="theme-color" content="#F5E5D5">
 </head>
 <body>
-<div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
-<header>
+	<div id="frontPageCanvas" aria-hidden="true" tabindex="-1"></div>
+	<header>
+		<label for="language">idioma:</label>
+		<select id="language" onchange="window.location.href='pt.html'">
+			<option value="portuguese">português</option>
+			<option value="english" selected>english</option>
+		</select>
+		<span id="ukFlag" class="currFlag" aria-hidden="true"></span>
+	</header>
+	<h1>Arturo Fonseca</h1>
+	<main>
+		<section>
+			<nav id="indexSection" class="subsection">
+				<a class="colorful red" href="#about" id="aboutHomeButton">Sobre</a>
+				
+				<a class="colorful yellow" href="#projects" id="projectsHomeButton">Projetos</a>
+				
+				<a class="colorful blue" href="#others" id="othersHomeButton">Outros</a>
+			</nav>
+		</section>
 
-	<label for="language">idioma:</label>
-	<select id="language" onchange="window.location.href='index.html'">
-		<option selected value="portuguese">português</option>
-		<option value="english">english</option>
-	</select>
-	<span id="brFlag" class="currFlag"></span>
+		<script src="p5js/p5.min.js"></script>
+		<!-- Front page animation-->
+		<script src="p5js/front-page.js"></script>
+		<script>
+			if(window.innerWidth > 1000) {
+				let frontPageAnimation = new p5(frontPage);
+			}
+		</script>
 
-</header>
-<h1>Arturo Fonseca</h1>
-<main>
-	<section>
-		<nav id="indexSection" class="subsection">
-			<a class="colorful red" href="#about" id="aboutHomeButton">
-				Sobre
-			</a>
+		<section class="colorful red" aria-labelledby="aboutTitle">
+			<div id="aboutSection" class="subsection">
+				
+				<h2 id="about">Sobre</h2>
+				<img id="myPicture" src="media/miniatures/me.jpg" alt="Uma foto minha sorrindo. Eu sou branco, tenho um longo cabelo castanho e um rosto fino. Atrás de mim há uma cortina cinza. Estou usando uma camisa branca.">
+				<p>Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 24 anos e sou graduado em TI pela Universidade Federal do Rio Grande do Norte (UFRN). Atualmente estou cursando Ciência da Computação também na UFRN. Nos últimos 3 anos eu venho trabalhando com <em>desenvolvimento web</em> em projetos de bolsas da minha universidade, aprofundando meu conhecimento tanto em tecnologias de <em>backend</em> como de <em>frontend</em>.</p>
 
-			<a class="colorful yellow" href="#projects" id="projectsHomeButton">
-				Projetos
-			</a>
+				<p>Eu gosto bastante de aprender coisas novas e torná-las mais acessíveis para pessoas. Essa foi uma das principais motivações por trás <span style="text-decoration: line-through">de um dos meus mais queridos projetos pessoais</span> <em>do meu futuro TCC</em>: um site onde qualquer pessoa consegue visualizar e entender <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">como ponteiros funcionam</a> em linguagens de programação. Ele ainda está em seu desenvolvimento inicial, mas eu estou determinado em acabá-lo esse ano!</p>
+				
+				<p>Além de desenvolver aplicações web, eu tenho uma grande paixão por geometria e matemática no geral. Isso me levou a descobrir as maravilhas da <em>computação gráfica</em>. Por isso é possível encontrar muitos projetos pessoais ou de disciplinas que envolvam geometria, vetores e gráficos neste site.</p>
 
-			<a class="colorful blue" href="#others" id="othersHomeButton">
-				Outros
-			</a>
-		</nav>
-	</section>
+				<p>Meus outros interesses envolvem dobrar origami, tirar fotos, mexer um pouco com eletrônica e assistir vídeos sobre teoria musical!</p>
 
-	<script src="p5js/p5.min.js"></script>
+				<div class="section-footer">
+					<p>
+						<a href="https://www.linkedin.com/in/arturo-fonseca"><span class="linkedin-icon icon" aria-hidden="true"></span>meu LinkeIn</a>
+					</p>
+					<p>
+						<a href="https://github.com/arturo32"><span class="github-icon icon" aria-hidden="true"></span>meu GitHub</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="colorful yellow" aria-labelledby="projectsTitle">
+			<div id="projectsSection" class="subsection">
+				<h2 id="projects">Projetos</h2>
+				<h3>Websites</h3>
+				<div class="columns c-2">
 
-	<!-- Front page animation-->
-	<script src="p5js/front-page.js"></script>
+					<div>
+						<h4>Como Ponteiros Funcionam</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+
+						<p>Projeto pessoal educacional sobre a magia dos ponteiros e como eles se comportam na memória.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="howPointersWorkTitle">
+							<div class="modal-content">
+								<h3 id="howPointersWorkTitle">Como Ponteiros Funcionam</h3>
+								<p>Quando eu vi meus colegas tendo dificuldade com o conceito de ponteiros em disciplinas introdutórias de programação, eu pensei em escrever um programa que pudesse ajudá-los a visualizar o que acontece na memória do computador quando eles rodam seus programas.</p>
+
+								<p>Então há 2 anos eu comecei a desenvolver um site que mostra a alocação de memória de variáveis e seus ponteiros ao mesmo tempo em que são digitados pelo usuário em um console.</p>
+
+								<p>Até agora o site pode identificar declaração e atribuição de variáveis e ponteiros, seus tipos e desreferenciamento de ponteiros. Ele ainda não pode identificar arrays (que podem ser vistos como um tipo de ponteiro nas linguagens C e C++). Eu planejo migrar para o framework Vue.js e remover a biblioteca p5.js, deixando a visualização de células de memórias mais interativas.</p>
+
+								<img src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF do site sendo usado." class="full-image">
+
+
+								<p>Eu falo mais sobre ele na página do projeto abaixo.</p>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Ecoleta (React)</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/ecoleta/ecoleta.webp" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+
+						<p>Um site sobre pontos de coleta reciclável na sua cidade.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="ecoletaTitle">
+							<div class="modal-content">
+								<h3 id="ecoletaTitle">Ecoleta (React)</h3>
+								<p>Esse site foi desenvolvido acompanhando a primeira edição do evento online Next Level Week organizado pela <a href="https://www.rocketseat.com.br/">Rocketseat</a>. Este evento era gratuito e consistia de 5 vídeos postados durante uma semana, ensinando conceitos de front e backend enquanto era desenvolvido colaborativamente um site sobre encontrar pontos de coleta de lixo sólido perto de você.</p>
+
+								<img src="media/miniatures/ecoleta/ecoleta.webp" alt="Um GIF mostrando o fluxo do site: landing page, registro de um ponto de coleta com campos de nome, imagem, endereço (com um mapa) e, no fim, que tipos de materiais o ponto aceita." class="full-image">
+
+								<p>O <em>backend</em> consiste de uma API restful feita com <em>NodeJS</em> e o <em>frontend</em> foi feito com a biblioteca de JavaScript <em>React</em>. Eu fiquei muito orgulhoso com as pequenas modificações que fiz no projeto original. Você pode checá-las na página do projeto clicando no botão abaixo:</p>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Conversor (Vue.js)</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/converter/converter-vue-js.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Converte valores monetários entre várias moedas internacionais!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
+							<div class="modal-content">
+								<h3 id="converterTitle">Conversor (Vue.js)</h3>
+								<p>Este é um dos vários pequenos projetos que eu fiz enquanto estava aprendendo pela primeira vez <em>Vue.js</em>, um framework do JavaScript para construir interfaces de frontend. Eu o fiz seguindo um <a href="https://youtu.be/tIEa3MRBpI0">video de Programador BR</a> mas logo me deixei levar pela reatividade do data biding do Vue e tentei explorá-la o máximo que pude.</p>
+
+								<img src="media/miniatures/converter/converter-vue-js.gif" alt="Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6 quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos vazios" class="full-image">
+
+								<p>Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6 quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos vazios.</p>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>(Re)aprendendo Vue.js</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>De volta aos fundamentos.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
+							<div class="modal-content">
+								<h3 id="learningVueTitle">(Re)aprendendo Vue.js</h3>
+								<p>Depois de 3 anos dos meus primeiros projetos em <em>Vue.js</em> eu sentir a necessidade de re-aprendê-lo do começo, começando com o <a href="https://v2.vuejs.org/v2/guide/">guia do Vue 2</a>. Após passar pelos conceitos básicos (renderização condicional, data biding, propriedades computadas, etc) com um <a href="https://v2.vuejs.org/v2/guide/installation.html#CDN">script CDN</a>, eu quis tentar implementar o "Single File Components" do Vue <em>sem</em> usar o CLI, com a intenção de aprender todas as pequenas partes que tornam possível o desenvolvimento de aplicações web complexas.</p>
+
+								<img src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="Print de um site com fundo esverdeado e 8 retângulos amarelos, cada um com título e subtítulo, alguns com botões e campos de texto." class="full-image">
+
+								<p>Então, utilizando <a href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/" title="Creating a Vue.js app using SFC without CLI."> este guia</a>, eu aprendi como configurar <em>Webpack</em> e <em>Babel</em> para agrupar (<span style="font-style: italic">bundle</span>) e (trans)compilar todos arquivos de JS e Vue para uma forma que navegadores consigam entender.</p>
+
+								<p>Para a etapa final desse projeto eu pretendo ler o guia da terceira versão do Vue e utilizá-lo juntamente ao CLI dessa vez. Também vai ser uma preparação para eu continuar o desenvolvimento do projeto <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">ComoPonteirosFuncionam</a>.</p>
+								<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Primeiro projeto Spring</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>projects.description.title</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="firstSpringProjectTitle">
+							<div class="modal-content">
+								<h3 id="firstSpringProjectTitle">Primeiro projeto Spring</h3>
+								<p>Fiz esse site em 2020, quando eu estava tentando entrar em uma bolsa financiada pela minha universidade (e o Ministério da Saúde!) e isso fazia parte do seu processo de seleção. Eu passei e me mantive no projeto por quase 2 anos.</p>
+
+								<p>Ele é sobre um sistema de gerenciamento para uma escola onde é possível realizar operações "CRUD" em turmas, professores e alunos.</p>
+
+								<figure>
+									<img alt="Diagrama UML" loading="lazy" class="full-image" src="media/miniatures/first-spring-project/firstSpringProjectUml.jpg">
+									<figcaption>Diagrama UML das entidades.</figcaption>
+								</figure>
+
+								<p>Ele segue o padrão MVC: o backend foi feito com <em>Java + Spring</em> e utiliza <em>PostgreSQL</em> como gerenciador de banco de dados enquanto o frontend com HTML/CSS básicos com <em>Thymeleaf</em>.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video class="full-image" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project.mp4"></video>
+										<button id="firstSpringProjectDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="firstSpringProjectDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="firstSpringProjectDescription" class="gif-description">Captura de tela mostrando o uso do site com a página inicial composta de 6 botões para criar e visualizar as entidades.</p>
+								</div>
+
+								<p>
+									Curiosity: I wanted to show off my CSS skills so, for a moment during development, the version below existed:
+								</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video class="full-image" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project-old-version.mp4"></video>
+										<button id="firstSpringProjectOldVersionDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="firstSpringProjectOldVersionDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="firstSpringProjectOldVersionDescription" class="gif-description">Captura de tela da página inicial composta por 3 botões, cada um se transformando em mais dois em uma animação quando o mouse passa por cima deles.</p>
+								</div>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/FirstSpringProject">Código</a>
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Selo ou não sê-lo (Tumblr)</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Fazendo um site para minha irmã... no Tumblr!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="seloNaoSeloTitle">
+							<div class="modal-content">
+								<h3 id="seloNaoSeloTitle">Selo ou não sê-lo (Tumblr)</h3>
+								<p>Minha irmã, <a href="https://instagram.com/luiza_fs">Luiza Fonseca</a>, é uma artista visual e designer que às vezes me pede ajuda quando ela precisa fazer um site. Não foi diferente quando ela teve que fazer um projeto sobre produzir arte colectivamente através da troca de cartas entre diferentes artistas!</p>
+
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp" alt="Print da página inicial do site.">
+
+								<p>A princípio, ela desenvolveu todo o design do site. Em seguida, escolheu o Tumblr como plataforma para hospedá-lo (o que foi um pouco desafiante devido a suas limitações, mas menos do que imaginei). Daí em diante, eu tentei implementá-lo o mais próximo possível de sua visão. Os títulos e até a aparência do cursor foram desenhados por ela, criando um visual bem único.</p>
+
+								<p>Algo que gostei de ter feito nesse projeto foi o botão do menu para mobile. Eu vi em algum lugar um ícone de menu que se transformava em um botão de fechar e eu queria copiar com CSS puro. Funcionou, como é possível ver abaixo.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img alt="GIF mostrando a animação de um botão de fechar" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp">
+										<button id="seloDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="seloDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											Descrição do GIF
+										</button>
+									</div>
+									<p id="seloDescription" class="gif-description">GIF mostrando a versão mobile do site um botão de menu feito de duas linhas paralelas que se cruzam quando clicado, formando um X. O menu é revelado.</p>
+								</div>
+
+								<p></p>
+
+								<img class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.">
+								<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Este site aqui</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>projects.description.title</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
+							<div class="modal-content">
+								<h3 id="thisVeryOwnWebSiteTitle">Este site aqui</h3>
+								<p>Este portfólio foi motivado pelo <a href="https://sgi.mit.edu/">Summer Geometry Initiative (SGI)</a> do Massachusetts Institute of Technology (MIT): um curso de 6 semanas focado em pesquisa na área de processamento geométrico. Infelizmente acabei não sendo aceito, mas toda a experiência que obtive no processo me foi muito valiosa. Este site não deixa de ser uma prova disso! :)</p>
+
+								<p>Eu o fiz sem muito JavaScript (ou qualquer um de seus frameworks/bibliotecas) e tentei mantê-lo simples, mas original. No processo de desenvolvimento, foquei em deixa-lo <em>acessível</em>, especialmente para pessoas que usam teclado e leitores de tela para navegar na web.</p>
+
+								<p>Na verdade, utilizei uma biblioteca JS neste site: a <a href="https://www.mathjax.org/">biblioteca MathJax</a>, utilizada para visualizar equações matemáticas escritas em \( \LaTeX\). As equações também são acessíveis para usuários de leitores de tela.</p>
+
+								<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg" alt="Print da página inicial deste site.">
+								<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Código</a>
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+				</div>
+
+				<h3>Matemática Visual</h3>
+				<div class="columns c-3">
+
+					<div id="triagleLerp">
+						<h4>Interpolação triangular</h4>
+
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Interpolação linear, mas com áreas! Em um triângulo!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
+							<div class="modal-content">
+								<h3 id="triagleLerpTitle">Interpolação triangular</h3>
+
+								<p>Este eu peguei de um <a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">fio do Twitter</a> de <a href="https://acegikmo.com/">Freya Holmér</a>. Eu já conhecia o conceito de interpolação linear do Projeto de Desenho Gráfico, mas não tinha conhecimento de interpolação entre três pontos ao mesmo tempo.</p>
+
+								<p>Como Freya diz em seu fio, para calcular a influência de cada vértice do triângulo em um ponto arbitrário dentro dele, é necessário calcular a <em>área</em> do triângulo interno <em>oposto</em> à esse ponto. Então, a porcentagem dessa área em relação à área total é calculada.</p>
+
+								<p>Uma técnica similar foi utilizada no projeto de Ray Tracer para que superfícies pareçam mais suaves em malhas de triângulos (Phong Shading).</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="GIF da interpolação triangular">
+										<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="triangleLerpDescription" class="gif-description">GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo também interpolam as cores de seus vértices.</p>
+								</div>
+
+
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Código</a>
+
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Tabuada</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Lindos padrões emergem quando números são escritos em um círculo.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
+							<div class="modal-content">
+								<h3 id="timesTableTitle">Tabuada</h3>
+								<p>...tabuada? Isso mesmo! O GIF abaixo é apenas a tabuada de 2, onde cada ponto na circunferência é um número e cada linha conecta um número com seu dobro. Então, 2 se conecta com 4, 3 com 6, e por aí vai...</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
+										<button id="timesTableDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="timesTableDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="timesTableDescription" class="gif-description">Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conectando diferentes pontos em sua circunferência. O número de pontos e linha cresce rapidamente, formando uma imagem que parece um coração de lado (cardioide).</p>
+								</div>
+
+								<p>projects.timesTable.p2</p>
+
+								<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png" style="width: 500px;" alt="Um círculo com 10 linhas verdes conectando 12 números escritos em sua circunferência de 0 a 11. Elas formam uma imagem que é simétrica no eixo horizontal.">
+
+								<p>A imagem abaixo também é uma tabuada de 2, contudo a quantidade de números que fazem parte não estão loucamente mudando o tempo todo e eles... aparecem escritos! São 12 números no total, seguindo a mesma lógica de antes: 2 se conecta com 4, 3 com 6... Do 6 em diante nós fazemos o que é chamado aritmética de relógio ou, mais precisamente, aritmética modular: 0 é 12, 1 é 13, 2 é 14 e assim por diante... Por isso 6 se conecta com 0 e 7 com 2, por exemplo. Nós podemos chamar tudo isso de <em>tabuada de 2 módulo 12</em>:</p>
+
+								<p>Eu descobri isso em um <a href="https://youtu.be/qhbuKbxJsk8">vídeo do canal Mathologer</a>. Quando você adiciona mais números, isto é, altera o módulo, uma figura conhecida na matemática como cardioide começa a aparecer na tabuada de 2, como é possível ver no primeiro GIF.</p>
+
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png" alt="A circle with several green lines crossing
+									each other forming small rectangles.">
+									<figcaption>Tabuada de 38 com 78 números.</figcaption>
+								</figure>
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg" alt="A circle with several green lines crossing
+									each other forming a small cardioid in the center with lots of random lines surrounding it.">
+									<figcaption>Tabuada de 65 com 191 números.</figcaption>
+								</figure>
+								<figure>
+									<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg" alt="A circle with several green lines crossing
+									each other forming a beautiful pattern with radial symmetry.">
+									<figcaption>Tabuada de 17 com 288 números.</figcaption>
+								</figure>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ" title="Code of the Times Table">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+
+<!--							<div>-->
+<!--								<h4>PI blocks</h4>-->
+<!--								<div class="project-container">-->
+<!--									<img  src="media/miniatures/pi-blocks.gif" />-->
+<!--									<button type="button" data-t="learnMore">Learn <br> more</button>-->
+<!--								</div>-->
+<!--								<p>When PI is found in unexpected places.</p>-->
+
+<!--								<dialog class="project-details modal" aria-modal="true" aria-labelledby="piBlocksTitle">-->
+<!--									<div class="modal-content">-->
+<!--										<button type="button" class="close" aria-label="Close" data-attr-t aria-label-t="close" title-t="close"></button>-->
+<!--										<h3 id="piBlocksTitle">PI blocks</h3>-->
+<!--										<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>-->
+<!--										<p>Soon!</p>-->
+<!--										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk" data-t="code">Code</a>-->
+<!--									</div>-->
+<!--								</dialog>-->
+<!--							</div>-->
+
+					<div>
+						<h4>Campo vetorial</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>A beleza de um certo gerador de números aleatórios.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
+							<div class="modal-content">
+								<h3 id="perlinNoiseTitle">Campo vetorial</h3>
+								<p>Eu fui introduzido ao p5.js pelos vídeos de <a href="https://shiffman.net/">Daniel Shiffman</a>, um dos diretores do <a href="https://processingfoundation.org/">Processing Foundation</a>. Em seu canal no YouTube, <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, não só aprendi sobre as funcionalidades do p5.js, como também a matemática e algoritmos por trás delas.</p>
+
+								<p>Como explicado na <a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">playlist do Coding Train</a>, <em>Perlin noise</em> é um gerador de números randômicos onde cada número gerado por ele é relativamente próximo aos números que vem antes e depois dele.</p>
+
+								<p>No meu código, eu utilizei esses valores para representar o ângulo de rotação de cada traço, como é possível observar no GIF abaixo. Eu também utilizei função seno para mapear as cores azul e vermelho em suas rotações.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="GIF do campo vetorial">
+										<button id="perlinNoiseVectorFieldDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="perlinNoiseVectorFieldDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="perlinNoiseVectorFieldDescription" class="gif-description">GIF com 100 pequenas linhas igualmente espaçadas que giram e mudam de cor dependendo de seus ângulos. Elas se movem de maneira sincrônizada mas orgânica.</p>
+								</div>
+
+
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Luz e sombra</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/light-and-shadow/light-and-shadow.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Linhas e suas interseções com o ambiente.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
+							<div class="modal-content">
+								<h3 id="lightAndShadowTitle">Luz e sombra</h3>
+								<p>Este eu peguei do <a href="https://ncase.me/sight-and-light/">artigo Sight and Light de Nicky Case</a>. É sobre como você pode simular luz e suas sombras para jogos. Eu segui apenas metade do tutorial e consegui fazer a pequena visualização interativa abaixo:</p>
+
+								<button class="code-button colorful play-button">Começar</button>
+								<div id="lightShadowCanvas" class="interactiveCode"></div>
+								<button class="code-button colorful stop-button" style="display: none;">Parar</button>
+
+								<p>Ah, também fiz... essa coisa:</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img loading="lazy" src="media/miniatures/light-and-shadow/third-eye.gif" alt="Third eye GIF">
+										<button id="thirdEyeDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="thirdEyeDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="thirdEyeDescription" class="gif-description">O GIF começa com dois olhos geométricos em um fundo preto. As suas pupilas radiam várias linhas brancas enquanto se movem para fora dos olho e em direção ao centro acima deles. Quando convergem, outro olho é desenhado em volta deles.</p>
+								</div>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Conjuntos de Julia</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+
+						<p>Move your mouse to generate beautiful products of a complex number function.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
+							<div class="modal-content">
+								<h3 id="juliaSetsTitle">Conjuntos de Julia</h3>
+
+								<p>O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que fica bonitinho quando plotado no plano complexo como a figura abaixo:</p>
+
+								<figure role="group">
+									<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png" alt="Uma imagem quase toda preta com uma figura de bordas brancas composta de duas bolhas: uma em um formato de cardioide e outra menor e mais redonda. Suas bordas se tocam em um ponto e são seguidas por uma linha fina branca. Essas bolhas parecem se repetir na borda da estrutura, de maneira fractal.">
+									<figcaption>Veja o <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">código do conjunto Mandelbrot.</a></figcaption>
+								</figure>
+
+								<p>É relativamente simples gerar essa imagem. Tudo se resume a função abaixo:</p>
+
+								<p class="equation">\(f_c(z) = z^2 + c\)</p>
+
+								<p>Nos falaremos dos números complexos \(z\) e \(c\) logo. Primeiro, precisamos de outro par de números:</p>
+
+								<ul>
+									<li>Um número positivo maior que 2. Vamos chamá-lo de <em>limite</em>;</li>
+									<li>Outro número positivo. Dessa vez um grande. Este será nosso <em>número de iterações</em></li>
+								</ul>
+
+								<p>Agora, nós aplicamos nossa função recursivamente em <em>cada píxel</em> da imagem que representa o plano complexo. Nós fazemos isso tornando \(c\) a coordenada do pixel atual e \(z\) começando com o valor \(0 + 0i\). Enquanto iteramos a função em um píxel, \(z\) pode ou não crescer acima de nosso <em>limite</em>. Se isso acontecer antes de alcançarmos o <em>número de iterações</em>, nós paramos a recursão e pintamos o píxel de <em>branco</em>. Se não, pintamos de <em>preto</em>. É isso!</p>
+
+								<p>E <em>conjuntos de Julia</em> são quase a mesma coisa, com \(c\) e \(z\) trocando de lugar, ou seja, \(z\) irá representar a coordenada do píxel atual enquanto \(c\) irá ser... uma constante arbitrária! Para cada \(c\) que escolhemos no começo do processo, nós podemos fazer uma imagem completamente diferente (um conjunto completamente diferente!). Cada uma possuindo uma complexidade e beleza única. E para tornar as coisas ainda mais bonitas, nós adicionamos uma pequena mágica matemática nos valores RGB dos píxels, mudando eles conforme o quão rápido algumas das entradas alcançam o <em>limite</em>, como na imagem abaixo feita com \(c = 0 - 0.8i\):</p>
+
+								<figure role="group">
+									<img loading="lazy" src="media/miniatures/julia-set/julia.jpg" title="Julia set" alt="Um conjunto de Julia muito colorido com um forma central preta que lembra uma minhoca em forma de Z." class="full-image">
+									<figcaption>Veja o <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">código desse grande conjunto de Julia.</a></figcaption>
+								</figure>
+
+								<p>Finalmente, o GIF abaixo foi feito mudando \(c\) de acordo com as coordanadas do mouse. Então, a cada nova posição do mouse, a função itera em todos os píxels para formar a imagem daquele conjunto particular. Para poupar o processador, eu fiz a função pular alguns píxels. Por isso as cores estão um pouco dessaturadas.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
+										<button id="juliaSetDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="juliaSetDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="juliaSetDescription" class="gif-description">GIF de um retângulo colorido com um círculo negro dentro dele. Suas cores são pastéis bem pálidas que variam entre rosa, azul e amarelo. Assim que o mouse se move, o círculo se transforma drasticamente, com seus lados opostos fundindo em formas psicodélicas.</p>
+								</div>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+
+					<div>
+						<h4>Espirais</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/spirals/spirals.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Ande, gire levemente para direta, repita. De repente, você se vê cercado por fractais espirais!</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
+							<div class="modal-content">
+								<h3 id="spiralsTitle">Espirais</h3>
+								<p>O fio de Matt Henderson no Twitter sobre <a href="https://twitter.com/matthen2/status/1249611168265547776?s=20" title="fio de Matt Henderson no Twitter.">espirais de Euler</a> me inspirou nessa animação.</p>
+								<p>É realmente simples como a descrição sugere: desenhe uma linha, gire a um <em>certo ângulo</em>, desenhe outra linha. Mas a cada repetição, você adicionada esse <em>certo ângulo</em>, acumulando-o. No final você tem uma aproximação de uma <a href="https://pt.wikipedia.org/wiki/Espiral_de_Cornu" title="Artigo da Wikipidia."> Espiral de Euler</a>. E, se você escolher o ângulo certo, você pode obter uma Espiral de Euler feita de pequenas Espirais de Euler:</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<img loading="lazy" src="media/miniatures/spirals/spirals.gif" alt="GIF da espiral">
+										<button id="spiralsDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="spiralsDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="spiralsDescription" class="gif-description">GIF mostrando uma espiral branca num fundo quadrado escuro que se abre no sentido anti-horário no canto inferior direito, cruza o centro e se fecha no canto superior esquerdo no sentido horário. O mesmo padrão é encontrado ao longo da linha da espiral, em menor escala.</p>
+								</div>
+
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Série de Fourier</h4>
+						<div class="project-container">
+							<img aria-hidden="true" tabindex="-1" src="media/miniatures/fourier/fourier.gif" alt>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Círculos ao redor de círculos ao redor de círculos...</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
+							<div class="modal-content">
+								<h3 id="fourierSeriesTitle">Série de Fourier</h3>
+
+								<p>A série de Fourier é uma forma de usar as funções seno e cosseno para aproximar outras funções. É um pouco parecido com a <a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_Taylor">série de Taylor</a>, que muitas pessoas aprendem na disciplina de cálculo na universidade.</p>
+
+								<p>Um exemplo muito famoso na internet são GIFs que mostram a série de Fourier sendo usada para expressar ondas quadradas a partir de funções seno. Eles lindamente representam as funções sendo adicionadas como círculos que giram em torno de outros círculos com frequências diferentes. Então eu tentei fazer o mesmo, só que de forma interativa, com a ajuda de um <a href="https://youtu.be/Mm2eYfj0SgA">vídeo do Coding Train</a>.</p>
+
+								<p>Você pode clicar no botão abaixo se quiser brincar com a visualização. Apenas tome cuidado com a quantidade círculos adicionados. Eu não iria recomendar algo acima de 1000 se não estiver em um computador minimamente "poderoso".</p>
+
+								<button class="code-button colorful play-button">Começar</button>
+								<div id="fourierCanvas" class="interactiveCode"></div>
+								<button class="code-button colorful stop-button" style="display: none;">Parar</button>
+
+								<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+				</div>
+
+				<h3>Outros projetos</h3>
+				<div class="columns c-3">
+					<div>
+						<h4>Ray Tracer</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Ray tracer 3D que consegue criar imagens fotorrealísticas.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
+							<div class="modal-content">
+								<h3 id="rayTracerTitle">Ray Tracer</h3>
+								<p>Este projeto foi desenvolvido por mim e meu amigo <a href="https://github.com/JohnVithor">João Vítor</a> através da disciplina Computação Gráfica, lecionada pelo professor <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan Rodrigues dos Santos</a>. A aplicação desenvolvida cria imagens representando cenas 3D descritas por arquivos XML. Tudo isso utilizando a magia do ray tracing.</p>
+
+								<p>Ray tracing é uma técnica usada para criar imagens onde o <em>foto-realismo</em> é desejado. Ele funciona <em>simulando</em> fótons de <em>luz</em> como <em>raios</em> (vetores) que são lançados na cena da perspectiva da pessoa espectadora. Os raios, então, viajam pela cena sendo <em>refletidos, refratados ou absorvidos</em> por objetos. Todas essas interações são calculadas para cada píxel da imagem, definindo sua cor final.</p>
+
+								<p>Fazer esse projeto foi desafiante por conta de seu tamanho. Tivemos que considerar a <em>câmera</em>, <em>objetos</em> e suas <em>interações com os raios</em>, diferentes <em>tipos de iluminações</em>, diferentes <em>modelos de luz</em>, parsear <em>arquivos XML</em> e <em>arquivos .obj</em>... Ao mesmo tempo, foi muito gratificante porque a cada etapa do projeto nos podíamos <em>ver</em> o resultado do que tínhamos feito até então.</p>
+
+								<p>No final, nós não podíamos acreditar nas imagens que o nosso próprio programa produzia! O plano de fundo esférico (opcional) fez com que as superfícies reflexivas se tornassem muito mais interessantes!</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
+										<button id="rayTracerDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="rayTracerDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="rayTracerDescription" class="gif-description">GIF feito de 5 imagens que se alternam: primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo; segunda imagem: uma rosquinha no espaço que reflete 100% do ambiente; terceira imagem: um dragão de Stanford espelhado sentado em um campo verde; quarta imagem: duas esferas espelhadas flutuando no mesmo campo da imagem anterior; quinta imagem: um bule de Utah verde inclinado sob um espelho quadrado refletindo o céu do mesmo campo das imagens anteriores.</p>
+								</div>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Projeto de Desenho Gráfico</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Quase a mesma coisa que o Paint! Mas usando o teclado ao invés do mouse.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+							<div class="modal-content">
+								<h3 id="drawingProjectTitle">Projeto de Desenho Gráfico</h3>
+								<p>Este foi o projeto final da disciplina de Introdução à Técnicas de Programação, lecionada pelo professor Gustavo Girão no meu segundo semestre na universidade. Foi feito por mim e meu amigo <a href="https://github.com/artursantiago">Artur Santiago</a> utilizando a linguagem de programação C.</p>
+
+								<p>O projeto é sobre desenhar imagens rasterizadas no formato PPM com comandos em um arquivo de texto. Isto é o que ele consegue desenhar:</p>
+
+								<ul>
+									<li>Linhas;</li>
+									<li>Círculos;</li>
+									<li>Retângulos;</li>
+									<li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Curvas de Bézier;</a></li>
+									<li>Curvas de Bézier aleatórias!;</li>
+									<li>Polígonos regulares;</li>
+									<li>Ferramenta de balde de tinta.</li>
+								</ul>
+
+								<p>Eu me surpreendi pelo fato de que desenhar linhas em um computador é bem mais complexo do que pensava. Píxels vem em quantidades discretas, bem diferente do espaço contínuo de uma folha de papel em nossa realidade, por exemplo. É necessário ter algorítmos espertos que decidam que píxels devem ser "coloridos" ou não.</p>
+
+								<p>Este foi o primeiro "grande" projeto que participei e foi uma grande aprendizado sobre planejamento, implementação e organização de um projeto em grupo.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
+										<button id="drawingProjectDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="drawingProjectDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="drawingProjectDescription" class="gif-description">GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..</p>
+								</div>
+
+								<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+
+					<div>
+						<h4>Som Imaginário</h4>
+						<div class="project-container">
+							<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
+							<button class="container-cover" type="button">Saiba <br> mais</button>
+						</div>
+						<p>Projeto educacional sobre som e como seres humanos localizam sua origem no espaço.</p>
+
+						<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
+							<div class="modal-content">
+								<h3 id="somImaginarioTitle">Som Imaginário</h3>
+
+								<p>Este foi o projeto final da disciplina de Sistema Embarcados lecionada pela professora <a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.</p>
+
+								<p>Ele é sobre um jogo eletrônico educacional com a intenção de ensinar sobre como ondas sonoras funcionam e como o ser humano consegue captar essas ondas e localizar a origem de um certo som no espaço. É pensando para salas de aula do fundamental e ensino médio. O dispositivo — feito com Arduino, dois sensores de som, um LCD, um potenciômetro e um motor de passo — pode indicar a origem de sons altos e curtos, medindo a diferença de tempo em que o som leva para chegar entre os sensores.</p>
+
+								<div class="media-with-description">
+									<div class="gif-with-toggle">
+										<video autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
+										<button id="somImaginarioDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="somImaginarioDescription">
+											<svg viewbox="0 0 100 100" class="triangle">
+												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
+											</svg>
+											<span>gifDescription"</span>
+										</button>
+									</div>
+									<p id="somImaginarioDescription" class="gif-description">GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma foto desse dispositivo.</p>
+								</div>
+
+								<p>Um dos dois modos do jogo envolve alguém batendo palmas enquanto o dispositivo tenta apontar para sua localização. Por conta que o dispositivo possui somente 2 sensores de som, ele pode apontar ás vezes para a direção oposta da origem do som. Isso pode levar a discussões sobre o porquê que o dispositivo se comporta dessa maneira e como ele escolhe para onde apontar.</p>
+
+								<p>Fui inspirado por um <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">vídeo do canal do YouTube Smarter Every Day YouTube</a>, como também por um <a href="https://youtu.be/CqB95rj_txI">vídeo do canal do Steve Mould</a>.</p>
+
+								<p>O jogo também contava com um aplicativo de celular que eu não consegui implementar a tempo. Abaixo algumas das telas que prototipei:</p>
+
+								<figure>
+									<img src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt="Três tela do aplicativo Som Imaginário.">
+									<figcaption dat-t="projects.som.img.screens.description">
+										Three screens of the Som Imaginário app, written in portuguese: the first one with two buttons — one that takes to the
+										"about" section (third screen) and other that opens a modal for choosing one of the two game modes (second screen).
+									</figcaption>
+								</figure>
+
+								<p>PS: O nome do projeto faz referência à uma <a aria-label="Matança do Porco Album" href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA" title="Matança do Porco Album">banda dos anos 70</a>.</p>
+
+
+
+								<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Código</a>
+
+							</div>
+							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
+						</dialog>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="colorful blue" aria-labelledby="othersTitle">
+			<div id="othersSection" class="subsection">
+				<h2 id="others">Outros</h2>
+				
+
+				<h3>Origami</h3>
+				<div>
+					<p>Sem tesoura ou cola, formas intrigantes podem emergir de uma simples folha de papel. Eu descobri a arte do origami quando tinha 8 anos. Desde então, aprendi que posso dobrar tudo que imaginar — como nas pinturas, o realismo não é necessário — utilizando somente criatividade, técnica e um pouco de sugestão. Abaixo estão alguns dos modelos que tive a oportunidade de dobrar:</p>
+
+					<div id="origami">
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
+							<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br> por <br> Román Díaz</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
+							<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br> por <br> Jose Anibal Voyer</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
+							<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br> por <br> Satoshi Kamiya</div></a>
+						</div>
+						<div class="project-container">
+							<img src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
+							<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding in a mini box"><div>Clover Folding <br> por <br> Shuzo Fujimoto</div></a>
+						</div>
+					</div>
+
+					<p>Dê uma olhada no meu <a href="https://www.instagram.com/arturorigamis/">instagram</a> e <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>!</p>
+				</div>
+
+				
+
+				<h3>Fotografia</h3>
+				<div>
+					<p>Foi através da experiência de fotografar meus origamis que eu comecei a prestar atenção em iluminação, composição e fotografia no geral. Encontrei um grande prazer em fotografar a natureza e todas suas pequenas coisas vivas.</p>
+
+					<div id="photography">
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título">
+							<img src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título">
+						</a>
+
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out">
+							<img src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out">
+						</a>
+
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título">
+							<img src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título">
+						</a>
+
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo">
+							<img src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo">
+						</a>
+
+						<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/20816992939/" title="Amanhecer em Gouveia - MG">
+							<img src="https://live.staticflickr.com/5731/20816992939_52bb6bc8c0_c.jpg" width="800" height="336" alt="Amanhecer em Gouveia - MG">
+						</a>
+					</div>
+				</div>
+
+				<h3>Coisas 3D</h3>
+				<div>
+					<p>Resumindo: segui alguns tutoriais de Blender no YouTube e fiz algumas imagens que gostaria de compartilhar:</p>
+					<div id="blender">
+						<figure class="image-container">
+							<img loading="lazy" src="media/miniatures/blender/cup4.jpg" alt="Imagem de uma xícara de vidro com várias pequenas rosquinhas caindo dentro dela.">
+							<figcaption class="container-cover">Tea?</figcaption>
+						</figure>
+
+						<figure class="image-container">
+							<img loading="lazy" src="media/miniatures/blender/ico-cube.webp" alt="GIF com tempo reverso de pequenos icosaedros formando um cubo e caindo em uma quadrado cinza.">
+							<figcaption class="container-cover">Ico-cube</figcaption>
+						</figure>
+
+						<figure class="image-container">
+							<img loading="lazy" src="media/miniatures/blender/donut12.jpg" alt="Uma imagem de uma rosquinha num fundo rosa e com cobertura rosa cheia de pequenos confeitos coloridos.">
+							<figcaption class="container-cover">Donut</figcaption>
+						</figure>
+
+						<figure class="image-container">
+							<img loading="lazy" src="media/miniatures/blender/sonho5.jpg" alt="Vista superior dentro de uma estrutura vazia com três janelas altas onde o oceano pode ser visto.">
+							<figcaption class="container-cover">Dream</figcaption>
+						</figure>
+
+
+
+
+					</div>
+				</div>
+
+
+				
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<a href="#top" aria-label="Top of the page" title="Top of the page">A</a>
+	</footer>
+	
+	
+
+
+
+	<!-- A website inside itself -->
 	<script>
-		if(window.innerWidth > 1000) {
-			let frontPageAnimation = new p5(frontPage);
+		function moveThisWebsiteImage() {
+			let thisWebsiteImage = document.getElementById('thisWebsiteImage');
+
+			thisWebsiteImage.height = thisWebsiteImage.width / 2;
+
+			let currentScroll = window.scrollY;
+			let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+			let scrollPercentage = (currentScroll/maxScroll) * 100;
+
+			thisWebsiteImage.style.objectPosition = '0 ' + scrollPercentage + '%';
 		}
+
+		window.addEventListener('scroll', moveThisWebsiteImage);
+		moveThisWebsiteImage();
 	</script>
 
-	<section class="colorful red" aria-labelledby="aboutTitle">
-		<div id="aboutSection" class="subsection">
-
-			<h2 id="about">Sobre</h2>
-			<img  id="myPicture" src="media/miniatures/me.jpg" alt="Uma foto minha sorrindo. Eu sou branco,
-			tenho um longo cabelo castanho e um rosto fino. Atrás de mim há uma cortina cinza. Estou usando
-			uma camisa branca."/>
-			<p>
-				Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 24 anos e sou graduado em TI pela Universidade Federal
-				do Rio Grande do Norte (UFRN). Atualmente estou cursando Ciência da Computação também na UFRN. Nos
-				últimos 3 anos eu venho trabalhando com <em>desenvolvimento web</em> em projetos de bolsas da minha
-				universidade, aprofundando meu conhecimento tanto em tecnologias de <em>backend</em> como de
-				<em>frontend</em>.
-			</p>
-
-			<p>
-				Eu gosto bastante de aprender coisas novas e torná-las mais acessíveis para pessoas. Essa foi uma das
-				principais motivações por trás <span style="text-decoration: line-through">de um dos meus mais queridos
-				projetos pessoais</span> <em>do meu futuro TCC</em>: um site onde qualquer pessoa consegue visualizar e
-				entender <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md"> como ponteiros funcionam</a> em
-				linguagens de programação. Ele ainda está em seu desenvolvimento inicial, mas eu estou determinado em
-				acabá-lo esse ano!
-			</p>
-
-			<p>
-				Além de desenvolver aplicações web, eu tenho uma grande paixão por geometria e matemática no geral. Isso
-				me levou a descobrir as maravilhas da <em>computação gráfica</em>. Por isso é possível encontrar muitos
-				projetos pessoais ou de disciplinas que envolvam geometria, vetores e gráficos neste site.
-			</p>
-
-			<p>
-				Meus outros interesses envolvem dobrar origami, tirar fotos, mexer um pouco com eletrônica e assistir
-				vídeos sobre teoria musical!
-			</p>
-
-			<div class="section-footer">
-				<p>
-					<a href="https://www.linkedin.com/in/arturo-fonseca"><span class="linkedin-icon icon" aria-hidden="true"></span>meu LinkeIn</a>
-				</p>
-				<p>
-					<a href="https://github.com/arturo32"><span class="github-icon icon" aria-hidden="true"></span>meu GitHub</a>
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="colorful yellow" aria-labelledby="projectsTitle">
-		<div id="projectsSection" class="subsection">
-			<h2 id="projects">Projetos</h2>
-			<h3>Websites</h3>
-			<div class="columns c-2">
-
-				<div>
-					<h4>Como Ponteiros Funcionam</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/how-pointers-work/how-pointers-work.gif"
-							 alt="GIF do site sendo usado."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-
-					<p>Projeto pessoal educacional sobre a magia dos ponteiros e como eles se comportam na memória.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="howPointersWorkTitle">
-						<div class="modal-content">
-							<h3 id="howPointersWorkTitle">Como Ponteiros Funcionam</h3>
-							<p>
-								Quando eu vi meus colegas tendo dificuldade com o conceito de ponteiros em disciplinas 
-								introdutórias de programação, eu pensei em escrever um programa que pudesse ajudá-los 
-								a visualizar o que acontece na memória do computador quando eles rodam seus programas.
-							</p>
-
-							<p>
-								Então há 2 anos eu comecei a desenvolver um site que mostra a alocação de memória de 
-								variáveis e seus ponteiros ao mesmo tempo em que são digitados pelo usuário em um console.
-							</p>
-
-							<p>
-								Até agora o site pode identificar declaração e atribuição de variáveis e ponteiros, 
-								seus tipos e derreferenciamento de ponteiros. Ele ainda não pode identificar arrays (que
-								podem ser vistos como um tipo de ponteiro nas linguagens C e C++). Eu planejo migrar 
-								para o framework Vue.js e remover a biblioteca p5.js, deixando a visualização de células
-								de memórias mais interativas.
-							</p>
-
-							<img  src="media/miniatures/how-pointers-work/how-pointers-work.gif" alt="GIF do site sendo usado." class="full-image"/>
-
-
-							<p>Eu falo mais sobre ele na página do projeto abaixo.</p>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Ecoleta (React)</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/ecoleta/ecoleta.webp"
-							 alt="Um GIF mostrando o fluxo do site: landing page, registro de um ponto de coleta com
-							 campos de nome, imagem, endereço (com um mapa) e, no fim, que tipos de materiais o ponto
-							 aceita."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-
-					<p>Um site sobre pontos de coleta reciclável na sua cidade.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="ecoletaTitle">
-						<div class="modal-content">
-							<h3 id="ecoletaTitle">Ecoleta (React)</h3>
-							<p>
-								Esse site foi desenvolvido acompanhando a primeira edição do evento online Next Level Week
-								organizado pela <a href="https://www.rocketseat.com.br/">Rocketseat</a>. Este evento era
-								gratuito e consistia de 5 vídeos postados durante uma semana, ensinando conceitos de front
-								e backend enquanto era desenvolvido colaborativamente um site sobre encontrar pontos de coleta
-								de lixo sólido perto de você.
-							</p>
-
-							<img src="media/miniatures/ecoleta/ecoleta.webp" alt="Um GIF mostrando o fluxo do site:
-							landing page, registro de um ponto de coleta com campos de nome, imagem, endereço (com um
-							mapa) e, no fim, que tipos de materiais o ponto aceita." class="full-image"/>
-
-							<p>
-								O <em>backend</em> consiste de uma API restful feita com <em>NodeJS</em> e o <em>frontend</em>
-								foi feito com a biblioteca de JavaScript <em>React</em>. Eu fiquei muito orgulhoso com
-								as pequenas modificações que fiz no projeto original. Você pode checá-las na página do
-								projeo clicando no botão abaixo:
-							</p>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/NextLevelWeek">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Conversor (Vue.js)</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/converter/converter-vue-js.gif"
-							 alt="GIF mostrando um site de conversão de moedas."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Converte valores monetários entre várias moedas internacionais!</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="converterTitle">
-						<div class="modal-content">
-							<h3 id="converterTitle">Conversor (Vue.js)</h3>
-							<p>
-								Este é um dos vários pequenos projetos que eu fiz enquanto estava aprendendo pela
-								primeira vez <em>Vue.js</em>, um framework do JavaScript para construir interfaces de
-								frontend. Eu o fiz seguindo um <a href="https://youtu.be/tIEa3MRBpI0">video de
-								Programador BR</a> mas logo me deixei levar pela reatividade do data biding do Vue e
-								tentei explorá-la o máximo que pude.
-							</p>
-
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img alt="GIF mostrando um site de conversão de moedas." src="media/miniatures/converter/converter-vue-js.gif" class="full-image">
-									<button id="converterVueDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="converterVueDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="converterVueDescription" class="gif-description">
-									Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6
-									quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar
-									seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor
-									convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos
-									vazios.
-								</p>
-							</div>
-
-							<p>
-								Neste conversor de moedas você pode escolher a <em>moeda base</em> e digitar o valor que
-								você quer converter no campo de texto no topo. Enquanto digitado, o valor é
-								instantaneamente convertido para três diferentes moedas principais: o dólar americano
-								(USD), Euro (EUR) e o dólar canadense (CAD). E, para cada uma dessas moedas, é possível
-								alterar o valor da moeda base individualmente em suas caixas. É possível também fazer a
-								conversão inversa nas 3 caixas abaixo dessas.
-							</p>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/FirstVuejsProjects#converter">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>(Re)aprendendo Vue.js</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/re-learning-vue/re-learning-vue.png"
-							 alt="Print de um site com fundo esverdeado e 8 retângulos amarelos, cada um com título e
-							 subtítulo, alguns com botões e campos de texto."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>De volta aos fundamentos.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="learningVueTitle">
-						<div class="modal-content">
-							<h3 id="learningVueTitle">(Re)aprendendo Vue.js</h3>
-							<p>
-								Depois de 3 anos dos meus primeiros projetos em <em>Vue.js</em> eu sentir a necessidade
-								de re-aprendê-lo do começo, començando com o
-								<a href="https://v2.vuejs.org/v2/guide/">guia do Vue 2</a>. Após passar pelos conceitos
-								básicos (renderização condicional, data biding, propriedades computadas, etc) com um
-								<a href="https://v2.vuejs.org/v2/guide/installation.html#CDN">script CDN</a>, eu quis
-								tentar implementar o "Sungle File Components" do Vue <em>sem</em> usar o CLI, com a
-								intenção de aprender todas as pequenas partes que tornam possível o desenvolvimento de
-								aplicações web complexas.
-							</p>
-
-							<img src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="Print de um site com
-							fundo esverdeado e 8 retângulos amarelos, cada um com título e subtítulo, alguns com botões
-							e campos de texto." class="full-image"/>
-
-							<p>
-								Então, utilizando <a title="Creating a Vue.js app using SFC without CLI."
-							 	href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/">
-								este guia</a>, eu aprendi como configurar <em>Webpack</em> e <em>Babel</em> para agrupar
-								(<span style="font-style: italic">bundle</span>) e (trans)compilar todos arquivos de JS
-								e Vue para uma forma que navegadores consigam entender.
-							</p>
-
-							<p>
-								Para a etapa final desse projeto eu pretendo ler o guia da terceira versão do Vue e
-								utlizá-lo juntamente ao CLI dessa vez. Também vai ser uma preparação para eu continuar o
-								desenvolvimento do projeto
-								<a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">ComoPonteirosFuncionam</a>.
-							</p>
-							<a class="code-button colorful" href="https://github.com/arturo32/learning-vue">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Primeiro projeto Spring</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted
-							   src="media/miniatures/first-spring-project/first-spring-project.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Um sistema de gerenciamento escolar feito utilizando Java com Spring.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="firstSpringProjectTitle">
-						<div class="modal-content">
-							<h3 id="firstSpringProjectTitle">Primeiro projeto Spring</h3>
-							<p>
-								Fiz esse site em 2020, quando eu estava tentando entrar em uma bolsa financiada pela
-								minha universidade (e o Ministério da Saúde!) e isso fazia parte do seu processo de
-								seleção. Eu passei e me mantive no projeto por quase 2 anos.
-							</p>
-
-							<p>
-								Ele é sobre um sistema de gerenciamento para uma escola onde é possível realizar
-								operações "CRUD" em turmas, professores e alunos.
-							</p>
-
-							<figure>
-								<img alt="UML diagram" loading="lazy" class="full-image" src="media/miniatures/first-spring-project/firstSpringProjectUml.jpg">
-								<figcaption>Diagrama UML das entidades.</figcaption>
-							</figure>
-
-							<p>
-								Ele segue o padrão MVC: o backend foi feito com <em>Java + Spring</em> e utiliza
-								<em>PostgreSQL</em> como gerenciador de banco de dados enquanto o frontend com HTML/CSS
-								básicos com <em>Thymeleaf</em>.
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video class="full-image" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project.mp4"></video>
-									<button id="firstSpringProjectDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="firstSpringProjectDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="firstSpringProjectDescription" class="gif-description">
-									Captura de tela mostrando o uso do site com a página inicial composta de 6 botões
-									para criar e visualizar as entidades.
-								</p>
-							</div>
-
-							<p>
-								Curiosidade: Eu quis mostrar minhas habilidades no CSS então, durante o desenvolvimento,
-								a versão abaixo existiu:
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video class="full-image" autoplay loop muted src="media/miniatures/first-spring-project/first-spring-project-old-version.mp4"></video>
-									<button id="firstSpringProjectOldVersionDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="firstSpringProjectOldVersionDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="firstSpringProjectOldVersionDescription" class="gif-description">
-									Captura de tela da página inicial composta por 3 botões, cada um se transformando em
-									mais dois em uma animação quando o mouse passa por cima deles.
-								</p>
-							</div>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/FirstSpringProject">Código</a>
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Selo ou não sê-lo (Tumblr)</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp"
-							 alt="GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo." />
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Fazendo um site para minha irmã... no Tumblr!</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="seloNaoSeloTitle">
-						<div class="modal-content">
-							<h3 id="seloNaoSeloTitle">Selo ou não sê-lo (Tumblr)</h3>
-							<p>
-								Minha irmã, <a href="https://instagram.com/luiza_fs">Luiza Fonseca</a>, é uma artista
-								visual e designer que às vezes me pede ajuda quando ela precisa fazer um site. Não foi
-								diferente quando ela teve que fazer um projeto sobre produzir arte colectivamente
-								através da troca de cartas entre diferentes artistas!
-							</p>
-
-							<img loading="lazy" class="full-image"
-								 src="media/miniatures/selo-nao-selo/selo-nao-selo-still.webp"
-								 alt="Print da página inicial do site."/>
-
-							<p>
-								A princípio, ela desenvolveu todo o design do site. Em seguida, escolheu o Tumblr como
-								plataforma para hospedá-lo (o que foi um pouco desafiante devido a suas limitações, mas
-								menos do que imaginei). Daí em diante, eu tentei implementá-lo o mais próximo possível
-								de sua visão. Os títulos e até a aparência do cursor foram desenhados por ela, criando
-								um visual bem único.
-							</p>
-
-							<img  class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="GIF
-							de um site no Tumblr com uma imagem de papel marrom como plano de fundo."/>
-
-							<p>
-								Algo que gostei de ter feito nesse projeto foi o botão do menu para mobile. Eu vi em
-								algum lugar um ícone de menu que se transformava em um botão de fechar e eu
-								queria copiar com CSS puro. Funcionou, como é possível ver abaixo.
-							</p>
-
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img alt="GIF mostrando um site de conversão de moedas."
-										 src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp">
-									<button id="seloDescriptionToggle" class="collapseButton" aria-expanded="false"
-											aria-controls="seloDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="seloDescription" class="gif-description">
-									GIF mostrando a versão mobile do site um botão de menu feito de duas linhas paralelas
-									que se cruzam quando clicado, formando um X. O menu é revelado.
-								</p>
-							</div>
-
-
-							<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Este site aqui</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/this-site/site.jpg"
-							 id="thisWebsiteImage"
-							 alt="Imagem do próprio site que se move junto com a navegação."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Você está aqui.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
-						<div class="modal-content">
-							<h3 id="thisVeryOwnWebSiteTitle">Este site aqui</h3>
-							<p>
-								Este portfólio foi motivado pelo <a href="https://sgi.mit.edu/">Summer Geometry
-								Initiative (SGI)</a> do Massachusetts Institute of Technology (MIT): um curso de 6
-								semanas focado em pesquisa na área de processamento geométrico. Infelizmente acabei não
-								sendo aceito, mas toda a experiência que obtive no processo me foi muito valiosa. Este
-								site não deixa de ser uma prova disso! :)
-							</p>
-
-							<p>
-								Eu o fiz sem muito JavaScritp (ou qualquer um de seus frameworks/bibliotecas) e tentei
-								mantê-lo simples, mas original. No processo de desenvolvimento, foquei em deixa-lo
-								<em>acessível</em>, especialmente para pessoas que usam teclado e leitores de tela para
-								navegar na web.
-							</p>
-
-							<p>
-								Na verdade, utilizei uma biblioteca JS neste site: a
-								<a href="https://www.mathjax.org/">biblioteca MathJax</a>, utilizada para visualizar
-								equações matemáticas escritas em \( \LaTeX\). As equaçoes também são acessíveis para
-								usuários de leitores de tela.
-							</p>
-
-							<img loading="lazy" class="full-image" src="media/miniatures/this-site/this-modal.jpg"
-								 alt="Print da página inicial deste site."/>
-							<a class="code-button colorful" href="https://github.com/arturo32/arturo32.github.io">Código</a>
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-			</div>
-
-			<h3>Matemática Visual</h3>
-			<div class="columns c-3">
-
-				<div id="triagleLerp">
-					<h4>Interpolação triangular</h4>
-
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/triangle-lerp/triangle_lerp.gif"
-							 alt="GIF de um círculo movendo dentro de um triângulo."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Interpolação linear, mas com áreas! Em um triângulo!</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="triagleLerpTitle">
-						<div class="modal-content">
-							<h3 id="triagleLerpTitle">Interpolação triangular</h3>
-
-							<p>
-								Este eu peguei de um
-								<a href="https://twitter.com/FreyaHolmer/status/1244407595059884033?s=20">fio do
-								Twitter</a> de <a href="https://acegikmo.com/">Freya Holmér</a>. Eu já conhecia o
-								conceito de interpolação linear do Projeto de Desenho Gráfico, mas não tinha conhecimento
-								de interpolação entre três pontos ao mesmo tempo.
-							</p>
-
-							<p>
-								Como Freya diz em seu fio, para calcular a influência de cada vértice do triângulo em um
-								ponto arbitrário dentro dele, é necessário calcular a <em>área</em> do triângulo interno
-								<em>oposto</em> à esse ponto. Então, a porcentagem dessa área em relação à área total é
-								calculada.
-							</p>
-
-							<p>
-								Uma técnica similar foi utilizada no projeto de Ray Tracer para que superfícies pareçam
-								mais suaves em malhas de triângulos (Phong Shading).
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="Triangle lerp GIF"/>
-									<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="triangleLerpDescription" class="gif-description">
-									GIF em um fundo preto com um círculo girando dentro de um triângulo. Três linhas
-									conectam o círculo com os vértices do triângulo que possuem as cores vermelho, azul
-									e verde. Enquanto o círculo se move, sua cor vai mudando. As arestas do triângulo
-									também interpolam as cores de seus vértices.
-								</p>
-							</div>
-
-
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/eh_ess9Ix">Código</a>
-
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-				<div>
-					<h4>Tabuada</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Lindos padrões emergem quando números são escritos em um círculo.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="timesTableTitle">
-						<div class="modal-content">
-							<h3 id="timesTableTitle">Tabuada</h3>
-							<p>
-								...tabuada? Isso mesmo! O GIF abaixo é apenas a tabuada de 2, onde cada ponto na
-								circunferência é um número e cada linha conecta um número com seu dobro. Então, 2 se
-								conecta com 4, 3 com 6, e por aí vai...
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video autoplay loop muted src="media/miniatures/times-table/times-table.mp4"></video>
-									<button id="timesTableDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="timesTableDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="timesTableDescription" class="gif-description">
-									Um GIF de 2 segundos mostrando um círculo com muitas linhas vermelhas conectando
-									diferentes pontos em sua circunferência. O número de pontos e linhas cresce
-									rapidamente, formando uma imagem que parece um coração de lado (cardioide).
-								</p>
-							</div>
-
-							<p>
-								A imagem abaixo também é uma tabuada de 2, contudo a quantidade de números que fazem
-								parte não estão loucamente mudando o tempo todo e eles... aparecem escritos! São 12
-								números no total, seguindo a mesma lógica de antes: 2 se conecta com 4, 3 com 6...
-								Do 6 em diante nós fazemos o que é chamado aritmética de relógio ou, mais precisamente,
-								aritmética modular: 0 é 12, 1 é 13, 2 é 14 e assim por diante... Por isso 6 se conecta
-								com 0 e 7 com 2, por exemplo. Nós podemos chamar tudo isso de <em>tabuada de 2 módulo
-								12</em>:
-							</p>
-
-							<img loading="lazy" src="media/miniatures/times-table/2-times-table-with-numbers.png"
-								 style="width: 500px;" alt="Um círculo com 10 linhas verdes conectando 12 números
-								 escritos em sua circunferência de 0 a 11. Elas formam uma imagem que é simétrica no
-								 eixo horizontal."/>
-
-							<p>
-								Eu descobri isso em um <a href="https://youtu.be/qhbuKbxJsk8">vídeo do canal
-								Mathologer</a>. Quando você adiciona mais números, isto é, altera o módulo, uma figura
-								conhecida na matemática como cardioide começa a aparecer na tabuada de 2, como é
-								possível ver no primeiro GIF.
-							</p>
-
-							<p>
-								E quando você escolher números maiores para representar suas tabuadas, padrões
-								intrigantes começam aparecer:
-							</p>
-
-							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/38-times-table-78-numbers.png"
-									 alt="Um círculo com diversas linhas verdes cruzando umas as outras formando
-									 pequenos retângulos."/>
-								<figcaption>Tabuada de 38 com 78 números.</figcaption>
-							</figure>
-							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/65-times-table-191-numbers.jpg"
-									 alt="Um círculo com diversas linhas verdes cruzando umas as outras, formando um
-									 pequeno cardioide no centro, com linhas aleatórias em volta dele."/>
-								<figcaption>Tabuada 65 com 191 números.</figcaption>
-							</figure>
-							<figure>
-								<img loading="lazy" src="media/miniatures/times-table/17-times-table-288-numbers.jpg"
-									 alt="Um círculo com várias linhas verdes cruzando umas as outras formando uma lindo
-									 padrão com simetria radial."/>
-								<figcaption>Tabuada de 17 com 288 números.</figcaption>
-							</figure>
-
-
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-zIdqFQnJ">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-
-				<!--							<div>-->
-				<!--								<h4>PI blocks</h4>-->
-				<!--								<div class="project-container">-->
-				<!--									<img  src="media/miniatures/pi-blocks.gif" />-->
-				<!--									<button type="button">Saiba <br> mais</button>-->
-				<!--								</div>-->
-				<!--								<p>When PI is found in unexpected places.</p>-->
-
-				<!--								<dialog class="project-details modal" aria-modal="true" aria-labelledby="piBlocksTitle">-->
-				<!--									<div class="modal-content">-->
-				<!--										<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>-->
-				<!--										<h3 id="piBlocksTitle">PI blocks</h3>-->
-				<!--										<p>When I saw the video from the 3Blue1Brown channel on YouTube about <a title="Video from the channel 3Blue1Brown." href="https://youtu.be/HEfHFsfGXjs">PI appearing out of nowhere</a> in a physics simulation, it blew my mind.</p>-->
-				<!--										<p>Soon!</p>-->
-				<!--										<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/dZpGD_cxk">Código</a>-->
-				<!--									</div>-->
-				<!--								</dialog>-->
-				<!--							</div>-->
-
-				<div>
-					<h4>Campo vetorial</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="A GIF with over 100 small rotating lines that change
-							color from blue to red depending of their rotation. They move in a synchronized but organic way."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>A beleza de um certo gerador de números aleatórios.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="perlinNoiseTitle">
-						<div class="modal-content">
-							<h3 id="perlinNoiseTitle">Campo vetorial</h3>
-							<p>
-								Eu fui introduzido ao p5.js pelos vídeos de <a href="https://shiffman.net/">Daniel
-								Shiffman</a>, um dos diretores do <a href="https://processingfoundation.org/">Processing
-								Foundation</a>. Em seu canal no YouTube,
-								<a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>, não só aprendi
-								sobre as funcionalidades do p5.js, como também a matemática e algoritmos por trás delas.
-							</p>
-
-							<p>
-								Como explicado na
-								<a href="https://youtube.com/playlist?list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD">playlist
-								do Coding Train</a>, <em>Perlin noise</em> é um gerador de números randômicos onde cada
-								número gerado por ele é relativamente próximo aos números que vem antes e depois dele.
-							</p>
-
-							<p>
-								No meu código, eu utilizei esses valores para representar o ângulo de rotação de cada
-								traço, como é possível observar no GIF abaixo. Eu também utilizei função seno para mapear
-								as cores azul e vermelho em suas rotações.
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="Vector field GIF"/>
-									<button id="perlinNoiseVectorFieldDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="perlinNoiseVectorFieldDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="perlinNoiseVectorFieldDescription" class="gif-description">
-									GIF com 100 pequenas linhas que giram e mudam de cor dependendo de seus ângulos.
-									Elas se movem de maneira sincrônizada mas orgânica.
-								</p>
-							</div>
-
-
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/n_vnP5dpB">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Luz e sombra</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/light-and-shadow/light-and-shadow.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Linhas e suas interseções com o ambiente.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="lightAndShadowTitle">
-						<div class="modal-content">
-							<h3 id="lightAndShadowTitle">Luz e sombra</h3>
-							<p>
-								Este eu peguei do <a href="https://ncase.me/sight-and-light/">artigo Sight and Light de
-								Nicky Case</a>. É sobre como você pode simular luz e suas sombras para jogos. Eu segui
-								apenas metade do tutorial e consegui fazer a pequena visualização interativa abaixo:
-							</p>
-
-							<button class="code-button colorful play-button">Começar</button>
-							<div id="lightShadowCanvas" class="interactiveCode"></div>
-							<button class="code-button colorful stop-button" style="display: none;">Parar</button>
-
-							<p>
-								Ah, também fiz... essa coisa:
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img loading="lazy" src="media/miniatures/light-and-shadow/third-eye.gif" alt="Third eye GIF">
-									<button id="thirdEyeDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="thirdEyeDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="thirdEyeDescription" class="gif-description">
-									O GIF começa com dois olhos geométricos em um fundo preto. As suas pupilas radiam
-									várias linhas brancas enquanto se movem para fora dos olho e em direção ao centro
-									acima deles. Quando convergem, outro olho é desenhao em volta deles.
-								</p>
-							</div>
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/sCQCZDyxG">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Conjuntos de Julia</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-
-					<p>Mova seu mouse para gerar lindos produtos de uma função de números complexos.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
-						<div class="modal-content">
-							<h3 id="juliaSetsTitle">Conjuntos de Julia</h3>
-
-							<p>
-								O <em>conjunto de Mandelbrot</em> é um conjunto de números complexos que fica bonitinho
-								quando plotado no plano complexo como a figura abaixo:
-							</p>
-
-							<figure role="group">
-								<img loading="lazy" src="media/miniatures/julia-set/mandelbrot.png"
-									 alt="Uma imagem quase toda preta com uma figura de bordas brancas composta de duas
-									 bolhas: uma em um formato de cardioide e outra menor e mais redonda. Suas bordas se
-									 tocam em um ponto e são seguidas por uma linha fina branca. Essas bolhas parecem se
-									 repetir na borda da estrutura, de maneira fractal."/>
-								<figcaption>
-									Veja o <a href="https://editor.p5js.org/arturo32/sketches/OyFecBUxQ">código do
-									conjunto Mandelbrot.</a>
-								</figcaption>
-							</figure>
-
-							<p>É relativamente simples gerar essa imagem. Tudo se resume a função abaixo:</p>
-
-							<p class="equation">\(f_c(z) = z^2 + c\)</p>
-
-							<p>
-								Nos faleremos dos números complexos \(z\) e \(c\) logo. Primeiro, precisamos de outro
-								par de números:
-							</p>
-
-							<ul>
-								<li>Um número positivo maior que 2. Vamos chamá-lo de <em>limite</em>;</li>
-								<li>
-									Outro número positivo. Dessa vez um grande. Este será nosso <em>número de
-									iterações</em>.
-								</li>
-							</ul>
-
-							<p>
-								Agora, nós aplicamos nossa função recursivamente em <em>cada píxel</em> da imagem que
-								representa o plano complexo. Nós fazemos isso tornando \(c\) a coordenada do pixel atual
-								e \(z\) começando com o valor \(0 + 0i\). Enquanto iteramos a função em um píxel, \(z\)
-								pode ou não crescer acima de nosso <em>limite</em>. Se isso acontecer antes de
-								alcançarmos o <em>número de iterações</em>, nós paramos a recursão e pintamos o píxel de
-								<em>branco</em>. Se não, pintamos de <em>preto</em>. É isso!
-							</p>
-
-							<p>
-								E <em>conjuntos de Julia</em> são quase a mesma coisa, com \(c\) e \(z\) trocando de
-								lugar, ou seja, \(z\) irá representar a coordenada do píxel atual enquanto \(c\) irá
-								ser... uma constante arbitrária! Para cada \(c\) que escolhemos no começo do processo,
-								nós podemos fazer uma imagem completamente diferente (um conjunto completamente
-								diferente!). Cada uma possuindo uma complexidade e beleza única. E para tornar as coisas
-								ainda mais bonitas, nós adicionamos uma pequena mágica matemática nos valores RGB dos
-								píxels, mudando eles conforme o quão rápido algumas das entradas alcançam o
-								<em>limite</em>, como na imagem abaixo feita com \(c = 0 - 0.8i\):
-							</p>
-
-							<figure role="group">
-								<img loading="lazy" src="media/miniatures/julia-set/julia.jpg"
-									 alt="Um conjunto de Julia muito colorido com um forma central preta que lembra uma
-									 minhoca em forma de Z." class="full-image"/>
-								<figcaption>
-									Veja o <a href="https://editor.p5js.org/arturo32/sketches/9sfTuuGoA">código desse
-									grande conjunto de Julia.</a>
-								</figcaption>
-							</figure>
-
-							<p>
-								Finalmente, o GIF abaixo foi feito mudando \(c\) de acordo com as coordanadas do mouse.
-								Então, a cada nova posição do mouse, a função itera em todos os píxels para formar a
-								imagem daquele conjunto particular. Para poupar o processador, eu fiz a função pular
-								alguns píxels. Por isso as cores estão um pouco desaturadas.
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video autoplay loop muted src="media/miniatures/julia-set/julia.mp4"></video>
-									<button id="juliaSetDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="juliaSetDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="juliaSetDescription" class="gif-description">
-									GIF de um retângulo colorido com um círculo negro dentro dele. Suas cores são
-									pastéis bem pálidas que variam entre rosa, azul e amarelo. Assim que o mouse se
-									move, o círculo se transforma drasticamente, com seus lados opostos fundindo em
-									formas psicodélicas.
-								</p>
-							</div>
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/-rzI-Hc-g">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-
-				<div>
-					<h4>Espirais</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/spirals/spirals.gif" alt="A GIF showing a spiral a white spiral in a black square background
-							that starts in the bottom right, spiral outwards anti-clockwise until it crosses to the top left side of the square,
-							spiraling inwards clockwise. The same pattern is found along the spiral line, smaller."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Ande, gire levemente para direta, repita. De repente, você se vê cercado por fractais espirais!</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="spiralsTitle">
-						<div class="modal-content">
-							<h3 id="spiralsTitle">Espirais</h3>
-							<p>
-								O fio de Matt Henderson no Twitter sobre <a title="fio de Matt Henderson no Twitter."
-								href="https://twitter.com/matthen2/status/1249611168265547776?s=20">espirais de
-								Euler</a> me inspirou nessa animação.</p>
-							<p>
-								É realmente simples como a descrição sugeste: desenhe uma linha, gire a um <em>certo
-								ângulo</em>, desenhe outra linha. Mas a cada repetição, você adicionada esse <em>certo
-								ângulo</em>, acumulando-o. No final você tem uma aproximação de uma
-								<a href="https://pt.wikipedia.org/wiki/Espiral_de_Cornu" title="Artigo da Wikipidia.">
-									Espiral de Euler</a>. E, se você escolher o ângulo certo, você pode obter uma
-								Espiral de Euler feita de pequnas Espirais de Euler:
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<img  src="media/miniatures/spirals/spirals.gif" alt="Spiral GIF"/>
-									<button id="spiralsDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="spiralsDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="spiralsDescription" class="gif-description">
-									GIF mostrando uma espiral branca num fundo quadrado escuro que se abre no sentido
-									anti-horário no canto inferior direito, cruza o centro e se fecha no canto superior
-									esquerdo no sentido horário. O mesmo padrão é encontrado ao longo da linha da
-									espiral, em menor escala.
-								</p>
-							</div>
-
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/4aniZ97fS">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-				<div>
-					<h4>Série de Fourier</h4>
-					<div class="project-container">
-						<img aria-hidden="true" tabindex="-1" src="media/miniatures/fourier/fourier.gif"
-							 alt="GIF de 3 círculos girando em torno de si, desenhando um gráfico de onda ao lado."/>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Círculos ao redor de círculos ao redor de círculos...</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="fourierSeriesTitle">
-						<div class="modal-content">
-							<h3 id="fourierSeriesTitle">Série de Fourier</h3>
-							<p>
-								A série de Fourier é uma forma de usar as funções seno e cosseno para aproximar outras
-								funções. É um pouco parecido com a
-								<a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_Taylor">série de Taylor</a>, que muitas
-								pessoas aprendem na disciplina de cálculo na universidade.
-							</p>
-
-							<p>
-								Um exemplo muito famoso na internet são GIFs que mostram a série de Fourier sendo usada
-								para expressar ondas quadradas a partir de funções seno. Eles lindamente representam as
-								funções sendo adicionadas como círculos que giram em torno de outros círculos com
-								frequências diferentes. Então eu tentei fazer o mesmo, só que de forma interativa, com a
-								ajuda de um <a href="https://youtu.be/Mm2eYfj0SgA">vídeo do Coding Train</a>.
-							</p>
-
-							<p>
-								Você pode clicar no botão abaixo se quiser brincar com a visualização. Apenas tome
-								cuidado com a quantidade círculos adicionados. Eu não iria recomendar algo acima de 1000
-								se não estiver em um computador minimamente "poderoso".
-							</p>
-
-							<button class="code-button colorful play-button">Começar</button>
-							<div id="fourierCanvas" class="interactiveCode"></div>
-							<button class="code-button colorful stop-button" style="display: none;">Parar</button>
-
-							<a class="code-button colorful" href="https://editor.p5js.org/arturo32/sketches/m1kx4NOoh">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-			</div>
-
-			<h3>Outros projetos</h3>
-			<div class="columns c-3">
-				<div>
-					<h4>Ray Tracer</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Ray tracer 3D que consegue criar imagens fotorealísticas.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="rayTracerTitle">
-						<div class="modal-content">
-							<h3 id="rayTracerTitle">Ray Tracer</h3>
-							<p>
-								Este projeto foi desenvolvido por mim e meu amigo
-								<a href="https://github.com/JohnVithor">João Vítor</a> através da disciplina Computação
-								Gráfica, lecionada pelo professor
-								<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2497950">Selan
-									Rodrigues dos Santos</a>. A aplicação desenvolvida cria imagens representando cenas
-								3D descritas por arquivos XML. Tudo isso utilizando a magia do ray tracing.
-							</p>
-
-							<p>
-								Ray tracing é uma técnica usada para criar imagens onde o <em>foto-realismo</em> é
-								desejado. Ele funciona <em>simulando</em> fótons de <em>luz</em> como <em>raios</em>
-								(vetores) que são lançados na cena da perspectiva da pessoa espectadora. Os raios, então,
-								viajam pela cena sendo <em>refletidos, refratados ou absorvidos</em> por objetos. Todas
-								essas interações são calculadas para cada píxel da imagem, definindo sua cor final.
-							</p>
-
-							<p>
-								Fazer esse projeto foi desafiante por conta de seu tamanho. Tivemos que considerar
-								a <em>câmera</em>, <em>objetos</em> e suas <em>interações com os raios</em>, diferentes
-								<em>tipos de ilumuninações</em>, diferentes <em>modelos de luz</em>, parsear
-								<em>arquivos XML</em> e <em>arquivos .obj</em>... Ao mesmo tempo, foi muito gratificante
-								porque a cada etapa do projeto nos podíamos <em>ver</em> o resultado do que tínhamos feito
-								até então.
-							</p>
-
-							<p>
-								No final, nós não podíamos acreditar nas imagens que o nosso próprio programa produzia!
-								O plano de fundo esférico (opcional) fez com que as surpefíces reflexivas se tornassem
-								muito mais interessantes!
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video autoplay loop muted src="media/miniatures/ray-tracer/ray-tracer.mp4"></video>
-									<button id="rayTracerDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="rayTracerDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="rayTracerDescription" class="gif-description">
-									GIF feito de 5 imagens que se alternam:
-									primeira imagem: 3 esferas coloridas sob um quadrado escuro reflexivo;
-									segunda imagem: uma rosquinha no espaço que reflete 100% do ambiente;
-									terceira imagem: um dragão de Stanford espelhado sentado em um campo verde;
-									quarta imagem: duas esferas espelhadas flutuando no mesmo campo da imagem anterior;
-									quinta imagem: um bule de Utah verde inclinado sob um espelho quadrado refletindo o
-									céu do mesmo campo das imagens anteriores.
-								</p>
-							</div>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/ray-tracer">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-				<div>
-					<h4>Projeto de Desenho Gráfico</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Quase a mesma coisa que o Paint! Mas usando o teclado ao invés do mouse.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
-						<div class="modal-content">
-							<h3 id="drawingProjectTitle">Projeto de Desenho Gráfico</h3>
-							<p>
-								Este foi o projeto final da disciplina de Introdução à Técnicas de Programção, lecionada
-								pelo professor Gustavo Girão no meu segundo semestre na universidade. Foi feito por mim
-								e meu amigo <a href="https://github.com/artursantiago">Artur Santiago</a> utilizando a
-								linguagem de programção C.
-							</p>
-
-							<p>
-								O projeto é sobre desenhar imagens rasterizadas no formato PPM com comandos em um
-								arquivo de texto. Isto é o que ele consegue desenhar:
-							</p>
-
-							<ul>
-								<li>Linhas;</li>
-								<li>Círculos;</li>
-								<li>Retângulos;</li>
-								<li><a href="https://en.wikipedia.org/wiki/B%C3%A9zier_curve">Curvas de Bézier;</a></li>
-								<li>Curvas de Bézier aleatórias!;</li>
-								<li>Polígonos regulares;</li>
-								<li>Ferramenta de balde de tinta.</li>
-							</ul>
-
-							<p>
-								Eu me surpreendi pelo fato de que desenhar linhas em um computador é bem mais complexo
-								do que pensava. Píxels vem em quantidades discretas, bem diferente do espaço contínuo
-								de uma folha de papel em nossa realidade, por exemplo. É necessário ter algorítmos
-								espertos que decidam que píxels devem ser "coloridos" o não.
-							</p>
-
-							<p>
-								Este foi o primeiro "grande" projeto que participei e foi uma grande aprendizado sobre
-								planjamento, implementação e organização de um projeto em grupo.
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video autoplay loop muted src="media/miniatures/drawing-project/drawing-project.mp4"></video>
-									<button id="drawingProjectDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="drawingProjectDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="drawingProjectDescription" class="gif-description">
-									GIF mostrando 5 imagens de desenhos geométricos brancos em um fundo preto..
-								</p>
-							</div>
-
-							<a class="code-button colorful" href="https://github.com/arturo32/DrawingProject/blob/master/README(pt-br).md">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-
-				<div>
-					<h4>Som Imaginário</h4>
-					<div class="project-container">
-						<video aria-hidden="true" tabindex="-1" autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
-						<button class="container-cover" type="button">Saiba <br> mais</button>
-					</div>
-					<p>Projeto educacional sobre som e como seres humanos localizam sua origem no espaço.</p>
-
-					<dialog class="project-details modal" aria-modal="true" aria-labelledby="drawingProjectTitle">
-						<div class="modal-content">
-							<h3 id="somImaginarioTitle">Som Imaginário</h3>
-
-							<p>
-								Este foi o projeto final da disciplia de Sistema Embarcados lecionada pela professora
-								<a href="https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=1882699">Mônica Magalhães Pereira</a>.
-							</p>
-
-							<p>
-								Ele é sobre um jogo eletrônico educacional com a intenção de ensinar sobre como
-								ondas sonoras funcionam e como o ser humano consegue captar essas ondas e localizar
-								a origem de um certo som no espaço. É pensando para salas de aula do fundamental e
-								ensino médio. O dispositivo — feito com Arduino, dois sensores de som, um LCD, um
-								potenciômetro e um motor de passo — pode indicar a origem de sons altos e curtos,
-								medindo a diferença de tempo em que o som leva para chegar entre os sensores.
-							</p>
-
-							<div class="media-with-description">
-								<div class="gif-with-toggle">
-									<video autoplay loop muted src="media/miniatures/som-imaginario/som-imaginario.mp4"></video>
-									<button id="somImaginarioDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="somImaginarioDescription">
-										<svg viewBox="0 0 100 100" class="triangle">
-											<polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
-										</svg>
-										Descrição do GIF
-									</button>
-								</div>
-								<p id="somImaginarioDescription" class="gif-description">
-									GIF com duas imagens que se alternam: uma é o diagrama do dispositivo; a outra é uma
-									foto desse dispositivo.
-								</p>
-							</div>
-
-
-							<p>
-								Um dos dois modos do jogo envolve alguém batendo palmas enquanto o dispositivo tenta
-								apontar para sua localização. Por conta que o dispositivo possui somente 2 sensores de
-								som, ele pode apontar ás vezes para a direção oposta da origem do som. Isso pode levar
-								a discussões sobre o porquê que o dispositvo se comporta dessa maneira e como ele
-								escolhe para onde apontar.
-							</p>
-
-							<p>
-								Fui inspirado por um <a href="https://www.youtube.com/watch?v=Oai7HUqncAA">vídeo do
-								canal do  YouTube Smarter Every Day YouTube</a>, como também por um
-								<a href="https://youtu.be/CqB95rj_txI">vídeo do canal do Steve Mould</a>.
-							</p>
-
-							<p>O jogo também contava com um aplicativo de celular que eu não consegui implementar a
-								tempo. Abaixo algumas das telas que prototipei:</p>
-
-							<figure>
-								<img  src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image"
-									  alt="Três tela do aplicativo Som Imaginário."/>
-								<figcaption>
-									Três telas do aplicativo do Som Imaginário: a primeira com dois botões — um que leva
-									para seção "Sobre" (terceira tela) e outro que abre um modal para escolher uma dos
-									dois modos de jogo (Segunda tela).
-								</figcaption>
-							</figure>
-
-							<p>
-								PS: O nome do projeto faz referência à uma
-								<a href="https://open.spotify.com/album/001niW2B91JYvUJZEKgbkN?si=mYGtuccqS36OUY0aeNbJxA"
-								   title="Matança do Porco Album" aria-label="Matança do Porco Album">banda dos anos 70</a>.
-							</p>
-
-
-
-							<a class="code-button colorful" href="https://github.com/arturo32/som_imaginario">Código</a>
-
-						</div>
-						<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
-					</dialog>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<section class="colorful blue" aria-labelledby="othersTitle">
-		<div id="othersSection" class="subsection">
-			<h2 id="others">Outros</h2>
-
-
-			<h3>Origami</h3>
-			<div>
-				<p>
-					Sem tesoura ou cola, formas intrigantes podem emergir de uma simples folha de papel. Eu descobri a
-					arte do origami quando tinha 8 anos. Desde então, aprendi que posso dobrar tudo que imaginar — como
-					nas pinturas, o realismo não é necessário — utilizando somente criatividade, técnica e um pouco de
-					sugestão. Abaixo estão alguns dos modelos que tive a oportunidade de dobrar:
-				</p>
-
-				<div id="origami">
-					<div class="project-container">
-						<img  src="https://live.staticflickr.com/65535/50110110346_ec924097e6.jpg" alt="Unicornio" style="object-fit: contain; object-position: center; background-color: #101010;">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/50110110346/" title="Unicornio"><div>Unicornio <br/> por <br/> Román Díaz</div></a>
-					</div>
-					<div class="project-container">
-						<img  src="https://live.staticflickr.com/65535/49681473102_0ed1a82c54.jpg" alt="Avispa 3">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/49681473102/" title="Avispa 3"><div>Avispa <br/> por <br/> Jose Anibal Voyer</div></a>
-					</div>
-					<div class="project-container">
-						<img  src="https://live.staticflickr.com/923/43592494902_c331f6fcdc.jpg" alt="Lyrebird" style="object-position: 87%;">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/43592494902/" title="Lyrebird"><div>Lyrebird <br/> por <br/> Satoshi Kamiya</div></a>
-					</div>
-					<div class="project-container">
-						<img  src="https://live.staticflickr.com/950/42192923111_c16aa14da7_n.jpg" alt="Mini Clover Folding in a mini box">
-						<a class="container-cover" data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/42192923111/in/photostream/" title="Mini Clover Folding em uma mini caixa"><div>Clover Folding <br/> por <br/> Shuzo Fujimoto</div></a>
-					</div>
-				</div>
-
-				<p>Dê uma olhada no meu <a href="https://www.instagram.com/arturorigamis/">instagram</a> e <a href="https://www.flickr.com/photos/arturorigami_/">flickr</a>!</p>
-			</div>
-
-
-
-			<h3>Fotografia</h3>
-			<div>
-				<p>
-					Foi através da experiência de fotografar meus origamis que eu comecei a prestar atenção em
-					iluminação, composição e fotografia no geral. Encontrei um grande prazer em fotografar a natureza
-					e todas suas pequenas coisas vivas.
-				</p>
-
-				<div id="photography">
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/23136567039/" title="Sem título">
-						<img  src="https://live.staticflickr.com/654/23136567039_1263bba4ac_n.jpg" width="320" height="214" alt="Sem título">
-					</a>
-
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/34536102411/" title="way out">
-						<img  src="https://live.staticflickr.com/4170/34536102411_01ed08e51b_n.jpg" width="320" height="213" alt="way out">
-					</a>
-
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/16703419274/" title="Sem título">
-						<img  src="https://live.staticflickr.com/7732/16703419274_1fff090ded_n.jpg" width="320" height="240" alt="Sem título">
-					</a>
-
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/11912921775/" title="Musgo">
-						<img  src="https://live.staticflickr.com/7457/11912921775_a2e1de8f26_n.jpg" width="320" height="180" alt="Musgo">
-					</a>
-
-					<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/arturorigami_/20816992939/" title="Amanhecer em Gouveia - MG">
-						<img  src="https://live.staticflickr.com/5731/20816992939_52bb6bc8c0_c.jpg" width="800" height="336" alt="Amanhecer em Gouveia - MG">
-					</a>
-				</div>
-			</div>
-
-			<h3>Coisas 3D</h3>
-			<div>
-				<p>
-					Resumindo: segui alguns tutoriais de Blender no YouTube e fiz algumas imagens que gostaria de
-					compartilhar:
-				</p>
-				<div id="blender">
-					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/cup4.jpg" alt="Imagem de uma xícara de vidro
-						com várias pequenas rosquinhas caindo dentro dela."/>
-						<figcaption class="container-cover">Tea?</figcaption>
-					</figure>
-
-					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/ico-cube.webp" alt="GIF com tempo reverso de
-						de pequenos icosaedros formando um cubo e caindo em uma quadrado cinza."/>
-						<figcaption class="container-cover">Ico-cube</figcaption>
-					</figure>
-
-					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/donut12.jpg" alt="Uma imagem de uma rosquinha
-						num fundo rosa e com cobertura rosa cheia de pequenos confeitos coloidos."/>
-						<figcaption class="container-cover">Donut</figcaption>
-					</figure>
-
-					<figure class="image-container">
-						<img loading="lazy" src="media/miniatures/blender/sonho5.jpg" alt="Vista superior dentro de uma
-						estrutura vazia com três janelas altas onde o oceano pode ser visto."/>
-						<figcaption class="container-cover">Dream</figcaption>
-					</figure>
-
-				</div>
-			</div>
-
-
-
-		</div>
-	</section>
-</main>
-
-<footer>
-	<a href="#top" aria-label="Início da página" title="Início da página">A</a>
-</footer>
-
-
-
-
-
-<!-- A website inside itself -->
-<script>
-	function moveThisWebsiteImage() {
-		let thisWebsiteImage = document.getElementById('thisWebsiteImage');
-
-		thisWebsiteImage.height = thisWebsiteImage.width / 2;
-
-		let currentScroll = window.scrollY;
-		let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-		let scrollPercentage = (currentScroll/maxScroll) * 100;
-
-		thisWebsiteImage.style.objectPosition = '0 ' + scrollPercentage + '%';
-	}
-
-	window.addEventListener('scroll', moveThisWebsiteImage);
-	moveThisWebsiteImage();
-</script>
-
-
-<!-- Modals -->
-<script>
-
-	let p5Visualization = null;
-	let playButtons = document.getElementsByClassName('play-button');
-	for(let button of playButtons) {
-		let canvas = button.nextElementSibling;
-		let functionName = canvas.id.substring(0, canvas.id.lastIndexOf('Canvas'));
-
-		button.addEventListener('click', function () {
-			p5Visualization = new p5(eval(functionName), canvas.id);
-			let closeButton = canvas.nextElementSibling;
-			closeButton.style.display = 'block';
-			button.style.display = 'none';
-			canvas.scrollIntoView({
-				behavior: 'smooth'
+	
+	<!-- Modals -->
+	<script>
+
+		let p5Visualization = null;
+		let playButtons = document.getElementsByClassName('play-button');
+		for(let button of playButtons) {
+			let canvas = button.nextElementSibling;
+			let functionName = canvas.id.substring(0, canvas.id.lastIndexOf('Canvas'));
+
+			button.addEventListener('click', function () {
+				p5Visualization = new p5(eval(functionName), canvas.id);
+				let closeButton = canvas.nextElementSibling;
+				closeButton.style.display = 'block';
+				button.style.display = 'none';
+				canvas.scrollIntoView({
+					behavior: 'smooth'
+				});
+				canvas.focus();
 			});
-			canvas.focus();
-		});
-	}
-	let stopButtons = document.getElementsByClassName('stop-button');
-	for(let button of stopButtons) {
-		button.addEventListener('click', function () {
+		}
+		let stopButtons = document.getElementsByClassName('stop-button');
+		for(let button of stopButtons) {
+			button.addEventListener('click', function () {
+				if(p5Visualization != null) {
+					p5Visualization.remove();
+					p5Visualization = null;
+				}
+				let playButton = button.previousElementSibling.previousElementSibling;
+				playButton.style.display = 'block';
+				button.style.display = 'none';
+				playButton.focus();
+			});
+		}
+
+		function openModal(modal) {
+			modal.showModal();
+			document.documentElement.style.overflowY = 'hidden';
+			document.documentElement.style.cursor = 'pointer';
+		}
+
+		function closeModal(modal) {
+			modal.close();
+			document.documentElement.style.overflowY = 'initial';
+			document.documentElement.style.cursor = 'default';
 			if(p5Visualization != null) {
 				p5Visualization.remove();
 				p5Visualization = null;
 			}
-			let playButton = button.previousElementSibling.previousElementSibling;
-			playButton.style.display = 'block';
-			button.style.display = 'none';
-			playButton.focus();
-		});
-	}
 
-	function openModal(modal) {
-		modal.showModal();
-		document.documentElement.style.overflowY = 'hidden';
-		document.documentElement.style.cursor = 'pointer';
-	}
-
-	function closeModal(modal) {
-		modal.close();
-		document.documentElement.style.overflowY = 'initial';
-		document.documentElement.style.cursor = 'default';
-		if(p5Visualization != null) {
-			p5Visualization.remove();
-			p5Visualization = null;
+			for(let button of playButtons) {
+				button.style.display = 'block';
+				button.nextElementSibling.nextElementSibling.style.display = 'none';
+			}
 		}
 
-		for(let button of playButtons) {
-			button.style.display = 'block';
-			button.nextElementSibling.nextElementSibling.style.display = 'none';
-		}
-	}
+		// Get the modals
+		let dialogs = document.getElementsByTagName('dialog');
 
-	// Get the modals
-	let dialogs = document.getElementsByTagName('dialog');
+		for(let dialog of dialogs) {
+			let btn = dialog.parentNode.querySelector('button');
 
-	for(let dialog of dialogs) {
-		let btn = dialog.parentNode.querySelector('button');
+			// Get the <button> element that closes the modal
+			let closeButton = dialog.querySelector('.close');
 
-		// Get the <button> element that closes the modal
-		let closeButton = dialog.querySelector('.close');
+			// When the user clicks the button, open the modal 
+			btn.addEventListener('click', function() {
+				openModal(dialog);
 
-		// When the user clicks the button, open the modal
-		btn.addEventListener('click', function() {
-			openModal(dialog);
+				let clickEsc = function (event) {
+					if(event.key === 'Escape') {
+						removeEventListeners();
+						closeModal(dialog);
+					}
+				}
 
-			let clickEsc = function (event) {
-				if(event.key === 'Escape') {
+				let clickOutside = function (event) {
+					if(event.target === dialog) {
+						removeEventListeners();
+						closeModal(dialog);
+					}
+				}
+
+				let clickXButton = function () {
 					removeEventListeners();
 					closeModal(dialog);
 				}
-			}
 
-			let clickOutside = function (event) {
-				if(event.target === dialog) {
-					removeEventListeners();
-					closeModal(dialog);
+				window.addEventListener('click', clickOutside);
+				window.addEventListener('keydown', clickEsc);
+				closeButton.addEventListener('click', clickXButton);
+
+				let removeEventListeners = function () {
+					window.removeEventListener('keydown', clickEsc);
+					window.removeEventListener('click', clickOutside);
+					closeButton.removeEventListener('click', clickXButton);
 				}
-			}
+			});
 
-			let clickXButton = function () {
-				removeEventListeners();
-				closeModal(dialog);
-			}
-
-			window.addEventListener('click', clickOutside);
-			window.addEventListener('keydown', clickEsc);
-			closeButton.addEventListener('click', clickXButton);
-
-			let removeEventListeners = function () {
-				window.removeEventListener('keydown', clickEsc);
-				window.removeEventListener('click', clickOutside);
-				closeButton.removeEventListener('click', clickXButton);
-			}
-		});
-
-	}
+		}
 
 
 
-</script>
+	</script>
 
 
-<!--	Toggle GIF's descriptions-->
-<script>
-	const collapseButtons = document.getElementsByClassName("collapseButton");
-	for(let button of collapseButtons) {
-		button.addEventListener('click', function () {
-			const descriptionId = button.id.substring(0, button.id.indexOf("Toggle"));
-			const description = document.getElementById(descriptionId);
-			const triangle = button.querySelector("svg.triangle");
-			triangle.classList.toggle("open");
-			description.classList.toggle("open");
-			button.setAttribute("aria-expanded", (!(button.getAttribute("aria-expanded") === 'true')).toString());
-		});
-	}
-</script>
+	<!--	Toggle GIF's descriptions-->
+	<script>
+		const collapseButtons = document.getElementsByClassName("collapseButton");
+		for(let button of collapseButtons) {
+			button.addEventListener('click', function () {
+				const descriptionId = button.id.substring(0, button.id.indexOf("Toggle"));
+				const description = document.getElementById(descriptionId);
+				const triangle = button.querySelector("svg.triangle");
+				triangle.classList.toggle("open");
+				description.classList.toggle("open");
+				button.setAttribute("aria-expanded", (!(button.getAttribute("aria-expanded") === 'true')).toString());
+			});
+		}
+	</script>
 
 
 
-<!-- P5.JS SCRIPTS -->
+	<!-- P5.JS SCRIPTS -->
 
-<!-- Light and shadow -->
-<script src="p5js/lightShadow.js"></script>
+		<!-- Light and shadow -->
+		<script src="p5js/lightShadow.js"></script>
 
-<!-- Fourier -->
-<script src="p5js/fourier.js"></script>
+		<!-- Fourier -->
+		<script src="p5js/fourier.js"></script>
 
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>

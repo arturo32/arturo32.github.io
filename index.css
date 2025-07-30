@@ -10,7 +10,8 @@
 	--header-height: 30vh;
 	--modal-horizontal-margin: 16vw;
 
-	--c2-column-gap: 12vw
+	--c2-column-gap: 12vw;
+	--modal-height: 80vh;
 }
 
 html {
@@ -390,9 +391,9 @@ dialog::backdrop {
 /* Modal Content */
 .modal {
 	background-color: var(--white-cream);
-	margin: calc(var(--header-height) / 2) var(--modal-horizontal-margin);
+	margin: calc((100vh - var(--modal-height)) / 2) var(--modal-horizontal-margin);
 	width: calc(100vw - 2 * var(--modal-horizontal-margin));
-	height: calc(100vh - var(--header-height));
+	height: var(--modal-height);
 	border-radius: 25px;
 	box-sizing: border-box;
 	overflow-y: hidden;
@@ -804,11 +805,6 @@ a:focus {
 
 	#indexSection {
 		flex-direction: column;
-	}
-
-	.modal {
-		margin: calc(20vh / 2) var(--modal-horizontal-margin);
-		height: calc(100vh - 20vh);
 	}
 
 	.modal .modal-content {

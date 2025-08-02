@@ -11,10 +11,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
 	<link rel="manifest" href="media/site.webmanifest">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
 
 
 	<link rel="stylesheet" type="text/css" href="index.css">
@@ -80,15 +76,6 @@
 				</a>
 			</nav>
 		</section>
-
-		<script src="p5js/p5.min.js"></script>
-		<!-- Front page animation-->
-		<script src="p5js/front-page.js"></script>
-		<script>
-			if(window.innerWidth > 1000) {
-				let frontPageAnimation = new p5(frontPage);
-			}
-		</script>
 
 		<section class="colorful red" aria-labelledby="aboutTitle">
 			<div id="aboutSection" class="subsection">
@@ -248,7 +235,8 @@
 									the reactiveness of the data biding that Vue offer and tried to exploit it as much as I could.
 								</p>
 
-								<img src="media/miniatures/converter/converter-vue-js.gif"
+								<img loading="lazy"
+									 src="media/miniatures/converter/converter-vue-js.gif"
 									 data-attr-t
 									 alt-t="projects.converter.preview"
 									 alt="A GIF showing an all white static website with a field at the
@@ -291,7 +279,8 @@
 									parts that make possible frontend web development of complex applications.
 								</p>
 
-								<img  src="media/miniatures/re-learning-vue/re-learning-vue.png"
+								<img  loading="lazy"
+									  src="media/miniatures/re-learning-vue/re-learning-vue.png"
 									  data-attr-t
 									  alt-t="projects.relearningVue.preview"
 									  alt="An image showing a website with greenish background and 8 
@@ -437,6 +426,7 @@
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
 										<img
+											loading="lazy"
 											data-attr-t
 											alt-t="projects.seloOuNaoSelo.img.closeButton.alt"
 											alt="GIF showing close button animation."
@@ -460,7 +450,7 @@
 									not to be" using the word for "stamp" which is "<i>selo</i>" in brazilian portuguese.
 								</p>
 
-								<img  class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp"
+								<img  loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp"
 									  data-attr-t
 									  alt-t="projects.seloOuNaoSelo.preview"
 									  alt="A GIF showing a site on Tumblr with an
@@ -549,7 +539,8 @@
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif"
+										<img loading="lazy"
+											 src="media/miniatures/triangle-lerp/triangle_lerp.gif"
 											 data-attr-t
 											 alt-t="projects.lerp.img.triangleLerp.alt"
 											 alt="Triangle lerp GIF"/>
@@ -715,7 +706,8 @@
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif"
+										<img loading="lazy"
+											 src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif"
 											 data-attr-t
 											 alt-t="projects.vectors.img.vectorField.alt"
 											 alt="Vector field GIF"/>
@@ -1179,7 +1171,8 @@
 								<p data-t="projects.som.p5">The game also involved a mobile app that I couldn't implement in time. Below there are some screens that I prototyped:</p>
 
 								<figure>
-									<img  src="media/miniatures/som-imaginario/som_imaginario_screens.png"
+									<img  loading="lazy"
+										  src="media/miniatures/som-imaginario/som_imaginario_screens.png"
 										  class="full-image"
 										  data-attr-t
 										  alt-t="projects.som.img.screens.alt"
@@ -1349,10 +1342,18 @@
 	<footer>
 		<a href="#top" aria-label="Top of the page" title="Top of the page">A</a>
 	</footer>
-	
-	
 
 
+
+
+	<script src="p5js/p5.min.js"></script>
+	<!-- Front page animation-->
+	<script src="p5js/front-page.js"></script>
+	<script>
+		if(window.innerWidth > 1000) {
+			let frontPageAnimation = new p5(frontPage);
+		}
+	</script>
 
 	<!-- A website inside itself -->
 	<script>
@@ -1504,7 +1505,8 @@
 		<script src="p5js/fourier.js"></script>
 
 
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--	<script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </body>
 </html>

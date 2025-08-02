@@ -11,10 +11,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
 	<link rel="manifest" href="media/site.webmanifest">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
 
 
 	<link rel="stylesheet" type="text/css" href="index.css">
@@ -65,15 +61,6 @@
 				<a class="colorful blue" href="#others" id="othersHomeButton">Outros</a>
 			</nav>
 		</section>
-
-		<script src="p5js/p5.min.js"></script>
-		<!-- Front page animation-->
-		<script src="p5js/front-page.js"></script>
-		<script>
-			if(window.innerWidth > 1000) {
-				let frontPageAnimation = new p5(frontPage);
-			}
-		</script>
 
 		<section class="colorful red" aria-labelledby="aboutTitle">
 			<div id="aboutSection" class="subsection">
@@ -150,7 +137,7 @@
 								<h3 id="ecoletaTitle">Ecoleta (React)</h3>
 								<p>Esse site foi desenvolvido acompanhando a primeira edição do evento online Next Level Week organizado pela <a href="https://www.rocketseat.com.br/">Rocketseat</a>. Este evento era gratuito e consistia de 5 vídeos postados durante uma semana, ensinando conceitos de front e backend enquanto era desenvolvido colaborativamente um site sobre encontrar pontos de coleta de lixo sólido perto de você.</p>
 
-								<img src="media/miniatures/ecoleta/ecoleta.webp" alt="Um GIF mostrando o fluxo do site: landing page, registro de um ponto de coleta com campos de nome, imagem, endereço (com um mapa) e, no fim, que tipos de materiais o ponto aceita." class="full-image">
+								<img src="media/miniatures/ecoleta/ecoleta.webp" loading="lazy" alt="Um GIF mostrando o fluxo do site: landing page, registro de um ponto de coleta com campos de nome, imagem, endereço (com um mapa) e, no fim, que tipos de materiais o ponto aceita." class="full-image">
 
 								<p>O <em>backend</em> consiste de uma API restful feita com <em>NodeJS</em> e o <em>frontend</em> foi feito com a biblioteca de JavaScript <em>React</em>. Eu fiquei muito orgulhoso com as pequenas modificações que fiz no projeto original. Você pode checá-las na página do projeto clicando no botão abaixo:</p>
 
@@ -175,7 +162,7 @@
 								<h3 id="converterTitle">Conversor (Vue.js)</h3>
 								<p>Este é um dos vários pequenos projetos que eu fiz enquanto estava aprendendo pela primeira vez <em>Vue.js</em>, um framework do JavaScript para construir interfaces de frontend. Eu o fiz seguindo um <a href="https://youtu.be/tIEa3MRBpI0">video de Programador BR</a> mas logo me deixei levar pela reatividade do data biding do Vue e tentei explorá-la o máximo que pude.</p>
 
-								<img src="media/miniatures/converter/converter-vue-js.gif" alt="Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6 quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos vazios" class="full-image">
+								<img loading="lazy" src="media/miniatures/converter/converter-vue-js.gif" alt="Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6 quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos vazios" class="full-image">
 
 								<p>Um GIF mostrando um site estático todo branco com um campo ao centro no topo e 6 quadrados abaixo dele. O campo de cima é usado para escolher a moeda base e digitar seu valor. Enquanto o valor é digitado, os três primeiros quadrados mostram o valor convertido em USD, EUR e CAD. Os últimos três fazem a conversão inversa, com campos vazios.</p>
 
@@ -200,7 +187,7 @@
 								<h3 id="learningVueTitle">(Re)aprendendo Vue.js</h3>
 								<p>Depois de 3 anos dos meus primeiros projetos em <em>Vue.js</em> eu sentir a necessidade de re-aprendê-lo do começo, começando com o <a href="https://v2.vuejs.org/v2/guide/">guia do Vue 2</a>. Após passar pelos conceitos básicos (renderização condicional, data biding, propriedades computadas, etc) com um <a href="https://v2.vuejs.org/v2/guide/installation.html#CDN">script CDN</a>, eu quis tentar implementar o "Single File Components" do Vue <em>sem</em> usar o CLI, com a intenção de aprender todas as pequenas partes que tornam possível o desenvolvimento de aplicações web complexas.</p>
 
-								<img src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="Print de um site com fundo esverdeado e 8 retângulos amarelos, cada um com título e subtítulo, alguns com botões e campos de texto." class="full-image">
+								<img loading="lazy" src="media/miniatures/re-learning-vue/re-learning-vue.png" alt="Print de um site com fundo esverdeado e 8 retângulos amarelos, cada um com título e subtítulo, alguns com botões e campos de texto." class="full-image">
 
 								<p>Então, utilizando <a href="https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/" title="Creating a Vue.js app using SFC without CLI."> este guia</a>, eu aprendi como configurar <em>Webpack</em> e <em>Babel</em> para agrupar (<span style="font-style: italic">bundle</span>) e (trans)compilar todos arquivos de JS e Vue para uma forma que navegadores consigam entender.</p>
 
@@ -293,7 +280,7 @@
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img alt="GIF mostrando a animação de um botão de fechar" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp">
+										<img loading="lazy" alt="GIF mostrando a animação de um botão de fechar" src="media/miniatures/selo-nao-selo/selo-nao-selo-mobile.webp">
 										<button id="seloDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="seloDescription">
 											<svg viewbox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
@@ -306,7 +293,7 @@
 
 								<p></p>
 
-								<img class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.">
+								<img loading="lazy" class="full-image" src="media/miniatures/selo-nao-selo/selo-nao-selo.webp" alt="GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.">
 								<a class="code-button colorful" href="https://selonaoselo.tumblr.com/">Site</a>
 							</div>
 							<button type="button" class="close" aria-label="Fechar" title="Fechar"></button>
@@ -364,7 +351,7 @@
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="GIF da interpolação triangular">
+										<img loading="lazy" src="media/miniatures/triangle-lerp/triangle_lerp.gif" alt="GIF da interpolação triangular">
 										<button id="triangleLerpDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="triangleLerpDescription">
 											<svg viewbox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
@@ -482,7 +469,7 @@
 
 								<div class="media-with-description">
 									<div class="gif-with-toggle">
-										<img src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="GIF do campo vetorial">
+										<img loading="lazy" src="media/miniatures/perlin-noise/perlin-noise-vector-field.gif" alt="GIF do campo vetorial">
 										<button id="perlinNoiseVectorFieldDescriptionToggle" class="collapseButton" aria-expanded="false" aria-controls="perlinNoiseVectorFieldDescription">
 											<svg viewbox="0 0 100 100" class="triangle">
 												<polygon points="5.9,88.2 50,11.8 94.1,88.2 "/>
@@ -797,7 +784,7 @@
 								<p>O jogo também contava com um aplicativo de celular que eu não consegui implementar a tempo. Abaixo algumas das telas que prototipei:</p>
 
 								<figure>
-									<img src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt="Três tela do aplicativo Som Imaginário.">
+									<img loading="lazy" src="media/miniatures/som-imaginario/som_imaginario_screens.png" class="full-image" alt="Três tela do aplicativo Som Imaginário.">
 									<figcaption>Três telas do aplicativo do Som Imaginário: a primeira com dois botões — um que leva para seção "Sobre" (terceira tela) e outro que abre um modal para escolher uma dos dois modos de jogo (Segunda tela).</figcaption>
 								</figure>
 
@@ -914,10 +901,18 @@
 	<footer>
 		<a href="#top" aria-label="Top of the page" title="Top of the page">A</a>
 	</footer>
-	
-	
 
 
+
+
+	<script src="p5js/p5.min.js"></script>
+	<!-- Front page animation-->
+	<script src="p5js/front-page.js"></script>
+	<script>
+		if(window.innerWidth > 1000) {
+			let frontPageAnimation = new p5(frontPage);
+		}
+	</script>
 
 	<!-- A website inside itself -->
 	<script>
@@ -1069,7 +1064,8 @@
 		<script src="p5js/fourier.js"></script>
 
 
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--	<script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </body>
 </html>

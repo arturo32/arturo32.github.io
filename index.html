@@ -61,7 +61,7 @@
 	</header>
 	<h1>Arturo Fonseca</h1>
 	<main>
-		<section>
+		<section id="firstSection">
 			<nav id="indexSection" class="subsection">
 				<a class="colorful red" href="#about" id="aboutHomeButton" data-t="about.title">
 					About me
@@ -77,59 +77,60 @@
 			</nav>
 		</section>
 
-		<section class="colorful red" aria-labelledby="aboutTitle">
+		<section id="aboutSectionContainer" class="colorful red">
 			<div id="aboutSection" class="subsection">
 				
 				<h2 id="about" data-t="about.title">About me</h2>
 
-				<div class="about-img-text">
-					<img loading="lazy" id="myPicture" src="media/miniatures/me.jpg" data-attr-t
-						 alt-t="about.img.me"
-						 alt="A photo of me. I have long brown hair, white skin, long and skinny face.
+				<div id="aboutContent">
+					<div class="about-img-text">
+						<img loading="lazy" id="myPicture" src="media/miniatures/me.jpg" data-attr-t
+							 alt-t="about.img.me"
+							 alt="A photo of me. I have long brown hair, white skin, long and skinny face.
 					 The background is a blueish wall of a room. I am wearing a green indian shirt."
-					/>
-					<div class="about-text">
-						<p data-t="about.p1">
-							Hello! My name is Arturo Fonseca de Souza. I am a 26 years old brazilian <em>web developer</em> who have
-							been working with both back-end and front-end technologies for the last 5 years. I have degrees in
-							Computer Science and IT from the Universidade Federal do Rio Grande do Norte (UFRN).
-						</p>
+						/>
+						<div class="about-text">
+							<p data-t="about.p1">
+								Hello! My name is Arturo Fonseca de Souza. I am a 26 years old brazilian <em>web developer</em> who have
+								been working with both back-end and front-end technologies for the last 5 years. I have degrees in
+								Computer Science and IT from the Universidade Federal do Rio Grande do Norte (UFRN).
+							</p>
 
-						<p data-t="about.p2">
-							I really like learning new things and making them more accessible to people. My graduation thesis was
-							about a a website where anyone can visualize and understand
-							<a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages.
-						</p>
+							<p data-t="about.p2">
+								I really like learning new things and making them more accessible to people. My graduation thesis was
+								about a a website where anyone can visualize and understand
+								<a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages.
+							</p>
 
-						<p data-t="about.p3">
-							Outside developing web applications, I have a big passion for geometry and mathematics in general.
-							That's why you're gonna see some of my experimentations with math below.
-						</p>
+							<p data-t="about.p3">
+								Outside developing web applications, I have a big passion for geometry and mathematics in general.
+								That's why you're gonna see some of my experimentations with math below.
+							</p>
 
-						<p data-t="about.p4">
-							My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about
-							music theory.
-						</p>
+							<p data-t="about.p4">
+								My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about
+								music theory.
+							</p>
+						</div>
 					</div>
 				</div>
-
-
-				<div class="section-footer">
-					<p>
-						<a href="https://www.linkedin.com/in/arturo-fonseca/?locale=en_US" data-attr-t href-t="about.linkedin.link" data-t="about.linkedin.text">
-							<span class="linkedin-icon icon" aria-hidden="true"></span>my LinkeIn
-						</a>
-					</p>
-					<p>
-						<a href="https://github.com/arturo32" data-t="about.github.text">
-							<span class="github-icon icon" aria-hidden="true"></span>my GitHub
-						</a>
-					</p>
-				</div>
 			</div>
+			<div class="section-footer">
+				<p>
+					<a href="https://www.linkedin.com/in/arturo-fonseca/?locale=en_US" data-attr-t href-t="about.linkedin.link" data-t="about.linkedin.text">
+						<span class="linkedin-icon icon" aria-hidden="true"></span>my LinkeIn
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/arturo32" data-t="about.github.text">
+						<span class="github-icon icon" aria-hidden="true"></span>my GitHub
+					</a>
+				</p>
+			</div>
+
 		</section>
 		
-		<section class="colorful yellow" aria-labelledby="projectsTitle">
+		<section class="colorful yellow">
 			<div id="projectsSection" class="subsection">
 				<h2 id="projects" data-t="projects.title">Projects</h2>
 				<h3>Websites</h3>
@@ -1208,7 +1209,7 @@
 
 			</div>
 		</section>
-		<section class="colorful blue" aria-labelledby="othersTitle">
+		<section class="colorful blue">
 			<div id="othersSection" class="subsection">
 				<h2 id="others" data-t="others.title">Others</h2>
 				

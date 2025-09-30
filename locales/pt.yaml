@@ -15,21 +15,15 @@ about:
         me: 'Uma foto minha sorrindo. Eu sou branco, tenho um longo cabelo castanho e um rosto fino.
             Atrás de mim há uma cortina cinza. Estou usando uma camisa branca.'
 
-    p1: "Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 24 anos e sou graduado em TI pela
-        Universidade Federal do Rio Grande do Norte (UFRN). Atualmente estou cursando Ciência da
-        Computação também na UFRN. Nos últimos 3 anos eu venho trabalhando com <em>desenvolvimento web</em>
-        em projetos de bolsas da minha universidade, aprofundando meu conhecimento tanto em
-        tecnologias de <em>backend</em> como de <em>frontend</em>."
+    p1: 'Olá! Meu nome é Arturo Fonseca de Souza. Eu tenho 26 anos e trabalho com <em>desenvolvimento
+     web</em> há 5 anos. Tenho formação em TI e Ciência da Computação pela Universidade Federal do
+     Rio Grande do Norte (UFRN).'
     p2: 'Eu gosto bastante de aprender coisas novas e torná-las mais acessíveis para pessoas.
-        Essa foi uma das principais motivações por trás <span style="text-decoration: line-through">de
-        um dos meus mais queridos projetos pessoais</span> <em>do meu futuro TCC</em>: um site onde
-        qualquer pessoa consegue visualizar e entender
+        Meu TCC, por exemplo, foi sobre um site para ajudar pessoas a visualizar e entender
         <a href="https://github.com/arturo32/HowPointersWork/blob/main/README(pt-br).md">como ponteiros funcionam</a>
-        em linguagens de programação. Ele ainda está em seu desenvolvimento inicial, mas eu estou
-        determinado em acabá-lo esse ano!'
+        em linguagens de programação.'
     p3: 'Além de desenvolver aplicações web, eu tenho uma grande paixão por geometria e matemática no geral.
-        Isso me levou a descobrir as maravilhas da <em>computação gráfica</em>. Por isso é possível
-        encontrar muitos projetos pessoais ou de disciplinas que envolvam geometria, vetores e
+        Por isso é possível encontrar muitos dos meus projetos pessoais envolvam geometria, vetores e
         gráficos neste site.'
     p4: 'Meus outros interesses envolvem dobrar origami, tirar fotos, mexer um pouco com eletrônica
         e assistir vídeos sobre teoria musical!'
@@ -140,12 +134,8 @@ projects:
         p3: 'Ele segue o padrão MVC: o backend foi feito com <em>Java + Spring</em> e utiliza
              <em>PostgreSQL</em> como gerenciador de banco de dados enquanto o frontend com HTML/CSS
              básicos com <em>Thymeleaf</em>.'
-        p4: 'Captura de tela mostrando o uso do site com a página inicial composta de 6 botões
-             para criar e visualizar as entidades.'
-        p5: 'Curiosidade: Eu quis mostrar minhas habilidades no CSS então, durante o desenvolvimento,
+        p4: 'Curiosidade: Eu quis mostrar minhas habilidades no CSS então, durante o desenvolvimento,
              a versão abaixo existiu:'
-        p6: 'Captura de tela da página inicial composta por 3 botões, cada um se transformando em
-             mais dois em uma animação quando o mouse passa por cima deles.'
     seloOuNaoSelo:
         title: 'Selo ou não sê-lo (Tumblr)'
         preview: 'GIF de um site no Tumblr com uma imagem de papel marrom como plano de fundo.'

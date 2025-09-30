@@ -6,9 +6,6 @@ My portfolio!
    alt="Gif showing how the site looks."/>
 </p>
 
-## to-do
-- Update about-me text (I'm 26 now!).
-
 
 ### Generate translation
 ```bash

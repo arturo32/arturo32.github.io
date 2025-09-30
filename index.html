@@ -81,30 +81,38 @@
 			<div id="aboutSection" class="subsection">
 				
 				<h2 id="about" data-t="about.title">About me</h2>
-				<img  id="myPicture" src="media/miniatures/me.jpg" data-attr-t alt-t="about.img.me" alt="A photo of me. I have long brown hair, white skin, long and skinny face. The background is a blueish wall of a room. I am wearing a green indian shirt."/>
-				<p data-t="about.p1">
-					Hello! My name is Arturo Fonseca de Souza. I am a 24 year old Computer Science student at the Universidade Federal do Rio Grande do Norte
-					(Brazil). I have a degree in IT from the same university. For the last 3 years I have been working with <em>web development</em> in projects funded by my university,
-					furthering my knowledge in the <em>backend</em> side as well as the <em>frontend</em>.
-				</p>
 
-				<p data-t="about.p2">
-					I really like learning new things and making them more accessible to people. This was my main motivation behind one of my
-					dearest personal projects: a website where anyone can visualize and understand
-					<a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages. It is still in the
-					early stages of development, but I am determined to finish it this year!
-				</p>
-				
-				<p data-t="about.p3">
-					Outside developing web applications, I have a big passion for geometry and mathematics in general. This led me down a path
-					of studies where I discovered the wonders of <em>computer graphics</em>. After finally taking a course in the subject at
-					my university, I was sure that this was something I wanted to pursue more deeply.
-				</p>
+				<div class="about-img-text">
+					<img loading="lazy" id="myPicture" src="media/miniatures/me.jpg" data-attr-t
+						 alt-t="about.img.me"
+						 alt="A photo of me. I have long brown hair, white skin, long and skinny face.
+					 The background is a blueish wall of a room. I am wearing a green indian shirt."
+					/>
+					<div class="about-text">
+						<p data-t="about.p1">
+							Hello! My name is Arturo Fonseca de Souza. I am a 26 years old brazilian <em>web developer</em> who have
+							been working with both back-end and front-end technologies for the last 5 years. I have degrees in
+							Computer Science and IT from the Universidade Federal do Rio Grande do Norte (UFRN).
+						</p>
 
-				<p data-t="about.p4">
-					My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about
-					music theory.
-				</p>
+						<p data-t="about.p2">
+							I really like learning new things and making them more accessible to people. My graduation thesis was
+							about a a website where anyone can visualize and understand
+							<a href="https://github.com/arturo32/HowPointersWork">how pointers work</a> in programming languages.
+						</p>
+
+						<p data-t="about.p3">
+							Outside developing web applications, I have a big passion for geometry and mathematics in general.
+							That's why you're gonna see some of my experimentations with math below.
+						</p>
+
+						<p data-t="about.p4">
+							My other interests include folding origami, taking pictures, messing around a bit with electronics and watching videos about
+							music theory.
+						</p>
+					</div>
+				</div>
+
 
 				<div class="section-footer">
 					<p>
@@ -313,7 +321,7 @@
 							<img loading="lazy" aria-hidden="true" tabindex="-1" src="media/miniatures/first-spring-project/first-spring-project.webp" alt=""/>
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p data-t="projects.description.title">A school management system made using Java with Spring.</p>
+						<p data-t="projects.firstSpringProject.description">A school management system made using Java with Spring.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="firstSpringProjectTitle">
 							<div class="modal-content">
@@ -359,7 +367,7 @@
 									</p>
 								</div>
 
-								<p>
+								<p data-t="projects.firstSpringProject.p4">
 									Curiosity: I wanted to show off my CSS skills so, for a moment during development, the version below existed:
 								</p>
 
@@ -468,7 +476,7 @@
 							<img loading="lazy" aria-hidden="true" tabindex="-1" src="media/miniatures/this-site/site.jpg" id="thisWebsiteImage" alt=""/>
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
-						<p data-t="projects.description.title">We are here.</p>
+						<p data-t="projects.thisSite.description">We are here.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="thisVeryOwnWebSiteTitle">
 							<div class="modal-content">
@@ -789,7 +797,7 @@
 							<button class="container-cover" type="button" data-t="learnMore">Learn <br> more</button>
 						</div>
 
-						<p>Move your mouse to generate beautiful products of a complex number function.</p>
+						<p data-t="projects.julia.description">Move your mouse to generate beautiful products of a complex number function.</p>
 
 						<dialog class="project-details modal" aria-modal="true" aria-labelledby="juliaSetsTitle">
 							<div class="modal-content">

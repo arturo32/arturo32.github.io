@@ -20,14 +20,20 @@
 	src: url('fonts/JosefinSans/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Switzer';
+	font-display: swap;
+	src: url('fonts/Switzer-Variable.ttf') format('truetype');
+}
+
 html {
 	background-color: var(--white-cream);
 	font-size: 24px;
 	text-align: center;
 	box-sizing: border-box;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 200;
-	color: black;
+	font-family: 'Switzer', sans-serif;
+	font-weight: 365;
+	color: #363737;
 	scroll-behavior: smooth;
 }
 
@@ -123,19 +129,21 @@ h1 {
 	font-size: 3.5rem;
 	letter-spacing: .2rem;
 	margin: 0 2rem;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	height: calc(var(--header-height)*0.7);
 	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
-	margin: 1.5rem 0;
+	margin: 3rem 0;
 	font-size: 2rem;
 	text-align: left;
 	padding-top: 3vh;
 	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .colorful h2 {
@@ -160,18 +168,25 @@ h3 {
 	font-weight: 300;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h4 {
 	font-weight: 200;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 p, 
 ol,
 ul {
 	text-align: left;
-	font-weight: 300;
+	font-weight: 365;
 	line-height: 1.5rem;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 0.5rem;
 }
 
 em {
@@ -179,15 +194,26 @@ em {
 	font-weight: 600;
 }
 
+
+
+.about-img-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	gap: 2rem;
+}
+
 #myPicture {
 	max-height: 300px;
 	max-width: 300px;
 	object-fit: cover;
 	border-radius: 50%;
-	float: left;
-	margin-right: 2rem;
 	margin-left: 1rem;
 	margin-bottom: 1rem;
+}
+
+.about-text {
+	max-width: 1000px;
 }
 
 .icon {
@@ -290,6 +316,12 @@ section {
 	width: 20vw;
 }
 
+#origami,
+#photography,
+#blender {
+	margin-top: 1.5rem;
+}
+
 #othersSection #origami img {
 	height: 20vw;
 	width: 20vw;
@@ -316,6 +348,8 @@ section {
 	padding-left: 0.5rem;
 	text-decoration: none;
 }
+
+
 
 
 
@@ -353,7 +387,7 @@ section {
 	left: 0;
 	top: 0;
 	background: rgba(0,0,0,0.7);
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Switzer', sans-serif;
 	color: var(--YELLOW) !important;
 	font-weight: 300;
 	font-size: 2vw;
@@ -644,6 +678,7 @@ button.colorful,
 a.colorful {
 	background-color: var(--white-cream);
 	font-size: 1.2rem;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 a.red:focus,
@@ -761,6 +796,7 @@ footer a {
 	font-weight: 400;
 	font-size: 3rem;
 	padding: 2rem;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -812,6 +848,10 @@ a:focus {
 	}
 
 	#indexSection {
+		flex-direction: column;
+	}
+
+	.about-img-text {
 		flex-direction: column;
 	}
 

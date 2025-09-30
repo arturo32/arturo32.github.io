@@ -138,7 +138,7 @@ const frontPage = (p) => {
 		let yellow = '#fac22b';
 		let blue = '#0e638e';
 		let colors = [red, yellow, blue];
-		for(let i = 0; i < 15; ++i) {
+		for(let i = 0; i < 20; ++i) {
 			let x = p.random(canvasWidth/20, canvasWidth - canvasWidth/20);
 			let y = p.random(canvasHeight/10, canvasHeight - canvasHeight/10);
 
